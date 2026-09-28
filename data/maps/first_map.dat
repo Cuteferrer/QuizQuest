@@ -143,11 +143,62 @@ tile{
   pattern = "20_7",
 }
 
+tile{
+  layer = 0,
+  x = 136,
+  y = 16,
+  width = 8,
+  height = 32,
+  pattern = "50_2",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 16,
+  width = 8,
+  height = 32,
+  pattern = "51_2",
+}
+
 destination{
   name = "destination",
   layer = 0,
   x = 160,
   y = 181,
   direction = 1,
+}
+
+pickable{
+  layer = 0,
+  x = 88,
+  y = 133,
+}
+
+dynamic_tile{
+  layer = 0,
+  x = 144,
+  y = 16,
+  width = 16,
+  height = 32,
+  pattern = "52_2",
+}
+
+teletransporter{
+  layer = 0,
+  x = 144,
+  y = 32,
+  width = 16,
+  height = 16,
+  destination_map = "first_map",
+}
+
+npc{
+  layer = 0,
+  x = 192,
+  y = 77,
+  direction = 3,
+  subtype = 1,
+  sprite = "animals/bird_red",
 }
 
