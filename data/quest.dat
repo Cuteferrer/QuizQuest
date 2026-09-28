@@ -1,0 +1,26 @@
+quest{
+  solarus_version = "2.1",
+  write_dir = "9d341ccb-e582-4734-aa9f-171b5a329012",
+  title = "QuizQuest",
+  short_description = "",
+  long_description = [[
+]],
+  author = "",
+  quest_version = "",
+  initial_release_date = "",
+  release_date = "",
+  website = "",
+  normal_quest_size = "320x240",
+  min_quest_size = "320x240",
+  max_quest_size = "320x240",
+  license = "",
+  languages = {},
+  min_players = 1,
+  max_players = 1,
+  genres = {},
+  age = "all",
+  controls = 0,
+  dynamic_timestep = false,
+  subpixel_camera = false,
+}
+
