@@ -1,2 +1,2 @@
 # QuizQuest
-"Abschlussprojekt" Speil
+"Abschlussprojekt"
