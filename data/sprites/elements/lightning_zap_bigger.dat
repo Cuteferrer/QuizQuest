@@ -1,0 +1,8 @@
+animation{
+  name = "zap",
+  src_image = "elements/lightning_zap_bigger.png",
+  frame_delay = 50,
+  directions = {
+    { x = 0, y = 0, frame_width = 80, frame_height = 80, origin_x = 40, origin_y = 45, num_frames = 10, num_columns = 5 },
+  },
+}

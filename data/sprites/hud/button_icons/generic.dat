@@ -1,0 +1,140 @@
+animation{
+  name = "a",
+  src_image = "hud/button_icons/button_icons_generic.png",
+  directions = {
+    { x = 0, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "axis_left",
+  src_image = "hud/button_icons/button_icons_generic.png",
+  directions = {
+    { x = 0, y = 32, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "axis_right",
+  src_image = "hud/button_icons/button_icons_generic.png",
+  directions = {
+    { x = 16, y = 32, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "b",
+  src_image = "hud/button_icons/button_icons_generic.png",
+  directions = {
+    { x = 16, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "back",
+  src_image = "hud/button_icons/button_icons_generic.png",
+  directions = {
+    { x = 80, y = 32, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "dpad",
+  src_image = "hud/button_icons/button_icons_generic.png",
+  directions = {
+    { x = 0, y = 48, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "dpad_down",
+  src_image = "hud/button_icons/button_icons_generic.png",
+  directions = {
+    { x = 64, y = 48, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "dpad_left",
+  src_image = "hud/button_icons/button_icons_generic.png",
+  directions = {
+    { x = 48, y = 48, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "dpad_right",
+  src_image = "hud/button_icons/button_icons_generic.png",
+  directions = {
+    { x = 16, y = 48, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "dpad_up",
+  src_image = "hud/button_icons/button_icons_generic.png",
+  directions = {
+    { x = 32, y = 48, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "left_shoulder",
+  src_image = "hud/button_icons/button_icons_generic.png",
+  directions = {
+    { x = 64, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "left_stick",
+  src_image = "hud/button_icons/button_icons_generic.png",
+  directions = {
+    { x = 32, y = 32, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "right_shoulder",
+  src_image = "hud/button_icons/button_icons_generic.png",
+  directions = {
+    { x = 80, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "right_stick",
+  src_image = "hud/button_icons/button_icons_generic.png",
+  directions = {
+    { x = 48, y = 32, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "start",
+  src_image = "hud/button_icons/button_icons_generic.png",
+  directions = {
+    { x = 64, y = 32, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "trigger_left",
+  src_image = "hud/button_icons/button_icons_generic.png",
+  directions = {
+    { x = 96, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "trigger_right",
+  src_image = "hud/button_icons/button_icons_generic.png",
+  directions = {
+    { x = 112, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "unknown",
+  src_image = "hud/button_icons/button_icons_generic.png",
+  directions = {
+    { x = 48, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "x",
+  src_image = "hud/button_icons/button_icons_generic.png",
+  directions = {
+    { x = 32, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "y",
+  src_image = "hud/button_icons/button_icons_generic.png",
+  directions = {
+    { x = 48, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}

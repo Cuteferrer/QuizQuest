@@ -1,0 +1,401 @@
+[
+  {
+    "id": "AE2_UML_Q001",
+    "topic": "UML Klassendiagramme",
+    "type": "single_choice",
+    "question": "Welches Symbol wird in einem UML-Klassendiagramm verwendet, um die Sichtbarkeit 'private' (privat) für ein Attribut oder eine Methode zu kennzeichnen?",
+    "media": null,
+    "options": [
+      { "id": "A", "text": "+" },
+      { "id": "B", "text": "-" },
+      { "id": "C", "text": "#" },
+      { "id": "D", "text": "~" }
+    ],
+    "correct_answers": ["B"],
+    "explanation": "Das Minus-Zeichen (-) steht für 'private', das Plus-Zeichen (+) für 'public', die Raute (#) für 'protected' und die Tilde (~) für 'package'."
+  },
+  {
+    "id": "AE2_UML_Q002",
+    "topic": "UML Klassendiagramme",
+    "type": "single_choice",
+    "question": "Welches objektorientierte Konzept wird im abgebildeten Diagramm durch den Pfeil mit der geschlossenen, nicht ausgemalten Spitze dargestellt?",
+    "media": {
+      "type": "image",
+      "src": "image_Q002",
+      "alt": "UML Klassendiagramm mit Basisklasse und abgeleiteten Klassen"
+    },
+    "options": [
+      { "id": "A", "text": "Assoziation" },
+      { "id": "B", "text": "Komposition" },
+      { "id": "C", "text": "Vererbung (Generalisierung)" },
+      { "id": "D", "text": "Abhängigkeit (Dependency)" }
+    ],
+    "correct_answers": ["C"],
+    "explanation": "Ein Pfeil mit einer nicht ausgemalten (leeren), geschlossenen Spitze zeigt in der UML immer auf die Basisklasse (Superklasse) und symbolisiert die Vererbung bzw. Generalisierung."
+  },
+  {
+    "id": "AE2_UML_Q003",
+    "topic": "UML Grundlagen",
+    "type": "multiple_choice",
+    "question": "Welche der folgenden Diagrammtypen gehören zu den Strukturdiagrammen in der UML 2?",
+    "media": null,
+    "options": [
+      { "id": "A", "text": "Klassendiagramm" },
+      { "id": "B", "text": "Use-Case-Diagramm" },
+      { "id": "C", "text": "Komponentendiagramm" },
+      { "id": "D", "text": "Aktivitätsdiagramm" }
+    ],
+    "correct_answers": ["A", "C"],
+    "explanation": "Klassen- und Komponentendiagramme stellen die statische Struktur eines Systems dar. Use-Case- und Aktivitätsdiagramme gehören zu den Verhaltensdiagrammen (dynamische Sicht)."
+  },
+  {
+    "id": "AE2_UML_Q004",
+    "topic": "UML Use-Case-Diagramme",
+    "type": "multiple_choice",
+    "question": "Welche Aussagen zu den <> und <> Beziehungen im abgebildeten Anwendungsfalldiagramm (Use-Case-Diagramm) sind zutreffend?",
+    "media": {
+      "type": "image",
+      "src": "image_Q004",
+      "alt": "Use Case Diagramm mit Site User und Webmaster sowie Include und Extend Beziehungen"
+    },
+    "options": [
+      { "id": "A", "text": "Ein <> bedeutet, dass der referenzierte Anwendungsfall zwingend ausgeführt wird." },
+      { "id": "B", "text": "Ein <> bedeutet, dass der referenzierte Anwendungsfall das Verhalten des Basis-Anwendungsfalls unter bestimmten Bedingungen erweitert." },
+      { "id": "C", "text": "Der Pfeil bei <> zeigt immer vom Basis-Anwendungsfall zum erweiternden Anwendungsfall." },
+      { "id": "D", "text": "<> und <> können in der UML synonym verwendet werden." }
+    ],
+    "correct_answers": ["A", "B"],
+    "explanation": "<> lagert zwingend benötigtes Verhalten aus (Pfeil zeigt zum inkludierten Use Case). <> beschreibt optionales Verhalten, wobei der Pfeil vom erweiternden Use Case ZURÜCK zum Basis-Use-Case zeigt."
+  },
+  {
+    "id": "AE2_UML_Q005",
+    "topic": "UML Sequenzdiagramme",
+    "type": "single_choice",
+    "question": "Was repräsentiert eine sogenannte 'Lebenslinie' (Lifeline) in einem UML-Sequenzdiagramm?",
+    "media": null,
+    "options": [
+      { "id": "A", "text": "Die Zeitspanne, bis ein Objekt vom Garbage Collector gelöscht wird." },
+      { "id": "B", "text": "Einen individuellen Teilnehmer (meist ein Objekt), der an einer Interaktion beteiligt ist." },
+      { "id": "C", "text": "Die Netzwerkverbindung zwischen zwei verteilten Systemen." },
+      { "id": "D", "text": "Den Rückgabewert eines asynchronen Methodenaufrufs." }
+    ],
+    "correct_answers": ["B"],
+    "explanation": "Eine Lebenslinie wird als gestrichelte Linie unterhalb eines Rechtecks (dem Objekt/Akteur) dargestellt und zeigt die Existenz dieses Teilnehmers über die Zeit der Interaktion hinweg."
+  },
+  {
+    "id": "AE2_UML_Q006",
+    "topic": "UML Klassendiagramme",
+    "type": "single_choice",
+    "question": "Wie unterscheiden sich Komposition und Aggregation im Klassendiagramm semantisch?",
+    "media": null,
+    "options": [
+      { "id": "A", "text": "Die Aggregation beschreibt eine existenzabhängige Beziehung, die Komposition nicht." },
+      { "id": "B", "text": "Bei der Komposition (ausgefüllte Raute) werden die Teile mit dem Ganzen gelöscht (Existenzabhängigkeit), bei der Aggregation (leere Raute) existieren die Teile eigenständig weiter." },
+      { "id": "C", "text": "Komposition wird für Schnittstellen (Interfaces) verwendet, Aggregation für abstrakte Klassen." },
+      { "id": "D", "text": "Es gibt in der UML keinen semantischen, sondern nur einen visuellen Unterschied." }
+    ],
+    "correct_answers": ["B"],
+    "explanation": "Eine Komposition ist eine strenge Form der Teil-Ganzes-Beziehung (Stirbt das Ganze, sterben die Teile). Die Aggregation ist eine schwache Teil-Ganzes-Beziehung (Die Teile können auch ohne das Ganze existieren)."
+  },
+  {
+    "id": "AE2_UML_Q007",
+    "topic": "UML Verhaltensdiagramme",
+    "type": "single_choice",
+    "question": "Das abgebildete Diagramm zeigt Kontrollflüsse zwischen verschiedenen Aktionen. Welchem UML-Diagrammtyp ist diese Darstellungsform (Knoten, Übergänge, Start-/Endknoten) am ehesten zuzuordnen?",
+    "media": {
+      "type": "image",
+      "src": "image_Q007",
+      "alt": "Abstraktes Flussdiagramm bestehend aus Rechtecken, Rauten und Kontrollflüssen"
+    },
+    "options": [
+      { "id": "A", "text": "Klassendiagramm" },
+      { "id": "B", "text": "Verteilungsdiagramm (Deployment Diagram)" },
+      { "id": "C", "text": "Aktivitätsdiagramm (Activity Diagram)" },
+      { "id": "D", "text": "Paketdiagramm (Package Diagram)" }
+    ],
+    "correct_answers": ["C"],
+    "explanation": "Aktivitätsdiagramme modellieren den Ablauf von Anwendungsfällen oder Geschäftsprozessen mittels Aktionen, Kontrollflüssen, Verzweigungen und Parallelisierungen."
+  },
+  {
+    "id": "AE2_UML_Q008",
+    "topic": "UML Klassendiagramme",
+    "type": "multiple_choice",
+    "question": "Welche Bedeutungen haben die Multiplizitäten '0..1' und '1..*' in einer Assoziation?",
+    "media": null,
+    "options": [
+      { "id": "A", "text": "'0..1' bedeutet: Kein oder genau ein Objekt." },
+      { "id": "B", "text": "'1..*' bedeutet: Mindestens ein Objekt, nach oben unbegrenzt." },
+      { "id": "C", "text": "'0..1' bedeutet: Genau ein Objekt." },
+      { "id": "D", "text": "'1..*' bedeutet: Genau ein Objekt oder exakt die Anzahl, die der Stern-Variable zugewiesen wurde." }
+    ],
+    "correct_answers": ["A", "B"],
+    "explanation": "Multiplizitäten definieren die Kardinalität. '0..1' ist eine Optionale 1-zu-1-Zuordnung. '1..*' erzwingt mindestens ein Element, erlaubt aber beliebig viele weitere."
+  },
+  {
+    "id": "AE2_UML_Q009",
+    "topic": "UML Aktivitätsdiagramme",
+    "type": "single_choice",
+    "question": "Welches Symbol wird im Aktivitätsdiagramm genutzt, um einen parallelen Kontrollfluss aufzuspalten (Fork) oder wieder zusammenzuführen (Join)?",
+    "media": null,
+    "options": [
+      { "id": "A", "text": "Ein hohler Kreis" },
+      { "id": "B", "text": "Eine Raute (Diamond)" },
+      { "id": "C", "text": "Ein dicker, schwarzer horizontaler oder vertikaler Balken" },
+      { "id": "D", "text": "Ein gestricheltes Rechteck" }
+    ],
+    "correct_answers": ["C"],
+    "explanation": "Ein dicker schwarzer Balken (Synchronisationsbalken) dient der Parallelisierung (Fork) und Synchronisation (Join). Die Raute wird hingegen für alternative Entscheidungen (Decision) genutzt."
+  },
+  {
+    "id": "AE2_UML_Q010",
+    "topic": "UML Zustandsdiagramme",
+    "type": "single_choice",
+    "question": "In einem Zustandsdiagramm (State Machine Diagram) wird der Zustandsübergang (Transition) oft mit einem Text im Format 'Trigger [Guard] / Effect' beschriftet. Was beschreibt der 'Guard'?",
+    "media": null,
+    "options": [
+      { "id": "A", "text": "Das Ereignis, das den Übergang auslöst." },
+      { "id": "B", "text": "Die Aktivität, die während des Übergangs ausgeführt wird." },
+      { "id": "C", "text": "Eine boolesche Bedingung, die wahr (true) sein muss, damit der Übergang stattfinden kann." },
+      { "id": "D", "text": "Den Zustand, der nach dem Übergang erreicht wird." }
+    ],
+    "correct_answers": ["C"],
+    "explanation": "Der Guard (die Wächterbedingung) steht in eckigen Klammern. Nur wenn diese Bedingung erfüllt ist, wird die Transition beim Eintreten des Triggers auch tatsächlich durchgeführt."
+  },
+  {
+    "id": "AE2_UML_Q011",
+    "topic": "Sequenzdiagramme",
+    "type": "single_choice",
+    "question": "Welche Bedeutung hat eine gestrichelte Pfeillinie mit einer offenen Pfeilspitze, die in einem Sequenzdiagramm von rechts nach links auf eine Lebenslinie zeigt?",
+    "media": null,
+    "options": [
+      { "id": "A", "text": "Ein asynchroner Nachrichtenaufruf" },
+      { "id": "B", "text": "Eine Antwortnachricht (Reply Message)" },
+      { "id": "C", "text": "Ein Objekterzeugungsaufruf (Create Message)" },
+      { "id": "D", "text": "Ein verlorenes Signal" }
+    ],
+    "correct_answers": ["B"],
+    "explanation": "Eine gestrichelte Linie mit offener Pfeilspitze stellt in der UML-Notation für Sequenzdiagramme die Rückmeldung (Reply Message) von Werten aus einem vorherigen synchronen Methodenaufruf dar."
+  },
+  {
+    "id": "AE2_UML_Q012",
+    "topic": "UseCase Diagramme",
+    "type": "single_choice",
+    "question": "Im abgebildeten UseCase-Diagramm wird eine Beziehung zwischen dem Akteur 'Kunde' und dem Anwendungsfall 'Konto eröffnen' dargestellt. Wie bezeichnet man die durchgezogene Linie ohne Pfeilspitze zwischen einem Akteur und einem Use Case?",
+    "media": {
+      "type": "image",
+      "src": "image_Q012",
+      "alt": "UseCase-Diagramm mit dem Akteur Kunde, der über eine einfache Linie mit dem UseCase Konto eröffnen verbunden ist."
+    },
+    "options": [
+      { "id": "A", "text": "Komposition" },
+      { "id": "B", "text": "Generalisierung" },
+      { "id": "C", "text": "Assoziation" },
+      { "id": "D", "text": "Include-Beziehung" }
+    ],
+    "correct_answers": ["C"],
+    "explanation": "Die Verbindung zwischen einem Akteur und einem Use Case ist eine Assoziation. Sie gibt an, dass der Akteur mit dem System in diesem Anwendungsfall interagiert."
+  },
+  {
+    "id": "AE2_UML_Q013",
+    "topic": "Sequenzdiagramme",
+    "type": "multiple_choice",
+    "question": "Welche Aussagen zu kombinierten Fragmenten (Combined Fragments) in UML-Sequenzdiagrammen sind korrekt?",
+    "media": null,
+    "options": [
+      { "id": "A", "text": "Der Operator 'alt' stellt eine alternative Ausführung (if-else) dar." },
+      { "id": "B", "text": "Der Operator 'opt' stellt eine Schleife dar, die mehrfach durchlaufen werden kann." },
+      { "id": "C", "text": "Der Operator 'par' beschreibt die parallele Ausführung von Interaktionsabfolgen." },
+      { "id": "D", "text": "Der Operator 'loop' beschreibt einen optionalen Ausführungspfad." }
+    ],
+    "correct_answers": ["A", "C"],
+    "explanation": "'alt' steht für alternative Ausführungspfade und 'par' für parallele Interaktionen. 'opt' ist ein optionaler Pfad (wie eine einfache IF-Bedingung ohne ELSE), während 'loop' für Schleifen verwendet wird."
+  },
+  {
+    "id": "AE2_UML_Q014",
+    "topic": "UseCase Diagramme",
+    "type": "single_choice",
+    "question": "Betrachten Sie das abgebildete UseCase-Diagramm. Welche Beziehung muss zwischen dem Basis-UseCase 'Geld abheben' und dem UseCase 'PIN prüfen' verwendet werden, wenn die PIN-Prüfung bei jeder Geldabhebung zwingend ausgeführt werden muss?",
+    "media": {
+      "type": "image",
+      "src": "image_Q014",
+      "alt": "UseCase-Diagramm mit Geld abheben und PIN prüfen, verknüpft mit einer gestrichelten Linie und der Stereotype include."
+    },
+    "options": [
+      { "id": "A", "text": "<> mit Pfeilrichtung auf 'Geld abheben'" },
+      { "id": "B", "text": "<> mit Pfeilrichtung auf 'PIN prüfen'" },
+      { "id": "C", "text": "<> mit Pfeilrichtung auf 'PIN prüfen'" },
+      { "id": "D", "text": "<> mit Pfeilrichtung auf 'Geld abheben'" }
+    ],
+    "correct_answers": ["B"],
+    "explanation": "Eine <>-Beziehung drückt die zwingende Einbindung eines Unter-Anwendungsfalls aus. Der gestrichelte Pfeil zeigt dabei vom aufrufenden Basis-UseCase auf den inkludierten UseCase."
+  },
+  {
+    "id": "AE2_UML_Q015",
+    "topic": "Sequenzdiagramme",
+    "type": "single_choice",
+    "question": "Wie wird das Ende der Lebenszeit eines Objekts (Destruktion) in einem Sequenzdiagramm visuell am unteren Ende der Lebenslinie dargestellt?",
+    "media": null,
+    "options": [
+      { "id": "A", "text": "Ein ausgefüllter schwarzer Kreis" },
+      { "id": "B", "text": "Ein großes 'X' auf der Lebenslinie" },
+      { "id": "C", "text": "Ein Doppelstrich mit Endsymbol" },
+      { "id": "D", "text": "Ein ausgefülltes Quadrat" }
+    ],
+    "correct_answers": ["B"],
+    "explanation": "Das finale Löschen/Zerstören eines Objekts wird am unteren Ende der gestrichelten Lebenslinie durch ein großes 'X' markiert."
+  },
+  {
+    "id": "AE2_UML_Q016",
+    "topic": "UseCase Diagramme",
+    "type": "multiple_choice",
+    "question": "Welche Aussagen zur Vererbung (Generalisierung) zwischen Akteuren in einem UseCase-Diagramm sind richtig?",
+    "media": null,
+    "options": [
+      { "id": "A", "text": "Ein spezialisierter Akteur erbt alle UseCases des generalisierten Akteurs." },
+      { "id": "B", "text": "Akteure können nur zu UseCases vererben, nicht zu anderen Akteuren." },
+      { "id": "C", "text": "Ein spezialisierter Akteur kann zusätzliche eigene UseCases ausführen." },
+      { "id": "D", "text": "Die Vererbung wird durch eine durchgezogene Linie mit einer geschlossenen, nicht ausgemalten Pfeilspitze dargestellt." }
+    ],
+    "correct_answers": ["A", "C", "D"],
+    "explanation": "Akteure können untereinander vererben (Generalisierung/Spezialisierung). Dabei erbt der untergeordnete Akteur alle Berechtigungen/Interaktionen des übergeordneten Akteurs und kann weitere besitzen. Die Pfeilform entspricht der allgemeinen UML-Vererbungssymbolik."
+  },
+  {
+    "id": "AE2_UML_Q017",
+    "topic": "Sequenzdiagramme",
+    "type": "single_choice",
+    "question": "Welcher Nachrichtentyp liegt vor, wenn der Sender nach dem Absenden der Nachricht nicht auf eine Antwort warten muss, sondern sofort in der eigenen Ausführung fortfährt?",
+    "media": null,
+    "options": [
+      { "id": "A", "text": "Synchrone Nachricht" },
+      { "id": "B", "text": "Asynchrone Nachricht" },
+      { "id": "C", "text": "Reflektive Nachricht" },
+      { "id": "D", "text": "Antwortnachricht" }
+    ],
+    "correct_answers": ["B"],
+    "explanation": "Eine asynchrone Nachricht blockiert den Aufrufer nicht. Er führt seinen Prozess unabhängig weiter, ohne auf das Ende der Verarbeitung oder eine Rückmeldung zu warten. Notation: durchgezogene Linie mit offener Pfeilspitze."
+  },
+  {
+    "id": "AE2_UML_Q018",
+    "topic": "UseCase Diagramme",
+    "type": "single_choice",
+    "question": "Das vorliegende UseCase-Diagramm zeigt die Erweiterung 'Rabatt anwenden' für den Anwendungsfall 'Bestellung abschließen'. Unter welcher Bedingung wird der erweiterte Anwendungsfall ausgeführt?",
+    "media": {
+      "type": "image",
+      "src": "image_Q018",
+      "alt": "UseCase-Diagramm mit Bestellung abschließen und Rabatt anwenden mit einer extend-Beziehung und Extension Point Gutscheincode vorhanden."
+    },
+    "options": [
+      { "id": "A", "text": "Immer zwingend bei jedem Durchlauf." },
+      { "id": "B", "text": "Niemals, da extend-Beziehungen nur dokumentativen Charakter ohne Ausführung besitzen." },
+      { "id": "C", "text": "Nur, wenn die festgelegte Erweiterungsbedingung (Extension Point / Guard) erfüllt ist." },
+      { "id": "D", "text": "Ausschließlich, wenn der Haupt-UseCase fehlschlägt." }
+    ],
+    "correct_answers": ["C"],
+    "explanation": "Eine <>-Beziehung fügt Verhalten optional hinzu, vorausgesetzt, der definierte Erweiterungspunkt (Extension Point) und die eventuell zugehörige Bedingung sind wahr."
+  },
+  {
+    "id": "AE2_UML_Q019",
+    "topic": "Sequenzdiagramme",
+    "type": "multiple_choice",
+    "question": "Was beschreibt der schmale vertikale Balken (Ausführungsüberdeckung / Activation Bar), der auf einer Lebenslinie liegt?",
+    "media": null,
+    "options": [
+      { "id": "A", "text": "Den Zeitraum, in dem das Objekt erstellt wird." },
+      { "id": "B", "text": "Den Zeitraum, in dem ein Objekt aktiv ist und den Fokus der Kontrolle (Control Focus) besitzt." },
+      { "id": "C", "text": "Dass das Objekt aktuell eine Operation/Methode ausführt." },
+      { "id": "D", "text": "Die Netzwerk-Latenzzeit zwischen zwei Systemkomponenten." }
+    ],
+    "correct_answers": ["B", "C"],
+    "explanation": "Die Ausführungsüberdeckung (Execution Specification / Activation Bar) zeigt an, dass ein Objekt die Kontrolle besitzt und eine Routine oder Anweisung ausführt."
+  },
+  {
+    "id": "AE2_UML_Q020",
+    "topic": "UseCase Diagramme",
+    "type": "single_choice",
+    "question": "Welche Bedeutung hat das Systemrechteck (System Boundary / Systemgrenze) in einem UseCase-Diagramm?",
+    "media": null,
+    "options": [
+      { "id": "A", "text": "Es grenzt die Anwendungsfälle innerhalb des Systems von den externen Akteuren außerhalb des Systems ab." },
+      { "id": "B", "text": "Es definiert die physikalische Serverhardware, auf der die Software läuft." },
+      { "id": "C", "text": "Es schränkt die Anzahl der maximal erlaubten Akteure ein." },
+      { "id": "D", "text": "Es stellt die Vererbungshierarchie von Klassen dar." }
+    ],
+    "correct_answers": ["A"],
+    "explanation": "Die Systemgrenze trennt das zu entwickelnde System (Umfang durch die Use Cases darin) von dessen Umgebung (Akteure außerhalb des Rechtecks)."
+  },
+  {
+    "id": "AE2_UML_Q021",
+    "topic": "UML Klassendiagramme",
+    "type": "single_choice",
+    "question": "Welches Konzept der Objektorientierung wird in einem UML-Klassendiagramm durch eine gestrichelte Linie mit offener Pfeilspitze zwischen zwei Klassen dargestellt?",
+    "media": null,
+    "options": [
+      { "id": "A", "text": "Vererbung (Generalisierung)" },
+      { "id": "B", "text": "Abhängigkeit (Dependency)" },
+      { "id": "C", "text": "Komposition" },
+      { "id": "D", "text": "Aggregation" }
+    ],
+    "correct_answers": ["B"],
+    "explanation": "Eine gestrichelte Linie mit offener Pfeilspitze stellt in einem UML-Klassendiagramm eine Abhängigkeit (Dependency) dar. Sie bedeutet, dass eine Klasse eine andere Klasse nutzt (z. B. als Methodenparameter oder lokales Objekt), ohne eine dauerhafte Assoziationsbeziehung zu ihr zu halten."
+  },
+  {
+    "id": "AE2_UML_Q022",
+    "topic": "UML Aktivitätsdiagramme",
+    "type": "single_choice",
+    "question": "In einem UML-Aktivitätsdiagramm teilt ein Verzweigungsknoten (Decision Node) den Kontrollfluss. Durch welches Symbol wird dieser Knoten dargestellt?",
+    "media": null,
+    "options": [
+      { "id": "A", "text": "Durch einen dicken, gefüllten Balken" },
+      { "id": "B", "text": "Durch eine Raute (Diamond)" },
+      { "id": "C", "text": "Durch einen ausgemalten schwarzen Kreis" },
+      { "id": "D", "text": "Durch ein abgerundetes Rechteck" }
+    ],
+    "correct_answers": ["B"],
+    "explanation": "Ein Verzweigungsknoten (Decision Node) sowie ein Zusammenführungsknoten (Merge Node) werden in UML-Aktivitätsdiagrammen durch ein Rautensymbol dargestellt. Ein dicker Balken steht hingegen für Fork/Join (Parallelisierung)."
+  },
+  {
+    "id": "AE2_UML_Q023",
+    "topic": "UML Klassendiagramme",
+    "type": "multiple_choice",
+    "question": "Welche der folgenden Aussagen zur Darstellung von Eigenschaften und Sichtbarkeiten in UML-Klassendiagrammen sind korrekt?",
+    "media": null,
+    "options": [
+      { "id": "A", "text": "Das Symbol '#' kennzeichnet den Zugriffsbezeichner 'protected'." },
+      { "id": "B", "text": "Abstrakte Klassennamen oder abstrakte Methoden werden in UML-Klassendiagrammen kursiv dargestellt." },
+      { "id": "C", "text": "Das Symbol '+' steht für 'private' Sichtbarkeit." },
+      { "id": "D", "text": "Statische Attribute oder Methoden (Klassenvariablen/-methoden) werden durch Unterstreichung gekennzeichnet." }
+    ],
+    "correct_answers": ["A", "B", "D"],
+    "explanation": "'#' steht für protected ('+' steht für public, '-' für private). Abstrakte Elemente werden kursiv geschrieben (oder mit der Stereotype {abstract} versehen). Statische Klassenmitglieder werden in UML durch Unterstreichung hervorgehoben."
+  },
+  {
+    "id": "AE2_UML_Q024",
+    "topic": "UML Aktivitätsdiagramme",
+    "type": "single_choice",
+    "question": "Was versteht man unter 'Partitionen' (auch bekannt als Swimlanes) in einem UML-Aktivitätsdiagramm?",
+    "media": null,
+    "options": [
+      { "id": "A", "text": "Sie dienen der optischen Aufteilung, um verschiedene Versionen desselben Diagramms nebeneinander darzustellen." },
+      { "id": "B", "text": "Sie ordnen Aktionen bestimmten Verantwortlichkeiten zu, z. B. Geschäftsrollen, Organisationseinheiten oder Softwaresystemen." },
+      { "id": "C", "text": "Sie sperren Threads für die parallele Verarbeitung ab, um Race Conditions zu verhindern." },
+      { "id": "D", "text": "Sie beenden die Ausführung eines Aktivitätsdiagramms vorzeitig." }
+    ],
+    "correct_answers": ["B"],
+    "explanation": "Partitionen (Swimlanes) gliedern das Aktivitätsdiagramm in vertikale oder horizontale Bereiche. Sie ordnen die einzelnen Aktionen den jeweiligen Akteuren, Einheiten oder Modulen zu, die für deren Durchführung verantwortlich sind."
+  },
+  {
+    "id": "AE2_UML_Q025",
+    "topic": "UML Klassendiagramme",
+    "type": "multiple_choice",
+    "question": "Welche Aussagen zu Schnittstellen (Interfaces) und deren Realisierung in UML-Klassendiagrammen treffen zu?",
+    "media": null,
+    "options": [
+      { "id": "A", "text": "Eine Klasse kann in der UML nur maximal eine Schnittstelle realisieren." },
+      { "id": "B", "text": "Die Realisierung einer Schnittstelle wird durch eine gestrichelte Linie mit einer geschlossenen, nicht ausgemalten Pfeilspitze dargestellt." },
+      { "id": "C", "text": "Schnittstellen enthalten Methoden ohne Implementierung und dürfen keine Zustandsspeicher-Attribute besitzen." },
+      { "id": "D", "text": "Eine Schnittstelle kann in der sogenannten Lutscher-Notation (Lollipop Notation) als kleiner Kreis an der anbietenden Klasse dargestellt werden." }
+    ],
+    "correct_answers": ["B", "C", "D"],
+    "explanation": "Mehrfachrealisierung ist in UML erlaubt. Die Pfeildarstellung erfolgt gestrichelte Linie mit weißer/leerer Dreiecksspitze zur Schnittstelle hin. Interfaces definieren Verträge (Methodensignaturen ohne Implementierung/Zustand) und können auch über das Ball/Socket (Lollipop) Symbol verkürzt dargestellt werden."
+  }
+]

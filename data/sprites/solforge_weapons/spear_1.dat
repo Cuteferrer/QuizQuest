@@ -1,0 +1,33 @@
+animation{
+  name = "spear",
+  src_image = "solforge_weapons/spear_1.png",
+  frame_delay = 50,
+  directions = {
+    { x = 0, y = 128, frame_width = 128, frame_height = 128, origin_x = 64, origin_y = 68, num_frames = 4 },
+    { x = 0, y = 384, frame_width = 128, frame_height = 128, origin_x = 64, origin_y = 68, num_frames = 4 },
+    { x = 0, y = 640, frame_width = 128, frame_height = 128, origin_x = 64, origin_y = 68, num_frames = 4 },
+    { x = 0, y = 896, frame_width = 128, frame_height = 128, origin_x = 64, origin_y = 68, num_frames = 4 },
+  },
+}
+animation{
+  name = "blocked",
+  src_image = "solforge_weapons/spear_1.png",
+  frame_delay = 225,
+  directions = {
+    { x = 0, y = 128, frame_width = 128, frame_height = 128, origin_x = 64, origin_y = 68 },
+    { x = 0, y = 384, frame_width = 128, frame_height = 128, origin_x = 64, origin_y = 68 },
+    { x = 0, y = 640, frame_width = 128, frame_height = 128, origin_x = 64, origin_y = 68 },
+    { x = 0, y = 896, frame_width = 128, frame_height = 128, origin_x = 64, origin_y = 68 },
+  },
+}
+animation{
+  name = "heavy_attack",
+  src_image = "solforge_weapons/spear_1.png",
+  frame_delay = 90,
+  directions = {
+    { x = 512, y = 128, frame_width = 128, frame_height = 128, origin_x = 64, origin_y = 68, num_frames = 7 },
+    { x = 512, y = 384, frame_width = 128, frame_height = 128, origin_x = 64, origin_y = 68, num_frames = 7 },
+    { x = 512, y = 640, frame_width = 128, frame_height = 128, origin_x = 64, origin_y = 68, num_frames = 7 },
+    { x = 512, y = 896, frame_width = 128, frame_height = 128, origin_x = 64, origin_y = 68, num_frames = 7 },
+  },
+}

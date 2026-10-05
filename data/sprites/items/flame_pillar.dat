@@ -1,0 +1,17 @@
+animation{
+  name = "flame",
+  src_image = "items/spells.png",
+  frame_delay = 70,
+  directions = {
+    { x = 0, y = 144, frame_width = 16, frame_height = 48, origin_x = 8, origin_y = 45, num_frames = 12, num_columns = 6 },
+  },
+}
+animation{
+  name = "target",
+  src_image = "items/spells.png",
+  frame_delay = 200,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 96, y = 160, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 4, num_columns = 1 },
+  },
+}

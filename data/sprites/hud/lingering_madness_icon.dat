@@ -1,0 +1,14 @@
+animation{
+  name = "whole",
+  src_image = "hud/lingering_madness_icon.png",
+  directions = {
+    { x = 0, y = 0, frame_width = 13, frame_height = 10, origin_x = 7, origin_y = 5 },
+  },
+}
+animation{
+  name = "broken",
+  src_image = "hud/lingering_madness_icon.png",
+  directions = {
+    { x = 16, y = 0, frame_width = 13, frame_height = 10, origin_x = 7, origin_y = 5 },
+  },
+}

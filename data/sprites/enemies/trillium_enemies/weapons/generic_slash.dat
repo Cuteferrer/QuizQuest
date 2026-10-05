@@ -1,0 +1,22 @@
+animation{
+  name = "slash_attack",
+  src_image = "enemies/trillium_enemies/weapons/generic_slash.png",
+  frame_delay = 60,
+  directions = {
+    { x = 0, y = 0, frame_width = 48, frame_height = 48, origin_x = 8, origin_y = 29, num_frames = 3 },
+    { x = 0, y = 96, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 53, num_frames = 3 },
+    { x = 0, y = 48, frame_width = 48, frame_height = 48, origin_x = 40, origin_y = 29, num_frames = 3 },
+    { x = 0, y = 144, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 25, num_frames = 3 },
+  },
+}
+animation{
+  name = "backslash_attack",
+  src_image = "enemies/trillium_enemies/weapons/generic_slash.png",
+  frame_delay = 60,
+  directions = {
+    { x = 0, y = 192, frame_width = 48, frame_height = 48, origin_x = 8, origin_y = 29, num_frames = 3 },
+    { x = 0, y = 240, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 53, num_frames = 3 },
+    { x = 0, y = 288, frame_width = 48, frame_height = 48, origin_x = 40, origin_y = 29, num_frames = 3 },
+    { x = 0, y = 336, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 25, num_frames = 3 },
+  },
+}

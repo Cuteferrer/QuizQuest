@@ -1,0 +1,7 @@
+animation{
+  name = "dagger",
+  src_image = "menus/item_portraits/items.png",
+  directions = {
+    { x = 48, y = 48, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 45 },
+  },
+}

@@ -1,0 +1,12 @@
+animation{
+  name = "0",
+  src_image = "world_objects/minecart/minecart.png",
+  frame_delay = 90,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 0, frame_width = 32, frame_height = 16, origin_x = 16, origin_y = 16, num_frames = 2 },
+    { x = 64, y = 0, frame_width = 32, frame_height = 16, origin_x = 16, origin_y = 13, num_frames = 2 },
+    { x = 0, y = 0, frame_width = 32, frame_height = 16, origin_x = 16, origin_y = 16, num_frames = 2 },
+    { x = 64, y = 0, frame_width = 32, frame_height = 16, origin_x = 16, origin_y = 13, num_frames = 2 },
+  },
+}

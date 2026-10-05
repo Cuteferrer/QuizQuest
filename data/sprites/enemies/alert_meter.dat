@@ -1,0 +1,21 @@
+animation{
+  name = "question_mark",
+  src_image = "enemies/alert_meter.png",
+  directions = {
+    { x = 32, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "background",
+  src_image = "enemies/alert_meter.png",
+  directions = {
+    { x = 0, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "yellow",
+  src_image = "enemies/alert_meter.png",
+  directions = {
+    { x = 16, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}

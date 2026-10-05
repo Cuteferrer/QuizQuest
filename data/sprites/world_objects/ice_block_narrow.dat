@@ -1,0 +1,15 @@
+animation{
+  name = "stopped",
+  src_image = "world_objects/world_objects.png",
+  directions = {
+    { x = 0, y = 256, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29 },
+  },
+}
+animation{
+  name = "breaking",
+  src_image = "world_objects/world_objects.png",
+  frame_delay = 60,
+  directions = {
+    { x = 32, y = 208, frame_width = 32, frame_height = 48, origin_x = 16, origin_y = 45, num_frames = 6 },
+  },
+}

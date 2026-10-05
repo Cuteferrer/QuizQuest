@@ -1,0 +1,18 @@
+animation{
+  name = "stopped",
+  src_image = "effects/floating_leaves.png",
+  directions = {
+    { x = 0, y = 8, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 5 },
+    { x = 8, y = 8, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 5 },
+    { x = 16, y = 8, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 5 },
+    { x = 24, y = 8, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 5 },
+    { x = 0, y = 16, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 5 },
+    { x = 8, y = 16, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 5 },
+    { x = 16, y = 16, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 5 },
+    { x = 0, y = 24, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 5 },
+    { x = 8, y = 24, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 5 },
+    { x = 16, y = 24, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 5 },
+    { x = 24, y = 24, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 5 },
+    { x = 32, y = 24, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 5 },
+  },
+}

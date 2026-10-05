@@ -1,0 +1,63 @@
+animation{
+  name = "defense_bullet",
+  src_image = "hud/effect_icons.png",
+  directions = {
+    { x = 16, y = 0, frame_width = 16, frame_height = 16, origin_x = 4, origin_y = 4 },
+  },
+}
+animation{
+  name = "defense_physical",
+  src_image = "hud/effect_icons.png",
+  directions = {
+    { x = 32, y = 0, frame_width = 16, frame_height = 16, origin_x = 4, origin_y = 4 },
+  },
+}
+animation{
+  name = "increase_guns",
+  src_image = "hud/effect_icons.png",
+  directions = {
+    { x = 48, y = 0, frame_width = 16, frame_height = 16, origin_x = 4, origin_y = 4 },
+  },
+}
+animation{
+  name = "increase_strength",
+  src_image = "hud/effect_icons.png",
+  directions = {
+    { x = 80, y = 0, frame_width = 16, frame_height = 16, origin_x = 4, origin_y = 4 },
+  },
+}
+animation{
+  name = "increase_weapons",
+  src_image = "hud/effect_icons.png",
+  directions = {
+    { x = 64, y = 0, frame_width = 16, frame_height = 16, origin_x = 4, origin_y = 4 },
+  },
+}
+animation{
+  name = "madness_recovery",
+  src_image = "hud/effect_icons.png",
+  directions = {
+    { x = 16, y = 16, frame_width = 16, frame_height = 16, origin_x = 4, origin_y = 4 },
+  },
+}
+animation{
+  name = "regen_health",
+  src_image = "hud/effect_icons.png",
+  directions = {
+    { x = 32, y = 16, frame_width = 16, frame_height = 16, origin_x = 4, origin_y = 4 },
+  },
+}
+animation{
+  name = "resistance_burn",
+  src_image = "hud/effect_icons.png",
+  directions = {
+    { x = 48, y = 16, frame_width = 16, frame_height = 16, origin_x = 4, origin_y = 4 },
+  },
+}
+animation{
+  name = "resistance_poison",
+  src_image = "hud/effect_icons.png",
+  directions = {
+    { x = 64, y = 16, frame_width = 16, frame_height = 16, origin_x = 4, origin_y = 4 },
+  },
+}

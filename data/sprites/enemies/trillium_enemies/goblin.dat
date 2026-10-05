@@ -1,0 +1,131 @@
+animation{
+  name = "stopped",
+  src_image = "enemies/trillium_enemies/goblin.png",
+  frame_delay = 140,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 0, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 0, y = 32, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 0, y = 48, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "attack",
+  src_image = "enemies/trillium_enemies/goblin.png",
+  frame_delay = 60,
+  directions = {
+    { x = 0, y = 64, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 3 },
+    { x = 0, y = 80, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 3 },
+    { x = 0, y = 96, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 3 },
+    { x = 0, y = 112, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 3 },
+  },
+}
+animation{
+  name = "bow_attack",
+  src_image = "enemies/trillium_enemies/goblin.png",
+  frame_delay = 60,
+  directions = {
+    { x = 48, y = 64, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 3 },
+    { x = 48, y = 80, frame_width = 32, frame_height = 16, origin_x = 16, origin_y = 13, num_frames = 2 },
+    { x = 48, y = 96, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 3 },
+    { x = 48, y = 112, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 3 },
+  },
+}
+animation{
+  name = "bow_windup",
+  src_image = "enemies/trillium_enemies/goblin.png",
+  directions = {
+    { x = 48, y = 64, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 48, y = 80, frame_width = 32, frame_height = 16, origin_x = 16, origin_y = 13 },
+    { x = 48, y = 96, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 48, y = 112, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "hurt",
+  src_image = "enemies/trillium_enemies/goblin.png",
+  frame_delay = 60,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 64, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 2 },
+    { x = 64, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 2 },
+    { x = 64, y = 32, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 2 },
+    { x = 64, y = 48, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 2 },
+  },
+}
+animation{
+  name = "slash_attack",
+  src_image = "enemies/trillium_enemies/goblin.png",
+  frame_delay = 80,
+  directions = {
+    { x = 0, y = 144, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 4 },
+    { x = 0, y = 160, frame_width = 32, frame_height = 16, origin_x = 16, origin_y = 13, num_frames = 4 },
+    { x = 0, y = 192, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 4 },
+    { x = 0, y = 208, frame_width = 32, frame_height = 16, origin_x = 16, origin_y = 13, num_frames = 4 },
+  },
+}
+animation{
+  name = "slash_attack_2",
+  src_image = "enemies/trillium_enemies/goblin.png",
+  frame_delay = 80,
+  directions = {
+    { x = 64, y = 144, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 4 },
+    { x = 0, y = 176, frame_width = 32, frame_height = 16, origin_x = 16, origin_y = 13, num_frames = 4 },
+    { x = 64, y = 192, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 4 },
+    { x = 0, y = 224, frame_width = 32, frame_height = 16, origin_x = 16, origin_y = 13, num_frames = 4 },
+  },
+}
+animation{
+  name = "slash_windup",
+  src_image = "enemies/trillium_enemies/goblin.png",
+  directions = {
+    { x = 0, y = 144, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 0, y = 160, frame_width = 32, frame_height = 16, origin_x = 16, origin_y = 13 },
+    { x = 0, y = 192, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 0, y = 208, frame_width = 32, frame_height = 16, origin_x = 16, origin_y = 13 },
+  },
+}
+animation{
+  name = "slash_windup_2",
+  src_image = "enemies/trillium_enemies/goblin.png",
+  directions = {
+    { x = 48, y = 144, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 0, y = 176, frame_width = 32, frame_height = 16, origin_x = 16, origin_y = 13 },
+    { x = 48, y = 192, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 0, y = 224, frame_width = 32, frame_height = 16, origin_x = 16, origin_y = 13 },
+  },
+}
+animation{
+  name = "stab_attack",
+  src_image = "enemies/trillium_enemies/goblin.png",
+  frame_delay = 90,
+  directions = {
+    { x = 0, y = 64, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 3 },
+    { x = 0, y = 80, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 3 },
+    { x = 0, y = 96, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 3 },
+    { x = 0, y = 112, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 3 },
+  },
+}
+animation{
+  name = "stab_windup",
+  src_image = "enemies/trillium_enemies/goblin.png",
+  directions = {
+    { x = 0, y = 64, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 0, y = 80, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 0, y = 96, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 0, y = 112, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "walking",
+  src_image = "enemies/trillium_enemies/goblin.png",
+  frame_delay = 140,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 4 },
+    { x = 0, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 4 },
+    { x = 0, y = 32, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 4 },
+    { x = 0, y = 48, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 4 },
+  },
+}

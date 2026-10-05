@@ -1,0 +1,34 @@
+animation{
+  name = "stopped",
+  src_image = "foliage/razorweed.png",
+  frame_delay = 270,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 32, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 4 },
+  },
+}
+animation{
+  name = "attacking",
+  src_image = "foliage/razorweed.png",
+  frame_delay = 70,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 80, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 4 },
+  },
+}
+animation{
+  name = "emerging",
+  src_image = "foliage/razorweed.png",
+  frame_delay = 60,
+  directions = {
+    { x = 0, y = 64, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 5 },
+  },
+}
+animation{
+  name = "retracting",
+  src_image = "foliage/razorweed.png",
+  frame_delay = 60,
+  directions = {
+    { x = 0, y = 48, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 5 },
+  },
+}

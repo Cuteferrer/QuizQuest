@@ -1,0 +1,24 @@
+animation{
+  name = "walking",
+  src_image = "enemies/gooseberry_enemies/fly.png",
+  frame_delay = 40,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 0, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 5, num_frames = 4 },
+    { x = 0, y = 8, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 5, num_frames = 4 },
+    { x = 0, y = 16, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 5, num_frames = 4 },
+    { x = 0, y = 24, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 5, num_frames = 4 },
+  },
+}
+animation{
+  name = "hurt",
+  src_image = "enemies/gooseberry_enemies/fly.png",
+  frame_delay = 40,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 32, y = 0, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 5, num_frames = 4 },
+    { x = 32, y = 0, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 5, num_frames = 4 },
+    { x = 32, y = 0, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 5, num_frames = 4 },
+    { x = 32, y = 0, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 5, num_frames = 4 },
+  },
+}

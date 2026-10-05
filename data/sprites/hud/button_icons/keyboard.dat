@@ -1,0 +1,798 @@
+animation{
+  name = "escape",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 16, y = 32, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "'",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 192, y = 80, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = ",",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 144, y = 96, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "-",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 192, y = 48, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = ".",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 160, y = 96, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "/",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 176, y = 96, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "0",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 176, y = 48, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "1",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 32, y = 48, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "2",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 48, y = 48, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "3",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 64, y = 48, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "4",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 80, y = 48, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "5",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 96, y = 48, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "6",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 112, y = 48, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "7",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 128, y = 48, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "8",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 144, y = 48, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "9",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 160, y = 48, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = ":",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 176, y = 80, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = ";",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 176, y = 80, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "=",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 208, y = 48, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "[",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 192, y = 64, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "\\",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 208, y = 80, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "]",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 208, y = 64, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "`",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 16, y = 48, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "a",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 32, y = 80, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "alt",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 48, y = 112, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "b",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 96, y = 96, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "backspace",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 224, y = 48, frame_width = 24, frame_height = 16, origin_x = 12, origin_y = 13 },
+  },
+}
+animation{
+  name = "c",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 64, y = 96, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "caps_lock",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 8, y = 80, frame_width = 24, frame_height = 16, origin_x = 12, origin_y = 13 },
+  },
+}
+animation{
+  name = "control",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 8, y = 112, frame_width = 24, frame_height = 16, origin_x = 12, origin_y = 13 },
+  },
+}
+animation{
+  name = "d",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 64, y = 80, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "delete",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 256, y = 64, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "down",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 272, y = 112, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "e",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 64, y = 64, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "end",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 272, y = 64, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "f",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 80, y = 80, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "f1",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 32, y = 32, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "f10",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 176, y = 32, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "f11",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 192, y = 32, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "f12",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 208, y = 32, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "f2",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 48, y = 32, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "f3",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 64, y = 32, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "f4",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 80, y = 32, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "f5",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 96, y = 32, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "f6",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 112, y = 32, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "f7",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 128, y = 32, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "f8",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 144, y = 32, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "f9",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 160, y = 32, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "g",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 96, y = 80, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "h",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 112, y = 80, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "home",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 272, y = 48, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "i",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 144, y = 64, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "insert",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 256, y = 48, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "j",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 128, y = 80, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "k",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 144, y = 80, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "kp_*",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 352, y = 48, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "kp_+",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 368, y = 64, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "kp_-",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 368, y = 48, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "kp_.",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 352, y = 112, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "kp_/",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 336, y = 48, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "kp_0",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 320, y = 112, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "kp_1",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 320, y = 96, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "kp_2",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 336, y = 96, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "kp_3",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 352, y = 96, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "kp_4",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 320, y = 80, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "kp_5",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 336, y = 80, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "kp_6",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 352, y = 80, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "kp_7",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 320, y = 64, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "kp_8",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 336, y = 64, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "kp_9",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 352, y = 64, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "kp_return",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 368, y = 96, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "l",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 160, y = 80, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "left",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 256, y = 112, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "left_alt",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 48, y = 112, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "left_control",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 8, y = 112, frame_width = 24, frame_height = 16, origin_x = 12, origin_y = 13 },
+  },
+}
+animation{
+  name = "left_meta",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 32, y = 112, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "left_shift",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 8, y = 96, frame_width = 24, frame_height = 16, origin_x = 12, origin_y = 13 },
+  },
+}
+animation{
+  name = "m",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 128, y = 96, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "meta",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 32, y = 112, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "mouse",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 320, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "mouse_left",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 320, y = 32, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "mouse_middle",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 336, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "mouse_right",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 336, y = 32, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "mouse_special",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 352, y = 32, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "mouse_x",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 352, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "n",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 112, y = 96, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "num_lock",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 320, y = 48, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "o",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 160, y = 64, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "p",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 176, y = 64, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "page_down",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 288, y = 64, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "page_up",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 288, y = 48, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "pause",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 288, y = 16, frame_width = 24, frame_height = 16, origin_x = 12, origin_y = 13 },
+  },
+}
+animation{
+  name = "q",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 32, y = 64, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "r",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 80, y = 64, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "return",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 224, y = 80, frame_width = 24, frame_height = 16, origin_x = 12, origin_y = 13 },
+  },
+}
+animation{
+  name = "right",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 288, y = 112, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "right_alt",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 136, y = 112, frame_width = 24, frame_height = 16, origin_x = 12, origin_y = 13 },
+  },
+}
+animation{
+  name = "right_control",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 184, y = 112, frame_width = 24, frame_height = 16, origin_x = 12, origin_y = 13 },
+  },
+}
+animation{
+  name = "right_meta",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 160, y = 112, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "right_shift",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 200, y = 96, frame_width = 24, frame_height = 16, origin_x = 12, origin_y = 13 },
+  },
+}
+animation{
+  name = "s",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 48, y = 80, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "scroll_lock",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 264, y = 16, frame_width = 24, frame_height = 16, origin_x = 12, origin_y = 13 },
+  },
+}
+animation{
+  name = "shift",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 8, y = 96, frame_width = 24, frame_height = 16, origin_x = 12, origin_y = 13 },
+  },
+}
+animation{
+  name = "space",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 88, y = 112, frame_width = 24, frame_height = 16, origin_x = 12, origin_y = 13 },
+  },
+}
+animation{
+  name = "t",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 96, y = 64, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "tab",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 8, y = 64, frame_width = 24, frame_height = 16, origin_x = 12, origin_y = 13 },
+  },
+}
+animation{
+  name = "u",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 128, y = 64, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "unknown_key",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 112, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "up",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 272, y = 96, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "v",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 80, y = 96, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "w",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 48, y = 64, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "x",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 48, y = 96, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "y",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 112, y = 64, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "z",
+  src_image = "hud/button_icons/keyboard_icons.png",
+  directions = {
+    { x = 32, y = 96, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}

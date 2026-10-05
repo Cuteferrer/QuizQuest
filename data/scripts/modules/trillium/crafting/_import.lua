@@ -1,0 +1,1 @@
+require("scripts/modules/trillium/crafting/crafting_manager")

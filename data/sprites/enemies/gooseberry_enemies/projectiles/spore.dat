@@ -1,0 +1,9 @@
+animation{
+  name = "walking",
+  src_image = "enemies/gooseberry_enemies/projectiles/spore.png",
+  frame_delay = 80,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 0, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 5, num_frames = 4 },
+  },
+}

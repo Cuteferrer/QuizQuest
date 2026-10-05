@@ -1,0 +1,41 @@
+animation{
+  name = "stopped",
+  src_image = "hero/stealth_barrel.png",
+  directions = {
+    { x = 0, y = 0, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29 },
+    { x = 0, y = 0, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29 },
+    { x = 0, y = 0, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29 },
+    { x = 0, y = 0, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29 },
+  },
+}
+animation{
+  name = "dropping",
+  src_image = "hero/stealth_barrel.png",
+  frame_delay = 50,
+  directions = {
+    { x = 0, y = 160, frame_width = 32, frame_height = 48, origin_x = 16, origin_y = 29, num_frames = 4 },
+  },
+}
+animation{
+  name = "shattering",
+  src_image = "hero/stealth_barrel.png",
+  frame_delay = 40,
+  directions = {
+    { x = 0, y = 208, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 45, num_frames = 6, num_columns = 3 },
+    { x = 0, y = 208, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 45, num_frames = 6, num_columns = 3 },
+    { x = 0, y = 208, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 45, num_frames = 6, num_columns = 3 },
+    { x = 0, y = 208, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 45, num_frames = 6, num_columns = 3 },
+  },
+}
+animation{
+  name = "walking",
+  src_image = "hero/stealth_barrel.png",
+  frame_delay = 120,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 32, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 4 },
+    { x = 0, y = 64, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 4 },
+    { x = 0, y = 96, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 4 },
+    { x = 0, y = 128, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 4 },
+  },
+}

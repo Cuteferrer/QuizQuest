@@ -1,0 +1,13 @@
+animation{
+  name = "chip",
+  src_image = "effects/stone_chip.png",
+  frame_delay = 40,
+  directions = {
+    { x = 0, y = 0, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 5, num_frames = 12 },
+    { x = 0, y = 8, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 5, num_frames = 12 },
+    { x = 0, y = 16, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 5, num_frames = 12 },
+    { x = 0, y = 24, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 5, num_frames = 12 },
+    { x = 0, y = 32, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 5, num_frames = 12 },
+    { x = 0, y = 40, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 5, num_frames = 12 },
+  },
+}

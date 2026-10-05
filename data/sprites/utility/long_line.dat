@@ -1,0 +1,7 @@
+animation{
+  name = "lol",
+  src_image = "utility/long_line.png",
+  directions = {
+    { x = 0, y = 0, frame_width = 2, frame_height = 1200, origin_x = 0, origin_y = 0 },
+  },
+}

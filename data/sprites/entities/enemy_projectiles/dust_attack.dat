@@ -1,0 +1,30 @@
+animation{
+  name = "attack",
+  src_image = "entities/enemy_projectiles/dust_attack.png",
+  frame_delay = 60,
+  directions = {
+    { x = 0, y = 0, frame_width = 16, frame_height = 48, origin_x = 8, origin_y = 45, num_frames = 7 },
+  },
+}
+animation{
+  name = "recovery",
+  src_image = "entities/enemy_projectiles/dust_attack.png",
+  directions = {
+    { x = 0, y = 0, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 5 },
+  },
+}
+animation{
+  name = "windup",
+  src_image = "entities/enemy_projectiles/dust_attack.png",
+  directions = {
+    { x = 0, y = 0, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 5 },
+  },
+}
+animation{
+  name = "with_debris",
+  src_image = "entities/enemy_projectiles/dust_attack.png",
+  frame_delay = 60,
+  directions = {
+    { x = 0, y = 144, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 45, num_frames = 10, num_columns = 5 },
+  },
+}

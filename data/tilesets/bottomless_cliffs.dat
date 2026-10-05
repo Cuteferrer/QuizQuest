@@ -1,0 +1,73 @@
+background_color{ 255, 255, 255 }
+tile_pattern{
+  id = "1",
+  ground = "empty",
+  default_layer = 0,
+  x = 0,
+  y = 32,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "2",
+  ground = "empty",
+  default_layer = 0,
+  x = 16,
+  y = 32,
+  width = 48,
+  height = 32,
+  repeat_mode = "horizontal",
+}
+
+tile_pattern{
+  id = "3",
+  ground = "empty",
+  default_layer = 0,
+  x = 64,
+  y = 64,
+  width = 64,
+  height = 144,
+}
+
+tile_pattern{
+  id = "4",
+  ground = "empty",
+  default_layer = 0,
+  x = 0,
+  y = 64,
+  width = 64,
+  height = 144,
+}
+
+tile_pattern{
+  id = "5",
+  ground = "empty",
+  default_layer = 0,
+  x = 64,
+  y = 208,
+  width = 64,
+  height = 64,
+}
+
+tile_pattern{
+  id = "6",
+  ground = "empty",
+  default_layer = 0,
+  x = 0,
+  y = 208,
+  width = 64,
+  height = 64,
+}
+
+tile_pattern{
+  id = "7",
+  ground = "empty",
+  default_layer = 0,
+  x = 64,
+  y = 32,
+  width = 16,
+  height = 32,
+  repeat_mode = "horizontal",
+}
+

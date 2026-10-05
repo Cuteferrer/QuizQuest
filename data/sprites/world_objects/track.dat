@@ -1,0 +1,8 @@
+animation{
+  name = "track",
+  src_image = "world_objects/world_objects.png",
+  directions = {
+    { x = 80, y = 48, frame_width = 16, frame_height = 8, origin_x = 8, origin_y = 5 },
+    { x = 80, y = 56, frame_width = 16, frame_height = 8, origin_x = 8, origin_y = 5 },
+  },
+}

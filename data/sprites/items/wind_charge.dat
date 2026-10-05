@@ -1,0 +1,12 @@
+animation{
+  name = "charging",
+  src_image = "items/wind_charge.png",
+  frame_delay = 60,
+  frame_to_loop_on = 7,
+  directions = {
+    { x = 48, y = 0, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 45, num_frames = 20 },
+    { x = 48, y = 0, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 45, num_frames = 20 },
+    { x = 48, y = 0, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 45, num_frames = 20 },
+    { x = 48, y = 0, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 45, num_frames = 20 },
+  },
+}

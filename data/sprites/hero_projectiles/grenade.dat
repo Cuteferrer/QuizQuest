@@ -1,0 +1,17 @@
+animation{
+  name = "rolling",
+  src_image = "hero_projectiles/hero_projectiles.png",
+  frame_delay = 20,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 32, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 5, num_frames = 11 },
+  },
+}
+animation{
+  name = "falling",
+  src_image = "hero_projectiles/hero_projectiles.png",
+  frame_delay = 30,
+  directions = {
+    { x = 0, y = 48, frame_width = 8, frame_height = 32, origin_x = 4, origin_y = 29, num_frames = 14 },
+  },
+}

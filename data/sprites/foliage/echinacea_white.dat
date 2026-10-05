@@ -1,0 +1,23 @@
+animation{
+  name = "stopped",
+  src_image = "foliage/foliage.png",
+  frame_delay = 320,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 288, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21, num_frames = 4 },
+    { x = 0, y = 288, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21, num_frames = 4 },
+    { x = 0, y = 288, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21, num_frames = 4 },
+    { x = 0, y = 288, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21, num_frames = 4 },
+  },
+}
+animation{
+  name = "shaking",
+  src_image = "foliage/foliage.png",
+  frame_delay = 70,
+  directions = {
+    { x = 0, y = 312, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21, num_frames = 4 },
+    { x = 0, y = 312, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21, num_frames = 4 },
+    { x = 0, y = 312, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21, num_frames = 4 },
+    { x = 0, y = 312, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21, num_frames = 4 },
+  },
+}

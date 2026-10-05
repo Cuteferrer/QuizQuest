@@ -1,0 +1,8 @@
+animation{
+  name = "attacking",
+  src_image = "entities/enemy_projectiles/dust_attack_big.png",
+  frame_delay = 60,
+  directions = {
+    { x = 0, y = 0, frame_width = 64, frame_height = 64, origin_x = 32, origin_y = 61, num_frames = 10, num_columns = 5 },
+  },
+}

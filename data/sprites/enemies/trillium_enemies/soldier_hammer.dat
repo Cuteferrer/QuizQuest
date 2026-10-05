@@ -1,0 +1,111 @@
+animation{
+  name = "walking",
+  src_image = "enemies/trillium_enemies/soldier_hammer.png",
+  frame_delay = 150,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 32, y = 16, frame_width = 32, frame_height = 48, origin_x = 16, origin_y = 45, num_frames = 4 },
+    { x = 32, y = 64, frame_width = 32, frame_height = 48, origin_x = 16, origin_y = 45, num_frames = 4 },
+    { x = 32, y = 112, frame_width = 32, frame_height = 48, origin_x = 16, origin_y = 45, num_frames = 4 },
+    { x = 32, y = 160, frame_width = 32, frame_height = 48, origin_x = 16, origin_y = 45, num_frames = 4 },
+  },
+}
+animation{
+  name = "casting",
+  src_image = "enemies/trillium_enemies/soldier_hammer.png",
+  frame_delay = 80,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 176, y = 224, frame_width = 32, frame_height = 48, origin_x = 16, origin_y = 45, num_frames = 2 },
+    { x = 176, y = 272, frame_width = 32, frame_height = 48, origin_x = 16, origin_y = 45, num_frames = 2 },
+    { x = 176, y = 320, frame_width = 32, frame_height = 48, origin_x = 16, origin_y = 45, num_frames = 2 },
+    { x = 176, y = 368, frame_width = 32, frame_height = 48, origin_x = 16, origin_y = 45, num_frames = 2 },
+  },
+}
+animation{
+  name = "hurt",
+  src_image = "enemies/trillium_enemies/soldier_hammer.png",
+  frame_delay = 50,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 176, y = 16, frame_width = 32, frame_height = 48, origin_x = 16, origin_y = 45, num_frames = 2 },
+    { x = 176, y = 64, frame_width = 32, frame_height = 48, origin_x = 16, origin_y = 45, num_frames = 2 },
+    { x = 176, y = 112, frame_width = 32, frame_height = 48, origin_x = 16, origin_y = 45, num_frames = 2 },
+    { x = 176, y = 160, frame_width = 32, frame_height = 48, origin_x = 16, origin_y = 45, num_frames = 2 },
+  },
+}
+animation{
+  name = "reverse_swipe_attack",
+  src_image = "enemies/trillium_enemies/soldier_hammer.png",
+  frame_delay = 50,
+  directions = {
+    { x = 96, y = 432, frame_width = 32, frame_height = 48, origin_x = 16, origin_y = 45, num_frames = 4 },
+    { x = 96, y = 480, frame_width = 32, frame_height = 48, origin_x = 16, origin_y = 45, num_frames = 4 },
+    { x = 96, y = 528, frame_width = 32, frame_height = 48, origin_x = 16, origin_y = 45, num_frames = 4 },
+    { x = 96, y = 576, frame_width = 32, frame_height = 48, origin_x = 16, origin_y = 45, num_frames = 4 },
+  },
+}
+animation{
+  name = "reverse_swipe_windup",
+  src_image = "enemies/trillium_enemies/soldier_hammer.png",
+  directions = {
+    { x = 96, y = 432, frame_width = 32, frame_height = 48, origin_x = 16, origin_y = 45 },
+    { x = 96, y = 480, frame_width = 32, frame_height = 48, origin_x = 16, origin_y = 45 },
+    { x = 96, y = 528, frame_width = 32, frame_height = 48, origin_x = 16, origin_y = 45 },
+    { x = 96, y = 576, frame_width = 32, frame_height = 48, origin_x = 16, origin_y = 45 },
+  },
+}
+animation{
+  name = "slam_attack",
+  src_image = "enemies/trillium_enemies/soldier_hammer.png",
+  frame_delay = 50,
+  directions = {
+    { x = 0, y = 224, frame_width = 32, frame_height = 48, origin_x = 16, origin_y = 45, num_frames = 5 },
+    { x = 0, y = 272, frame_width = 32, frame_height = 48, origin_x = 16, origin_y = 45, num_frames = 5 },
+    { x = 0, y = 320, frame_width = 32, frame_height = 48, origin_x = 16, origin_y = 45, num_frames = 5 },
+    { x = 0, y = 368, frame_width = 32, frame_height = 48, origin_x = 16, origin_y = 45, num_frames = 5 },
+  },
+}
+animation{
+  name = "slam_windup",
+  src_image = "enemies/trillium_enemies/soldier_hammer.png",
+  directions = {
+    { x = 0, y = 224, frame_width = 32, frame_height = 48, origin_x = 16, origin_y = 45 },
+    { x = 0, y = 272, frame_width = 32, frame_height = 48, origin_x = 16, origin_y = 45 },
+    { x = 0, y = 320, frame_width = 32, frame_height = 48, origin_x = 16, origin_y = 45 },
+    { x = 0, y = 368, frame_width = 32, frame_height = 48, origin_x = 16, origin_y = 45 },
+  },
+}
+animation{
+  name = "stopped",
+  src_image = "enemies/trillium_enemies/soldier_hammer.png",
+  frame_delay = 410,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 16, frame_width = 32, frame_height = 48, origin_x = 16, origin_y = 45, num_frames = 2 },
+    { x = 0, y = 64, frame_width = 32, frame_height = 48, origin_x = 16, origin_y = 45, num_frames = 2 },
+    { x = 0, y = 112, frame_width = 32, frame_height = 48, origin_x = 16, origin_y = 45, num_frames = 2 },
+    { x = 0, y = 160, frame_width = 32, frame_height = 48, origin_x = 16, origin_y = 45, num_frames = 2 },
+  },
+}
+animation{
+  name = "swipe_attack",
+  src_image = "enemies/trillium_enemies/soldier_hammer.png",
+  frame_delay = 50,
+  directions = {
+    { x = 0, y = 432, frame_width = 32, frame_height = 48, origin_x = 16, origin_y = 45, num_frames = 4 },
+    { x = 0, y = 480, frame_width = 32, frame_height = 48, origin_x = 16, origin_y = 45, num_frames = 4 },
+    { x = 0, y = 528, frame_width = 32, frame_height = 48, origin_x = 16, origin_y = 45, num_frames = 4 },
+    { x = 0, y = 576, frame_width = 32, frame_height = 48, origin_x = 16, origin_y = 45, num_frames = 4 },
+  },
+}
+animation{
+  name = "swipe_windup",
+  src_image = "enemies/trillium_enemies/soldier_hammer.png",
+  directions = {
+    { x = 0, y = 432, frame_width = 32, frame_height = 48, origin_x = 16, origin_y = 45 },
+    { x = 0, y = 480, frame_width = 32, frame_height = 48, origin_x = 16, origin_y = 45 },
+    { x = 0, y = 528, frame_width = 32, frame_height = 48, origin_x = 16, origin_y = 45 },
+    { x = 0, y = 576, frame_width = 32, frame_height = 48, origin_x = 16, origin_y = 45 },
+  },
+}

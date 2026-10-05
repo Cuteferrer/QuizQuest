@@ -1,0 +1,21 @@
+animation{
+  name = "slash_attack",
+  src_image = "enemies/trillium_enemies/spider.png",
+  frame_delay = 70,
+  directions = {
+    { x = 256, y = 416, frame_width = 64, frame_height = 48, origin_x = 32, origin_y = 29, num_frames = 2 },
+    { x = 256, y = 464, frame_width = 64, frame_height = 48, origin_x = 32, origin_y = 41, num_frames = 2 },
+    { x = 256, y = 512, frame_width = 64, frame_height = 48, origin_x = 32, origin_y = 29, num_frames = 2 },
+    { x = 256, y = 560, frame_width = 64, frame_height = 64, origin_x = 32, origin_y = 33, num_frames = 2 },
+  },
+}
+animation{
+  name = "slash_windup",
+  src_image = "enemies/trillium_enemies/spider.png",
+  directions = {
+    { x = 304, y = 544, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 5 },
+    { x = 304, y = 544, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 5 },
+    { x = 304, y = 544, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 5 },
+    { x = 304, y = 544, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 5 },
+  },
+}

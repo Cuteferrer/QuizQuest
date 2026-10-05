@@ -1,0 +1,70 @@
+animation{
+  name = "walking",
+  src_image = "enemies/trillium_enemies/bat.png",
+  frame_delay = 70,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 0, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21, num_frames = 6 },
+    { x = 0, y = 32, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21, num_frames = 6 },
+    { x = 0, y = 64, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21, num_frames = 6 },
+    { x = 0, y = 96, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21, num_frames = 6 },
+  },
+}
+animation{
+  name = "hurt",
+  src_image = "enemies/trillium_enemies/bat.png",
+  frame_delay = 60,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 112, y = 0, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21, num_frames = 2 },
+    { x = 112, y = 32, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21, num_frames = 2 },
+    { x = 112, y = 64, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21, num_frames = 2 },
+    { x = 112, y = 96, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21, num_frames = 2 },
+  },
+}
+animation{
+  name = "ramming",
+  src_image = "enemies/trillium_enemies/bat.png",
+  directions = {
+    { x = 0, y = 128, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21 },
+    { x = 0, y = 160, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21 },
+    { x = 0, y = 192, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21 },
+    { x = 0, y = 224, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21 },
+  },
+}
+animation{
+  name = "ramming_slice",
+  src_image = "enemies/trillium_enemies/bat.png",
+  frame_delay = 70,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 16, y = 128, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21, num_frames = 4 },
+    { x = 16, y = 160, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21, num_frames = 4 },
+    { x = 16, y = 192, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21, num_frames = 4 },
+    { x = 16, y = 224, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21, num_frames = 4 },
+  },
+}
+animation{
+  name = "ramming_windup",
+  src_image = "enemies/trillium_enemies/bat.png",
+  frame_delay = 30,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 0, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21, num_frames = 6 },
+    { x = 0, y = 32, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21, num_frames = 6 },
+    { x = 0, y = 64, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21, num_frames = 6 },
+    { x = 0, y = 96, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21, num_frames = 6 },
+  },
+}
+animation{
+  name = "stopped",
+  src_image = "enemies/trillium_enemies/bat.png",
+  frame_delay = 70,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 0, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21, num_frames = 6 },
+    { x = 0, y = 32, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21, num_frames = 6 },
+    { x = 0, y = 64, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21, num_frames = 6 },
+    { x = 0, y = 96, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21, num_frames = 6 },
+  },
+}

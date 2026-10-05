@@ -1,0 +1,10 @@
+animation{
+  name = "stopped",
+  src_image = "world_objects/world_objects.png",
+  directions = {
+    { x = 48, y = 64, frame_width = 64, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 32, y = 16, frame_width = 16, frame_height = 64, origin_x = 8, origin_y = 13 },
+    { x = 48, y = 64, frame_width = 64, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 32, y = 16, frame_width = 16, frame_height = 64, origin_x = 8, origin_y = 13 },
+  },
+}

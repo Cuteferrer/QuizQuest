@@ -1,0 +1,8 @@
+animation{
+  name = "stopped",
+  src_image = "items/shockwave.png",
+  frame_delay = 40,
+  directions = {
+    { x = 0, y = 0, frame_width = 48, frame_height = 40, origin_x = 24, origin_y = 20, num_frames = 9 },
+  },
+}

@@ -1,0 +1,23 @@
+animation{
+  name = "stopped",
+  src_image = "world_objects/pull_chain/pull_chain.png",
+  directions = {
+    { x = 0, y = 32, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29 },
+  },
+}
+animation{
+  name = "spin",
+  src_image = "world_objects/pull_chain/pull_chain.png",
+  frame_delay = 120,
+  directions = {
+    { x = 0, y = 40, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21, num_frames = 4 },
+  },
+}
+animation{
+  name = "spin_reverse",
+  src_image = "world_objects/pull_chain/pull_chain.png",
+  frame_delay = 120,
+  directions = {
+    { x = 0, y = 72, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21, num_frames = 4 },
+  },
+}

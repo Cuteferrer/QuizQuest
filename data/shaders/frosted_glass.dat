@@ -1,0 +1,4 @@
+shader{
+  fragment_file = "frosted_glass.frag.glsl",
+  scaling_factor = 1.72453e-307,
+}

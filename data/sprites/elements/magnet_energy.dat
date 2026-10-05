@@ -1,0 +1,27 @@
+animation{
+  name = "ball",
+  src_image = "elements/electric.png",
+  frame_delay = 50,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 240, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 5 },
+  },
+}
+animation{
+  name = "fizzle",
+  src_image = "elements/electric.png",
+  frame_delay = 70,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 16, y = 256, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 5, num_frames = 7 },
+  },
+}
+animation{
+  name = "ray",
+  src_image = "elements/electric.png",
+  frame_delay = 40,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 256, frame_width = 1, frame_height = 1, origin_x = 0, origin_y = 0, num_frames = 8 },
+  },
+}

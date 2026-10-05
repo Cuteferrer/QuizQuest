@@ -1,0 +1,12 @@
+animation{
+  name = "up",
+  src_image = "menus/trillium_menus/arrow.png",
+  frame_delay = 200,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 8, y = 0, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 5 },
+    { x = 0, y = 0, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 5 },
+    { x = 8, y = 8, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 5 },
+    { x = 0, y = 8, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 5 },
+  },
+}

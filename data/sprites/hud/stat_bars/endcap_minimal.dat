@@ -1,0 +1,7 @@
+animation{
+  name = "cap",
+  src_image = "hud/stat_bars/stat_bars.png",
+  directions = {
+    { x = 8, y = 32, frame_width = 8, frame_height = 8, origin_x = 0, origin_y = 0 },
+  },
+}

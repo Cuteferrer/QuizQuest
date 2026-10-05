@@ -1,0 +1,7 @@
+animation{
+  name = "box",
+  src_image = "menus/splash_screens/moths.png",
+  directions = {
+    { x = 240, y = 24, frame_width = 64, frame_height = 72, origin_x = 32, origin_y = 37 },
+  },
+}

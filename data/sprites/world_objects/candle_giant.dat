@@ -1,0 +1,18 @@
+animation{
+  name = "lit",
+  src_image = "world_objects/candles.png",
+  frame_delay = 100,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 16, y = 32, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29, num_frames = 5 },
+  },
+}
+animation{
+  name = "unlit",
+  src_image = "world_objects/candles.png",
+  frame_delay = 100,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 32, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29 },
+  },
+}

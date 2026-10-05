@@ -1,0 +1,8 @@
+animation{
+  name = "killed",
+  src_image = "enemies/enemy_killed_big.png",
+  frame_delay = 60,
+  directions = {
+    { x = 16, y = 16, frame_width = 64, frame_height = 64, origin_x = 32, origin_y = 45, num_frames = 16, num_columns = 4 },
+  },
+}

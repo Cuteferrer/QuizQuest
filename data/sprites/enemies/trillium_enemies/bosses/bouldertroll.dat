@@ -1,0 +1,105 @@
+animation{
+  name = "stopped",
+  src_image = "enemies/trillium_enemies/bosses/bouldertroll.png",
+  directions = {
+    { x = 0, y = 112, frame_width = 80, frame_height = 64, origin_x = 40, origin_y = 61 },
+    { x = 0, y = 176, frame_width = 80, frame_height = 64, origin_x = 40, origin_y = 61 },
+  },
+}
+animation{
+  name = "healing",
+  src_image = "enemies/trillium_enemies/bosses/bouldertroll.png",
+  frame_delay = 120,
+  directions = {
+    { x = 176, y = 576, frame_width = 96, frame_height = 80, origin_x = 48, origin_y = 77, num_frames = 4 },
+    { x = 176, y = 656, frame_width = 96, frame_height = 80, origin_x = 48, origin_y = 77, num_frames = 4 },
+  },
+}
+animation{
+  name = "hurt",
+  src_image = "enemies/trillium_enemies/bosses/bouldertroll.png",
+  directions = {
+    { x = 0, y = 576, frame_width = 96, frame_height = 80, origin_x = 56, origin_y = 77 },
+    { x = 0, y = 656, frame_width = 96, frame_height = 80, origin_x = 40, origin_y = 77 },
+  },
+}
+animation{
+  name = "roaring",
+  src_image = "enemies/trillium_enemies/bosses/bouldertroll.png",
+  directions = {
+    { x = 16, y = 256, frame_width = 96, frame_height = 80, origin_x = 48, origin_y = 77 },
+    { x = 16, y = 336, frame_width = 96, frame_height = 80, origin_x = 48, origin_y = 77 },
+  },
+}
+animation{
+  name = "smash",
+  src_image = "enemies/trillium_enemies/bosses/bouldertroll.png",
+  frame_delay = 60,
+  directions = {
+    { x = 112, y = 256, frame_width = 80, frame_height = 80, origin_x = 40, origin_y = 77, num_frames = 6 },
+    { x = 112, y = 336, frame_width = 80, frame_height = 80, origin_x = 40, origin_y = 77, num_frames = 6 },
+  },
+}
+animation{
+  name = "smash_windup",
+  src_image = "enemies/trillium_enemies/bosses/bouldertroll.png",
+  directions = {
+    { x = 112, y = 256, frame_width = 80, frame_height = 80, origin_x = 40, origin_y = 77 },
+    { x = 112, y = 336, frame_width = 80, frame_height = 80, origin_x = 40, origin_y = 77 },
+  },
+}
+animation{
+  name = "staggered",
+  src_image = "enemies/trillium_enemies/bosses/bouldertroll.png",
+  directions = {
+    { x = 0, y = 576, frame_width = 96, frame_height = 80, origin_x = 56, origin_y = 77 },
+    { x = 0, y = 656, frame_width = 96, frame_height = 80, origin_x = 40, origin_y = 77 },
+  },
+}
+animation{
+  name = "stunned",
+  src_image = "enemies/trillium_enemies/bosses/bouldertroll.png",
+  directions = {
+    { x = 96, y = 592, frame_width = 80, frame_height = 64, origin_x = 40, origin_y = 61 },
+    { x = 96, y = 672, frame_width = 80, frame_height = 64, origin_x = 40, origin_y = 61 },
+  },
+}
+animation{
+  name = "throwing",
+  src_image = "enemies/trillium_enemies/bosses/bouldertroll.png",
+  frame_delay = 60,
+  directions = {
+    { x = 304, y = 432, frame_width = 80, frame_height = 64, origin_x = 40, origin_y = 61, num_frames = 4 },
+    { x = 304, y = 496, frame_width = 80, frame_height = 64, origin_x = 40, origin_y = 61, num_frames = 4 },
+  },
+}
+animation{
+  name = "throwing_windup",
+  src_image = "enemies/trillium_enemies/bosses/bouldertroll.png",
+  frame_delay = 120,
+  frame_to_loop_on = 2,
+  directions = {
+    { x = 16, y = 432, frame_width = 96, frame_height = 64, origin_x = 56, origin_y = 61, num_frames = 3 },
+    { x = 16, y = 496, frame_width = 96, frame_height = 64, origin_x = 40, origin_y = 61, num_frames = 3 },
+  },
+}
+animation{
+  name = "throwing_windup_rock",
+  src_image = "enemies/trillium_enemies/bosses/bouldertroll.png",
+  frame_delay = 120,
+  frame_to_loop_on = 2,
+  directions = {
+    { x = 0, y = 752, frame_width = 96, frame_height = 64, origin_x = 56, origin_y = 61, num_frames = 3 },
+    { x = 0, y = 816, frame_width = 96, frame_height = 64, origin_x = 40, origin_y = 61, num_frames = 3 },
+  },
+}
+animation{
+  name = "walking",
+  src_image = "enemies/trillium_enemies/bosses/bouldertroll.png",
+  frame_delay = 120,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 112, frame_width = 80, frame_height = 64, origin_x = 40, origin_y = 61, num_frames = 4 },
+    { x = 0, y = 176, frame_width = 80, frame_height = 64, origin_x = 40, origin_y = 61, num_frames = 4 },
+  },
+}

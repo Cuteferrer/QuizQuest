@@ -1,0 +1,14 @@
+animation{
+  name = "off",
+  src_image = "menus/ui/toggle_switch.png",
+  directions = {
+    { x = 0, y = 0, frame_width = 16, frame_height = 8, origin_x = 8, origin_y = 5 },
+  },
+}
+animation{
+  name = "on",
+  src_image = "menus/ui/toggle_switch.png",
+  directions = {
+    { x = 0, y = 8, frame_width = 16, frame_height = 8, origin_x = 8, origin_y = 5 },
+  },
+}

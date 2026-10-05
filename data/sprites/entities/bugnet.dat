@@ -1,0 +1,11 @@
+animation{
+  name = "swinging",
+  src_image = "entities/bugnet.png",
+  frame_delay = 40,
+  directions = {
+    { x = 0, y = 0, frame_width = 48, frame_height = 48, origin_x = 16, origin_y = 37, num_frames = 7 },
+    { x = 0, y = 48, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 37, num_frames = 7 },
+    { x = 0, y = 96, frame_width = 48, frame_height = 48, origin_x = 32, origin_y = 37, num_frames = 7 },
+    { x = 0, y = 144, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 29, num_frames = 7 },
+  },
+}

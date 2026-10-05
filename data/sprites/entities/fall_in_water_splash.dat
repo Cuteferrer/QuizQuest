@@ -1,0 +1,16 @@
+animation{
+  name = "splash",
+  src_image = "entities/fall_in_water_splash.png",
+  frame_delay = 60,
+  directions = {
+    { x = 0, y = 16, frame_width = 32, frame_height = 16, origin_x = 16, origin_y = 13, num_frames = 12, num_columns = 6 },
+  },
+}
+animation{
+  name = "small",
+  src_image = "entities/fall_in_water_splash.png",
+  frame_delay = 60,
+  directions = {
+    { x = 0, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 8 },
+  },
+}

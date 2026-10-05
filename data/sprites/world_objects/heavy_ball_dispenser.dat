@@ -1,0 +1,7 @@
+animation{
+  name = "stopped",
+  src_image = "world_objects/heavy_ball.png",
+  directions = {
+    { x = 0, y = 40, frame_width = 32, frame_height = 40, origin_x = 16, origin_y = 37 },
+  },
+}

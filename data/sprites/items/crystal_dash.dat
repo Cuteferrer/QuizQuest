@@ -1,0 +1,12 @@
+animation{
+  name = "dashing",
+  src_image = "items/crystal_dash.png",
+  frame_delay = 60,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 0, frame_width = 64, frame_height = 48, origin_x = 56, origin_y = 29, num_frames = 3 },
+    { x = 0, y = 112, frame_width = 32, frame_height = 80, origin_x = 16, origin_y = 13, num_frames = 3 },
+    { x = 0, y = 48, frame_width = 64, frame_height = 48, origin_x = 8, origin_y = 29, num_frames = 3 },
+    { x = 96, y = 104, frame_width = 32, frame_height = 72, origin_x = 16, origin_y = 69, num_frames = 3 },
+  },
+}

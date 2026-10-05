@@ -1,0 +1,23 @@
+animation{
+  name = "closed",
+  src_image = "world_objects/elevators.png",
+  directions = {
+    { x = 0, y = 48, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 45 },
+  },
+}
+animation{
+  name = "closing",
+  src_image = "world_objects/elevators.png",
+  frame_delay = 60,
+  directions = {
+    { x = 0, y = 96, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 45, num_frames = 6 },
+  },
+}
+animation{
+  name = "opening",
+  src_image = "world_objects/elevators.png",
+  frame_delay = 60,
+  directions = {
+    { x = 0, y = 48, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 45, num_frames = 6 },
+  },
+}

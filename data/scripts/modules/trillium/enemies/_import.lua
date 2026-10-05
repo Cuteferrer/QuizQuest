@@ -1,0 +1,5 @@
+sol.modules.register_object_by_path("trillium_enemy_behavior", "scripts/modules/trillium/enemies/lib/behavior_applicator")
+require("scripts/modules/trillium/enemies/lib/faction_manager")
+-- require("scripts/modules/trillium/enemies/area_scaling/_import")
+require("scripts/modules/trillium/enemies/enemy_meta")
+require("scripts/modules/trillium/enemies/enemy_respawn_manager")

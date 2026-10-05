@@ -1,0 +1,29 @@
+animation{
+  name = "empty",
+  src_image = "hud/bullet.png",
+  directions = {
+    { x = 7, y = 16, frame_width = 7, frame_height = 16, origin_x = 4, origin_y = 13 },
+  },
+}
+animation{
+  name = "full",
+  src_image = "hud/bullet.png",
+  directions = {
+    { x = 0, y = 16, frame_width = 7, frame_height = 16, origin_x = 4, origin_y = 13 },
+  },
+}
+animation{
+  name = "invisible",
+  src_image = "hud/bullet.png",
+  directions = {
+    { x = 56, y = 0, frame_width = 8, frame_height = 16, origin_x = 4, origin_y = 13 },
+  },
+}
+animation{
+  name = "reloading",
+  src_image = "hud/bullet.png",
+  frame_delay = 50,
+  directions = {
+    { x = 21, y = 16, frame_width = 7, frame_height = 16, origin_x = 4, origin_y = 13, num_frames = 5 },
+  },
+}

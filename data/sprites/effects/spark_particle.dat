@@ -1,0 +1,11 @@
+animation{
+  name = "particle",
+  src_image = "effects/particles.png",
+  frame_delay = 60,
+  directions = {
+    { x = 0, y = 24, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 5 },
+    { x = 8, y = 24, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 5 },
+    { x = 16, y = 24, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 5 },
+    { x = 24, y = 24, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 5 },
+  },
+}

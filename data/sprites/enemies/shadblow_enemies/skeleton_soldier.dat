@@ -1,0 +1,79 @@
+animation{
+  name = "stopped",
+  src_image = "enemies/shadblow_enemies/skeleton_soldier.png",
+  frame_delay = 300,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 0, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 2 },
+    { x = 0, y = 32, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 2 },
+    { x = 0, y = 64, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 2 },
+    { x = 0, y = 96, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 2 },
+  },
+}
+animation{
+  name = "crossbow_windup",
+  src_image = "enemies/shadblow_enemies/skeleton_soldier.png",
+  directions = {
+    { x = 0, y = 432, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29 },
+    { x = 0, y = 464, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29 },
+    { x = 0, y = 496, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29 },
+    { x = 0, y = 528, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29 },
+  },
+}
+animation{
+  name = "staggered",
+  src_image = "enemies/shadblow_enemies/skeleton_soldier.png",
+  frame_delay = 200,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 160, y = 0, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 2 },
+    { x = 160, y = 32, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 2 },
+    { x = 160, y = 64, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 2 },
+    { x = 160, y = 96, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 2 },
+  },
+}
+animation{
+  name = "stunned",
+  src_image = "enemies/shadblow_enemies/skeleton_soldier.png",
+  frame_delay = 200,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 160, y = 0, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 2 },
+    { x = 160, y = 32, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 2 },
+    { x = 160, y = 64, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 2 },
+    { x = 160, y = 96, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 2 },
+  },
+}
+animation{
+  name = "thrust_attack",
+  src_image = "enemies/shadblow_enemies/skeleton_soldier.png",
+  frame_delay = 70,
+  directions = {
+    { x = 0, y = 128, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 6 },
+    { x = 0, y = 160, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 6 },
+    { x = 0, y = 192, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 6 },
+    { x = 0, y = 224, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 6 },
+  },
+}
+animation{
+  name = "thrust_windup",
+  src_image = "enemies/shadblow_enemies/skeleton_soldier.png",
+  directions = {
+    { x = 0, y = 128, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29 },
+    { x = 0, y = 160, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29 },
+    { x = 0, y = 192, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29 },
+    { x = 0, y = 224, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29 },
+  },
+}
+animation{
+  name = "walking",
+  src_image = "enemies/shadblow_enemies/skeleton_soldier.png",
+  frame_delay = 120,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 32, y = 0, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 4 },
+    { x = 32, y = 32, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 4 },
+    { x = 32, y = 64, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 4 },
+    { x = 32, y = 96, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 4 },
+  },
+}

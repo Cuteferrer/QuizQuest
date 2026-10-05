@@ -1,0 +1,7 @@
+animation{
+  name = "fire_sword",
+  src_image = "menus/item_portraits/items.png",
+  directions = {
+    { x = 144, y = 0, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 45 },
+  },
+}

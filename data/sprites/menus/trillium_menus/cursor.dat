@@ -1,0 +1,9 @@
+animation{
+  name = "cursor",
+  src_image = "menus/inventory/cursor_fancy.png",
+  frame_delay = 120,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 0, frame_width = 32, frame_height = 32, origin_x = 0, origin_y = 0 },
+  },
+}

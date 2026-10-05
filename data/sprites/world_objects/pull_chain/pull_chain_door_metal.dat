@@ -1,0 +1,8 @@
+animation{
+  name = "stopped",
+  src_image = "world_objects/pull_chain/pull_chain_door.png",
+  frame_delay = 60,
+  directions = {
+    { x = 0, y = 0, frame_width = 48, frame_height = 64, origin_x = 24, origin_y = 61, num_frames = 13 },
+  },
+}

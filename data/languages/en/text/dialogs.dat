@@ -1,0 +1,28 @@
+dialog{
+  id = "Welcome",
+  next = "Welcome.Two",
+  question = true,
+  text = [[
+Welcome to the QuizQuest!!
+Meow
+WTF
+]],
+}
+
+dialog{
+  id = "Welcome.Two",
+  text = [[
+I beg you.
+]],
+}
+
+dialog{
+  id = "uml1",
+  question = true,
+  text = [[
+What is a UML?
+idk
+some shit
+]],
+}
+

@@ -1,0 +1,33 @@
+animation{
+  name = "stopped",
+  src_image = "hazards/spider_web.png",
+  directions = {
+    { x = 0, y = 0, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29 },
+    { x = 0, y = 32, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29 },
+    { x = 0, y = 64, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29 },
+    { x = 0, y = 96, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29 },
+  },
+}
+animation{
+  name = "burning",
+  src_image = "hazards/spider_web.png",
+  frame_delay = 60,
+  directions = {
+    { x = 144, y = 0, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 7 },
+    { x = 144, y = 32, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 7 },
+    { x = 144, y = 64, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 7 },
+    { x = 144, y = 96, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 7 },
+  },
+}
+animation{
+  name = "shaking",
+  src_image = "hazards/spider_web.png",
+  frame_delay = 70,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 0, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 4 },
+    { x = 0, y = 32, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 4 },
+    { x = 0, y = 64, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 4 },
+    { x = 0, y = 96, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 4 },
+  },
+}

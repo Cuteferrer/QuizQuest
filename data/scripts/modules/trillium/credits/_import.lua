@@ -1,0 +1,1 @@
+sol.modules.register_object_by_path("credits_menu", "scripts/modules/trillium/credits/credits_scroll")

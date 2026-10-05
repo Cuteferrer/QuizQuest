@@ -1,0 +1,17 @@
+animation{
+  name = "stopped",
+  src_image = "elements/twister.png",
+  frame_delay = 60,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 0, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29, num_frames = 16, num_columns = 8 },
+  },
+}
+animation{
+  name = "disappearing",
+  src_image = "elements/twister.png",
+  frame_delay = 50,
+  directions = {
+    { x = 0, y = 64, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29, num_frames = 16, num_columns = 8 },
+  },
+}

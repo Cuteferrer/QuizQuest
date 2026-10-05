@@ -1,0 +1,8 @@
+sol.modules.register_object_by_path("trilmenu_component_command_legend", "scripts/modules/trillium/core/menu_components/command_legend")
+sol.modules.register_object_by_path("trilmenu_component_confirmation", "scripts/modules/trillium/core/menu_components/confirmation")
+sol.modules.register_object_by_path("trilmenu_component_confirmation_hold", "scripts/modules/trillium/core/menu_components/hold_to_confirm")
+sol.modules.register_object_by_path("trilmenu_component_incrementer", "scripts/modules/trillium/core/menu_components/incrementer")
+sol.modules.register_object_by_path("trilmenu_component_item_popup", "scripts/modules/trillium/core/menu_components/item_popup")
+sol.modules.register_object_by_path("trilmenu_component_slider", "scripts/modules/trillium/core/menu_components/slider")
+sol.modules.register_object_by_path("trilmenu_component_swiper", "scripts/modules/trillium/core/menu_components/swiper")
+sol.modules.register_object_by_path("trilmenu_component_toggle_switches", "scripts/modules/trillium/core/menu_components/toggle_switches")

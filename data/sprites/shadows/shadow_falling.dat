@@ -1,0 +1,12 @@
+animation{
+  name = "stopped",
+  src_image = "shadows/shadow.png",
+  frame_delay = 90,
+  frame_to_loop_on = 5,
+  directions = {
+    { x = 0, y = 80, frame_width = 24, frame_height = 16, origin_x = 12, origin_y = 13, num_frames = 6, num_columns = 3 },
+    { x = 0, y = 80, frame_width = 24, frame_height = 16, origin_x = 12, origin_y = 13, num_frames = 6, num_columns = 3 },
+    { x = 0, y = 80, frame_width = 24, frame_height = 16, origin_x = 12, origin_y = 13, num_frames = 6, num_columns = 3 },
+    { x = 0, y = 80, frame_width = 24, frame_height = 16, origin_x = 12, origin_y = 13, num_frames = 6, num_columns = 3 },
+  },
+}

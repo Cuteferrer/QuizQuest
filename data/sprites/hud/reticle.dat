@@ -1,0 +1,7 @@
+animation{
+  name = "aiming",
+  src_image = "hud/reticle.png",
+  directions = {
+    { x = 0, y = 0, frame_width = 16, frame_height = 8, origin_x = 4, origin_y = 5 },
+  },
+}

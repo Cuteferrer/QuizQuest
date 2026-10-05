@@ -1,0 +1,82 @@
+animation{
+  name = "walking",
+  src_image = "enemies/trillium_enemies/spider.png",
+  frame_delay = 110,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 16, frame_width = 64, frame_height = 48, origin_x = 28, origin_y = 29, num_frames = 6 },
+    { x = 0, y = 64, frame_width = 64, frame_height = 48, origin_x = 32, origin_y = 41, num_frames = 6 },
+    { x = 0, y = 112, frame_width = 64, frame_height = 48, origin_x = 36, origin_y = 29, num_frames = 6 },
+    { x = 0, y = 160, frame_width = 64, frame_height = 48, origin_x = 32, origin_y = 33, num_frames = 6 },
+  },
+}
+animation{
+  name = "hurt",
+  src_image = "enemies/trillium_enemies/spider.png",
+  frame_delay = 60,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 256, y = 224, frame_width = 64, frame_height = 48, origin_x = 28, origin_y = 29, num_frames = 2 },
+    { x = 256, y = 272, frame_width = 64, frame_height = 48, origin_x = 32, origin_y = 41, num_frames = 2 },
+    { x = 256, y = 320, frame_width = 64, frame_height = 48, origin_x = 36, origin_y = 29, num_frames = 2 },
+    { x = 256, y = 368, frame_width = 64, frame_height = 48, origin_x = 32, origin_y = 33, num_frames = 2 },
+  },
+}
+animation{
+  name = "shooting",
+  src_image = "enemies/trillium_enemies/spider.png",
+  frame_delay = 60,
+  directions = {
+    { x = 0, y = 224, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 29, num_frames = 4 },
+    { x = 0, y = 272, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 41, num_frames = 4 },
+    { x = 0, y = 320, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 29, num_frames = 4 },
+    { x = 0, y = 368, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 33, num_frames = 4 },
+  },
+}
+animation{
+  name = "shooting_windup",
+  src_image = "enemies/trillium_enemies/spider.png",
+  frame_delay = 60,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 224, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 29 },
+    { x = 0, y = 272, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 41 },
+    { x = 0, y = 320, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 29 },
+    { x = 0, y = 368, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 33 },
+  },
+}
+animation{
+  name = "slash_attack",
+  src_image = "enemies/trillium_enemies/spider.png",
+  frame_delay = 70,
+  directions = {
+    { x = 64, y = 416, frame_width = 64, frame_height = 48, origin_x = 28, origin_y = 29, num_frames = 3 },
+    { x = 64, y = 464, frame_width = 64, frame_height = 48, origin_x = 32, origin_y = 41, num_frames = 3 },
+    { x = 64, y = 512, frame_width = 64, frame_height = 48, origin_x = 36, origin_y = 29, num_frames = 3 },
+    { x = 64, y = 560, frame_width = 64, frame_height = 48, origin_x = 32, origin_y = 33, num_frames = 3 },
+  },
+}
+animation{
+  name = "slash_windup",
+  src_image = "enemies/trillium_enemies/spider.png",
+  frame_delay = 70,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 416, frame_width = 64, frame_height = 48, origin_x = 28, origin_y = 29, num_frames = 2 },
+    { x = 0, y = 464, frame_width = 64, frame_height = 48, origin_x = 32, origin_y = 41, num_frames = 2 },
+    { x = 0, y = 512, frame_width = 64, frame_height = 48, origin_x = 36, origin_y = 29, num_frames = 2 },
+    { x = 0, y = 560, frame_width = 64, frame_height = 48, origin_x = 32, origin_y = 33, num_frames = 2 },
+  },
+}
+animation{
+  name = "stopped",
+  src_image = "enemies/trillium_enemies/spider.png",
+  frame_delay = 110,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 192, y = 224, frame_width = 64, frame_height = 48, origin_x = 28, origin_y = 29 },
+    { x = 192, y = 272, frame_width = 64, frame_height = 48, origin_x = 32, origin_y = 41 },
+    { x = 192, y = 320, frame_width = 64, frame_height = 48, origin_x = 36, origin_y = 29 },
+    { x = 192, y = 368, frame_width = 64, frame_height = 48, origin_x = 32, origin_y = 33 },
+  },
+}

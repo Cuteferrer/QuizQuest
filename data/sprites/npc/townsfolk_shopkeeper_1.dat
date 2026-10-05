@@ -1,0 +1,12 @@
+animation{
+  name = "stopped",
+  src_image = "npc/npcs.png",
+  frame_delay = 120,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 112, y = 160, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29 },
+    { x = 112, y = 160, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29 },
+    { x = 112, y = 160, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29 },
+    { x = 112, y = 160, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29 },
+  },
+}

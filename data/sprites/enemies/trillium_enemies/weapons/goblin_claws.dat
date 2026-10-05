@@ -1,0 +1,32 @@
+animation{
+  name = "slash_attack",
+  src_image = "enemies/trillium_enemies/weapons/goblin_claws.png",
+  frame_delay = 70,
+  directions = {
+    { x = 0, y = 0, frame_width = 32, frame_height = 32, origin_x = 8, origin_y = 21, num_frames = 4 },
+    { x = 0, y = 64, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 4 },
+    { x = 0, y = 32, frame_width = 32, frame_height = 32, origin_x = 24, origin_y = 21, num_frames = 4 },
+    { x = 128, y = 64, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 13, num_frames = 4 },
+  },
+}
+animation{
+  name = "slash_attack_2",
+  src_image = "enemies/trillium_enemies/weapons/goblin_claws.png",
+  frame_delay = 70,
+  directions = {
+    { x = 128, y = 0, frame_width = 32, frame_height = 32, origin_x = 8, origin_y = 21, num_frames = 4 },
+    { x = 0, y = 96, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 4 },
+    { x = 128, y = 32, frame_width = 32, frame_height = 32, origin_x = 24, origin_y = 21, num_frames = 4 },
+    { x = 128, y = 96, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 13, num_frames = 4 },
+  },
+}
+animation{
+  name = "windup",
+  src_image = "enemies/trillium_enemies/weapons/goblin_claws.png",
+  directions = {
+    { x = 16, y = 0, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 5 },
+    { x = 16, y = 0, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 5 },
+    { x = 16, y = 0, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 5 },
+    { x = 16, y = 0, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 5 },
+  },
+}

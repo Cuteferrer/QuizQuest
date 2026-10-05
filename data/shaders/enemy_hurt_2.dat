@@ -1,0 +1,4 @@
+shader{
+  fragment_file = "enemy_hurt_2.frag.glsl",
+  scaling_factor = 1.72453e-307,
+}

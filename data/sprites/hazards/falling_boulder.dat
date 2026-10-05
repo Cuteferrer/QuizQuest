@@ -1,0 +1,9 @@
+animation{
+  name = "falling",
+  src_image = "hazards/falling_boulder.png",
+  frame_delay = 50,
+  frame_to_loop_on = 7,
+  directions = {
+    { x = 0, y = 16, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 8, num_columns = 4 },
+  },
+}

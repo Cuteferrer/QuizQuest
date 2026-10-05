@@ -1,0 +1,42 @@
+animation{
+  name = "thrust_attack",
+  src_image = "enemies/trillium_enemies/hobgoblin_spear.png",
+  frame_delay = 70,
+  directions = {
+    { x = 0, y = 256, frame_width = 64, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 5 },
+    { x = 160, y = 336, frame_width = 32, frame_height = 64, origin_x = 16, origin_y = 61, num_frames = 5 },
+    { x = 0, y = 288, frame_width = 64, frame_height = 32, origin_x = 48, origin_y = 29, num_frames = 5 },
+    { x = 0, y = 336, frame_width = 32, frame_height = 64, origin_x = 16, origin_y = 29, num_frames = 5 },
+  },
+}
+animation{
+  name = "slam_attack",
+  src_image = "enemies/trillium_enemies/hobgoblin_spear.png",
+  frame_delay = 70,
+  directions = {
+    { x = 0, y = 1104, frame_width = 80, frame_height = 48, origin_x = 32, origin_y = 45, num_frames = 4 },
+    { x = 160, y = 1216, frame_width = 32, frame_height = 64, origin_x = 16, origin_y = 45, num_frames = 5 },
+    { x = 0, y = 1152, frame_width = 80, frame_height = 48, origin_x = 48, origin_y = 45, num_frames = 4 },
+    { x = 0, y = 1200, frame_width = 32, frame_height = 80, origin_x = 16, origin_y = 45, num_frames = 5 },
+  },
+}
+animation{
+  name = "slam_windup",
+  src_image = "enemies/trillium_enemies/hobgoblin_spear.png",
+  directions = {
+    { x = 0, y = 1120, frame_width = 48, frame_height = 32, origin_x = 32, origin_y = 29 },
+    { x = 160, y = 1232, frame_width = 32, frame_height = 48, origin_x = 16, origin_y = 29 },
+    { x = 32, y = 1168, frame_width = 48, frame_height = 32, origin_x = 16, origin_y = 29 },
+    { x = 0, y = 1200, frame_width = 32, frame_height = 48, origin_x = 16, origin_y = 45 },
+  },
+}
+animation{
+  name = "thrust_windup",
+  src_image = "enemies/trillium_enemies/hobgoblin_spear.png",
+  directions = {
+    { x = 0, y = 256, frame_width = 64, frame_height = 32, origin_x = 16, origin_y = 29 },
+    { x = 160, y = 336, frame_width = 32, frame_height = 64, origin_x = 16, origin_y = 61 },
+    { x = 0, y = 288, frame_width = 64, frame_height = 32, origin_x = 48, origin_y = 29 },
+    { x = 0, y = 336, frame_width = 32, frame_height = 64, origin_x = 16, origin_y = 29 },
+  },
+}

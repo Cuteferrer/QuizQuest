@@ -1,0 +1,39 @@
+animation{
+  name = "invisible",
+  src_image = "status_effects/enemy_status_particles.png",
+  directions = {
+    { x = 0, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "burn",
+  src_image = "status_effects/enemy_status_particles.png",
+  frame_delay = 60,
+  directions = {
+    { x = 0, y = 16, frame_width = 8, frame_height = 16, origin_x = 4, origin_y = 13, num_frames = 8 },
+  },
+}
+animation{
+  name = "cold",
+  src_image = "status_effects/enemy_status_particles.png",
+  frame_delay = 60,
+  directions = {
+    { x = 0, y = 64, frame_width = 8, frame_height = 16, origin_x = 4, origin_y = 13, num_frames = 8 },
+  },
+}
+animation{
+  name = "poison",
+  src_image = "status_effects/enemy_status_particles.png",
+  frame_delay = 60,
+  directions = {
+    { x = 0, y = 32, frame_width = 8, frame_height = 16, origin_x = 4, origin_y = 13, num_frames = 8 },
+  },
+}
+animation{
+  name = "shock",
+  src_image = "status_effects/enemy_status_particles.png",
+  frame_delay = 60,
+  directions = {
+    { x = 0, y = 96, frame_width = 8, frame_height = 16, origin_x = 4, origin_y = 13, num_frames = 8 },
+  },
+}

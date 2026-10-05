@@ -1,0 +1,9 @@
+animation{
+  name = "blinking",
+  src_image = "menus/inventory/cursor_big.png",
+  frame_delay = 120,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 0, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 45, num_frames = 10, num_columns = 5 },
+  },
+}

@@ -1,0 +1,43 @@
+animation{
+  name = "sword",
+  src_image = "solforge_weapons/sabre.png",
+  frame_delay = 60,
+  directions = {
+    { x = 0, y = 0, frame_width = 64, frame_height = 48, origin_x = 24, origin_y = 29, num_frames = 5 },
+    { x = 0, y = 112, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 45, num_frames = 6 },
+    { x = 0, y = 48, frame_width = 64, frame_height = 48, origin_x = 40, origin_y = 29, num_frames = 5 },
+    { x = 0, y = 160, frame_width = 48, frame_height = 64, origin_x = 24, origin_y = 29, num_frames = 5 },
+  },
+}
+animation{
+  name = "endcombo",
+  src_image = "solforge_weapons/sabre.png",
+  frame_delay = 70,
+  directions = {
+    { x = 0, y = 480, frame_width = 64, frame_height = 64, origin_x = 24, origin_y = 45, num_frames = 6 },
+    { x = 0, y = 608, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 45, num_frames = 6 },
+    { x = 0, y = 544, frame_width = 64, frame_height = 64, origin_x = 40, origin_y = 45, num_frames = 6 },
+    { x = 0, y = 656, frame_width = 48, frame_height = 64, origin_x = 24, origin_y = 29, num_frames = 6 },
+  },
+}
+animation{
+  name = "reverse_swing",
+  src_image = "solforge_weapons/sabre.png",
+  frame_delay = 70,
+  directions = {
+    { x = 0, y = 240, frame_width = 64, frame_height = 64, origin_x = 24, origin_y = 45, num_frames = 5 },
+    { x = 0, y = 368, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 45, num_frames = 6 },
+    { x = 0, y = 304, frame_width = 64, frame_height = 64, origin_x = 40, origin_y = 45, num_frames = 5 },
+    { x = 0, y = 416, frame_width = 48, frame_height = 64, origin_x = 24, origin_y = 29, num_frames = 6 },
+  },
+}
+animation{
+  name = "windup",
+  src_image = "solforge_weapons/sabre.png",
+  directions = {
+    { x = 432, y = 0, frame_width = 48, frame_height = 32, origin_x = 24, origin_y = 29 },
+    { x = 432, y = 32, frame_width = 48, frame_height = 32, origin_x = 24, origin_y = 29 },
+    { x = 432, y = 64, frame_width = 48, frame_height = 32, origin_x = 24, origin_y = 29 },
+    { x = 432, y = 96, frame_width = 48, frame_height = 32, origin_x = 24, origin_y = 29 },
+  },
+}

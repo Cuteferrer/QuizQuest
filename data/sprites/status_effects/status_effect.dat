@@ -1,0 +1,45 @@
+animation{
+  name = "burn",
+  src_image = "status_effects/status_effects.png",
+  frame_delay = 90,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 0, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29, num_frames = 6 },
+    { x = 0, y = 0, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29, num_frames = 6 },
+    { x = 0, y = 0, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29, num_frames = 6 },
+    { x = 0, y = 0, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29, num_frames = 6 },
+  },
+}
+animation{
+  name = "acid",
+  src_image = "status_effects/status_effects.png",
+  frame_delay = 80,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 32, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29, num_frames = 8 },
+    { x = 0, y = 32, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29, num_frames = 8 },
+    { x = 0, y = 32, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29, num_frames = 8 },
+    { x = 0, y = 32, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29, num_frames = 8 },
+  },
+}
+animation{
+  name = "cold",
+  src_image = "status_effects/status_effects.png",
+  frame_delay = 150,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 128, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 16, num_columns = 8 },
+  },
+}
+animation{
+  name = "poison",
+  src_image = "status_effects/status_effects.png",
+  frame_delay = 120,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 64, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29, num_frames = 8 },
+    { x = 0, y = 64, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29, num_frames = 8 },
+    { x = 0, y = 64, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29, num_frames = 8 },
+    { x = 0, y = 64, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29, num_frames = 8 },
+  },
+}

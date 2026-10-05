@@ -1,0 +1,39 @@
+animation{
+  name = "thrown",
+  src_image = "entities/summoning_spear.png",
+  directions = {
+    { x = 0, y = 0, frame_width = 32, frame_height = 8, origin_x = 28, origin_y = 5 },
+    { x = 0, y = 16, frame_width = 8, frame_height = 32, origin_x = 4, origin_y = 5 },
+    { x = 0, y = 8, frame_width = 32, frame_height = 8, origin_x = 4, origin_y = 5 },
+    { x = 8, y = 16, frame_width = 8, frame_height = 32, origin_x = 4, origin_y = 29 },
+  },
+}
+animation{
+  name = "ground",
+  src_image = "entities/summoning_spear.png",
+  frame_delay = 80,
+  frame_to_loop_on = 3,
+  directions = {
+    { x = 32, y = 0, frame_width = 16, frame_height = 32, origin_x = 12, origin_y = 29, num_frames = 4 },
+    { x = 32, y = 0, frame_width = 16, frame_height = 32, origin_x = 12, origin_y = 29, num_frames = 4 },
+    { x = 32, y = 0, frame_width = 16, frame_height = 32, origin_x = 12, origin_y = 29, num_frames = 4 },
+    { x = 32, y = 0, frame_width = 16, frame_height = 32, origin_x = 12, origin_y = 29, num_frames = 4 },
+  },
+}
+animation{
+  name = "returning",
+  src_image = "entities/summoning_spear.png",
+  frame_delay = 50,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 16, y = 48, frame_width = 32, frame_height = 16, origin_x = 16, origin_y = 13, num_frames = 4, num_columns = 2 },
+  },
+}
+animation{
+  name = "splash",
+  src_image = "entities/summoning_spear.png",
+  frame_delay = 50,
+  directions = {
+    { x = 0, y = 80, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 6 },
+  },
+}

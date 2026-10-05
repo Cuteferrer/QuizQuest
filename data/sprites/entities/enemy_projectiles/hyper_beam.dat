@@ -1,0 +1,9 @@
+animation{
+  name = "beam",
+  src_image = "entities/enemy_projectiles/hyper_beam.png",
+  frame_delay = 60,
+  frame_to_loop_on = 3,
+  directions = {
+    { x = 0, y = 0, frame_width = 160, frame_height = 16, origin_x = 8, origin_y = 8, num_frames = 8, num_columns = 1 },
+  },
+}

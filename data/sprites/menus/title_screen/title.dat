@@ -1,0 +1,7 @@
+animation{
+  name = "title",
+  src_image = "menus/title_screen/title.png",
+  directions = {
+    { x = 0, y = 0, frame_width = 176, frame_height = 40, origin_x = 88, origin_y = 16 },
+  },
+}

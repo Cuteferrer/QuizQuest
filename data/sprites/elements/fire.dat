@@ -1,0 +1,33 @@
+animation{
+  name = "fire",
+  src_image = "elements/fire.png",
+  frame_delay = 80,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 144, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 6 },
+  },
+}
+animation{
+  name = "fire_1",
+  src_image = "elements/fire.png",
+  frame_delay = 80,
+  directions = {
+    { x = 0, y = 176, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 9 },
+  },
+}
+animation{
+  name = "fire_2",
+  src_image = "elements/fire.png",
+  frame_delay = 100,
+  directions = {
+    { x = 0, y = 208, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 9 },
+  },
+}
+animation{
+  name = "hitbox_burst",
+  src_image = "elements/fire.png",
+  frame_delay = 30,
+  directions = {
+    { x = 96, y = 112, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 15, num_frames = 6 },
+  },
+}

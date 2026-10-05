@@ -1,0 +1,5 @@
+require("scripts/modules/trillium/ui/hud/hud")
+require("scripts/modules/trillium/ui/boss_bar")
+require("scripts/modules/trillium/ui/cursor_reticle")
+require("scripts/modules/trillium/ui/enemy_life_bar")
+require("scripts/modules/trillium/ui/location_titles")

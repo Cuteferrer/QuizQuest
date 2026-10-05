@@ -1,0 +1,63 @@
+animation{
+  name = "slash",
+  src_image = "solforge_weapons/dagger_1.png",
+  frame_delay = 40,
+  directions = {
+    { x = 0, y = 0, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 29, num_frames = 7 },
+    { x = 0, y = 96, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 37, num_frames = 7 },
+    { x = 0, y = 48, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 29, num_frames = 7 },
+    { x = 0, y = 144, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 37, num_frames = 7 },
+  },
+}
+animation{
+  name = "backslash",
+  src_image = "solforge_weapons/dagger_1.png",
+  frame_delay = 70,
+  directions = {
+    { x = 0, y = 192, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 29, num_frames = 5 },
+    { x = 0, y = 288, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 37, num_frames = 5 },
+    { x = 0, y = 240, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 29, num_frames = 5 },
+    { x = 0, y = 336, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 37, num_frames = 5 },
+  },
+}
+animation{
+  name = "backslash_windup",
+  src_image = "solforge_weapons/dagger_1.png",
+  directions = {
+    { x = 0, y = 192, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 29 },
+    { x = 0, y = 288, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 37 },
+    { x = 0, y = 240, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 29 },
+    { x = 0, y = 336, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 37 },
+  },
+}
+animation{
+  name = "slash_windup",
+  src_image = "solforge_weapons/dagger_1.png",
+  directions = {
+    { x = 0, y = 0, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 29 },
+    { x = 0, y = 96, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 37 },
+    { x = 0, y = 48, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 29 },
+    { x = 0, y = 144, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 37 },
+  },
+}
+animation{
+  name = "thrust",
+  src_image = "solforge_weapons/dagger_1.png",
+  frame_delay = 50,
+  directions = {
+    { x = 0, y = 384, frame_width = 48, frame_height = 48, origin_x = 16, origin_y = 29, num_frames = 4 },
+    { x = 0, y = 480, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 45, num_frames = 4 },
+    { x = 0, y = 432, frame_width = 48, frame_height = 48, origin_x = 32, origin_y = 29, num_frames = 4 },
+    { x = 0, y = 528, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 21, num_frames = 4 },
+  },
+}
+animation{
+  name = "thrust_windup",
+  src_image = "solforge_weapons/dagger_1.png",
+  directions = {
+    { x = 0, y = 384, frame_width = 48, frame_height = 48, origin_x = 16, origin_y = 29 },
+    { x = 0, y = 480, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 45 },
+    { x = 0, y = 432, frame_width = 48, frame_height = 48, origin_x = 32, origin_y = 29 },
+    { x = 0, y = 528, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 21 },
+  },
+}

@@ -1,0 +1,32 @@
+animation{
+  name = "stopped",
+  src_image = "foraging_materials/mineral/ore.png",
+  directions = {
+    { x = 0, y = 0, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29 },
+    { x = 0, y = 32, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29 },
+    { x = 0, y = 64, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29 },
+    { x = 0, y = 96, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29 },
+  },
+}
+animation{
+  name = "breaking",
+  src_image = "foraging_materials/mineral/ore.png",
+  frame_delay = 40,
+  directions = {
+    { x = 48, y = 0, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29, num_frames = 10, num_columns = 5 },
+    { x = 48, y = 0, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29, num_frames = 10, num_columns = 5 },
+    { x = 48, y = 0, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29, num_frames = 10, num_columns = 5 },
+    { x = 48, y = 0, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29, num_frames = 10, num_columns = 5 },
+  },
+}
+animation{
+  name = "debris",
+  src_image = "foraging_materials/mineral/ore.png",
+  frame_delay = 40,
+  directions = {
+    { x = 64, y = 64, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 6, num_columns = 2 },
+    { x = 64, y = 96, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 4, num_columns = 2 },
+    { x = 64, y = 64, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 6, num_columns = 2 },
+    { x = 64, y = 64, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 3, num_columns = 1 },
+  },
+}

@@ -1,0 +1,9 @@
+animation{
+  name = "glow",
+  src_image = "world_objects/treasure_glow.png",
+  frame_delay = 60,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 64, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29, num_frames = 6 },
+  },
+}

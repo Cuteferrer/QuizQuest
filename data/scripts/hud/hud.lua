@@ -28,7 +28,6 @@ local function initialize_hud_features(game)
   local action_icon
   local attack_icon
   local pause_icon
-  local hearts
   local rupees
   local keys
 
@@ -111,7 +110,7 @@ local function initialize_hud_features(game)
   end
 
   -- Enable or disable additionnal HUD info.
-  -- Example: during cinematic, extra info should be hidden (hearts, rupees, etc.)
+  -- Example: during cinematic, extra info should be hidden (, rupees, etc.)
   function game:set_hud_additionnal_info_enabled(enabled)
     if game.get_hud ~= nil then
       local hud = game:get_hud()
@@ -238,10 +237,6 @@ local function initialize_hud_features(game)
         end
       end
 
-      -- Set the transparency on the hearts.
-      if hearts then
-        hearts:set_transparent(top_right_transparent)
-      end
     end
 
     return true  -- Repeat the timer.
@@ -447,18 +442,10 @@ local function initialize_hud_features(game)
     end
   end
 
-  -- Sets the additionnal info (hearts, rupees, keys) enabled or not.
+  -- Sets the additionnal info (, rupees, keys) enabled or not.
   function hud:set_additionnal_info_enabled(enabled)
-    hud:set_hearts_enabled(enabled)
     hud:set_rupees_enabled(enabled)
     hud:set_keys_enabled(enabled)
-  end
-
-  -- Enables or disables the life counter.
-  function hud:set_hearts_enabled(enabled)
-    if hearts then
-      set_menu_enabled(hearts, enabled)
-    end
   end
 
   -- Enables or disables the life counter.
@@ -527,8 +514,6 @@ local function initialize_hud_features(game)
       end
     elseif element_config.menu_script == "scripts/hud/pause_icon" then
       pause_icon = element
-    elseif element_config.menu_script == "scripts/hud/hearts" then
-      hearts = element
     elseif element_config.menu_script == "scripts/hud/small_keys" then
       keys = element
     elseif element_config.menu_script == "scripts/hud/rupees" then

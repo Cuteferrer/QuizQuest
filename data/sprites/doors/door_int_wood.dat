@@ -1,0 +1,21 @@
+animation{
+  name = "closed",
+  src_image = "doors/interior_doors.png",
+  directions = {
+    { x = 0, y = 0, frame_width = 16, frame_height = 32, origin_x = 0, origin_y = 16 },
+    { x = 0, y = 0, frame_width = 16, frame_height = 32, origin_x = 0, origin_y = 16 },
+    { x = 0, y = 0, frame_width = 16, frame_height = 32, origin_x = 0, origin_y = 16 },
+    { x = 0, y = 0, frame_width = 16, frame_height = 32, origin_x = 0, origin_y = 16 },
+  },
+}
+animation{
+  name = "opening",
+  src_image = "doors/interior_doors.png",
+  frame_delay = 70,
+  directions = {
+    { x = 0, y = 0, frame_width = 16, frame_height = 32, origin_x = 0, origin_y = 16, num_frames = 3 },
+    { x = 0, y = 0, frame_width = 16, frame_height = 32, origin_x = 0, origin_y = 16, num_frames = 3 },
+    { x = 0, y = 0, frame_width = 16, frame_height = 32, origin_x = 0, origin_y = 16, num_frames = 3 },
+    { x = 0, y = 0, frame_width = 16, frame_height = 32, origin_x = 0, origin_y = 16, num_frames = 3 },
+  },
+}

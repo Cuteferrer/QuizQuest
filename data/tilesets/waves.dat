@@ -1,0 +1,163 @@
+background_color{ 255, 255, 255 }
+tile_pattern{
+  id = "1",
+  ground = "shallow_water",
+  default_layer = 0,
+  x = { 0, 32, 64, 96, 128, 160, 192, 224, 256, 288, 320 },
+  y = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
+  width = 32,
+  height = 64,
+  frame_delay = 150,
+  repeat_mode = "horizontal",
+}
+
+tile_pattern{
+  id = "1_2",
+  ground = "shallow_water",
+  default_layer = 0,
+  x = { 0, 32, 64, 96, 128, 160, 192, 224, 256, 288, 320 },
+  y = { 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64 },
+  width = 32,
+  height = 64,
+  frame_delay = 150,
+  repeat_mode = "horizontal",
+}
+
+tile_pattern{
+  id = "2",
+  ground = "shallow_water",
+  default_layer = 0,
+  x = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
+  y = { 128, 160, 192, 224, 256, 288, 320, 352, 384, 416, 448 },
+  width = 64,
+  height = 32,
+  frame_delay = 150,
+  repeat_mode = "vertical",
+}
+
+tile_pattern{
+  id = "2_2",
+  ground = "shallow_water",
+  default_layer = 0,
+  x = { 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64 },
+  y = { 128, 160, 192, 224, 256, 288, 320, 352, 384, 416, 448 },
+  width = 64,
+  height = 32,
+  frame_delay = 150,
+  repeat_mode = "vertical",
+}
+
+tile_pattern{
+  id = "3",
+  ground = "shallow_water",
+  default_layer = 0,
+  x = { 0, 64, 128, 192, 256, 320, 384, 448, 512, 576, 640 },
+  y = { 480, 480, 480, 480, 480, 480, 480, 480, 480, 480, 480 },
+  width = 64,
+  height = 64,
+  frame_delay = 150,
+  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "3_2",
+  ground = "shallow_water",
+  default_layer = 0,
+  x = { 0, 64, 128, 192, 256, 320, 384, 448, 512, 576, 640 },
+  y = { 544, 544, 544, 544, 544, 544, 544, 544, 544, 544, 544 },
+  width = 64,
+  height = 64,
+  frame_delay = 150,
+  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "3_3",
+  ground = "shallow_water",
+  default_layer = 0,
+  x = { 0, 64, 128, 192, 256, 320, 384, 448, 512, 576, 640 },
+  y = { 672, 672, 672, 672, 672, 672, 672, 672, 672, 672, 672 },
+  width = 64,
+  height = 64,
+  frame_delay = 150,
+  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "3_4",
+  ground = "shallow_water",
+  default_layer = 0,
+  x = { 0, 64, 128, 192, 256, 320, 384, 448, 512, 576, 640 },
+  y = { 608, 608, 608, 608, 608, 608, 608, 608, 608, 608, 608 },
+  width = 64,
+  height = 64,
+  frame_delay = 150,
+  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "4",
+  ground = "deep_water",
+  default_layer = 0,
+  x = { 144, 192, 240, 288, 336, 384, 432, 480, 528, 576, 624 },
+  y = { 288, 288, 288, 288, 288, 288, 288, 288, 288, 288, 288 },
+  width = 48,
+  height = 48,
+  frame_delay = 150,
+}
+
+tile_pattern{
+  id = "4_2",
+  ground = "deep_water",
+  default_layer = 0,
+  x = { 144, 192, 240, 288, 336, 384, 432, 480, 528, 576, 624 },
+  y = { 336, 336, 336, 336, 336, 336, 336, 336, 336, 336, 336 },
+  width = 48,
+  height = 48,
+  frame_delay = 150,
+}
+
+tile_pattern{
+  id = "4_3",
+  ground = "deep_water",
+  default_layer = 0,
+  x = { 144, 192, 240, 288, 336, 384, 432, 480, 528, 576, 624 },
+  y = { 384, 384, 384, 384, 384, 384, 384, 384, 384, 384, 384 },
+  width = 48,
+  height = 48,
+  frame_delay = 150,
+}
+
+tile_pattern{
+  id = "4_4",
+  ground = "deep_water",
+  default_layer = 0,
+  x = { 144, 192, 240, 288, 336, 384, 432, 480, 528, 576, 624 },
+  y = { 432, 432, 432, 432, 432, 432, 432, 432, 432, 432, 432 },
+  width = 48,
+  height = 48,
+  frame_delay = 150,
+}
+
+tile_pattern{
+  id = "5",
+  ground = "shallow_water",
+  default_layer = 0,
+  x = 368,
+  y = 16,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "6",
+  ground = "wall",
+  default_layer = 0,
+  x = { 400, 400, 400, 400, 400, 400, 400, 400, 400, 400, 400 },
+  y = { 64, 80, 96, 112, 128, 144, 160, 176, 192, 208, 224 },
+  width = 16,
+  height = 16,
+  frame_delay = 150,
+  repeat_mode = "horizontal",
+}
+

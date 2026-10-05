@@ -1,0 +1,52 @@
+animation{
+  name = "flying",
+  src_image = "enemies/gooseberry_enemies/maplesnap.png",
+  frame_delay = 40,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 0, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29, num_frames = 8 },
+  },
+}
+animation{
+  name = "hurt",
+  src_image = "enemies/gooseberry_enemies/maplesnap.png",
+  frame_delay = 60,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 112, y = 32, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29, num_frames = 2, num_columns = 1 },
+  },
+}
+animation{
+  name = "landing",
+  src_image = "enemies/gooseberry_enemies/maplesnap.png",
+  frame_delay = 70,
+  directions = {
+    { x = 0, y = 32, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29, num_frames = 7 },
+  },
+}
+animation{
+  name = "stopped",
+  src_image = "enemies/gooseberry_enemies/maplesnap.png",
+  frame_delay = 200,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 80, y = 32, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29, num_frames = 2 },
+  },
+}
+animation{
+  name = "takeoff",
+  src_image = "enemies/gooseberry_enemies/maplesnap.png",
+  frame_delay = 70,
+  directions = {
+    { x = 0, y = 64, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29, num_frames = 6 },
+  },
+}
+animation{
+  name = "walking",
+  src_image = "enemies/gooseberry_enemies/maplesnap.png",
+  frame_delay = 200,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 80, y = 32, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29, num_frames = 2 },
+  },
+}

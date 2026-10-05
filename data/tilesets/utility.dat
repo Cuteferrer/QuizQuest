@@ -1,0 +1,51 @@
+background_color{ 255, 255, 255 }
+tile_pattern{
+  id = "1",
+  ground = "hole",
+  default_layer = 0,
+  x = 0,
+  y = 48,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "2",
+  ground = "empty",
+  default_layer = 0,
+  x = 80,
+  y = 16,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "3",
+  ground = "empty",
+  default_layer = 0,
+  x = 88,
+  y = 16,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "4",
+  ground = "empty",
+  default_layer = 0,
+  x = 96,
+  y = 16,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "5",
+  ground = "traversable",
+  default_layer = 0,
+  x = 16,
+  y = 48,
+  width = 8,
+  height = 8,
+}
+

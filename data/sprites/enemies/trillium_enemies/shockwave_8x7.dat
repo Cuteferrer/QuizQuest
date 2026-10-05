@@ -1,0 +1,8 @@
+animation{
+  name = "stopped",
+  src_image = "enemies/trillium_enemies/shockwave_8x7.png",
+  frame_delay = 20,
+  directions = {
+    { x = 0, y = 400, frame_width = 128, frame_height = 112, origin_x = 64, origin_y = 56, num_frames = 15, num_columns = 1 },
+  },
+}

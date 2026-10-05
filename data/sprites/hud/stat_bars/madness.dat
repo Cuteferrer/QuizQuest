@@ -1,0 +1,16 @@
+animation{
+  name = "bar",
+  src_image = "hud/stat_bars/stat_bars.png",
+  directions = {
+    { x = 0, y = 136, frame_width = 512, frame_height = 8, origin_x = 0, origin_y = 0 },
+  },
+}
+animation{
+  name = "flashing",
+  src_image = "hud/stat_bars/stat_bars.png",
+  frame_delay = 70,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 128, frame_width = 512, frame_height = 8, origin_x = 0, origin_y = 0, num_frames = 2, num_columns = 1 },
+  },
+}

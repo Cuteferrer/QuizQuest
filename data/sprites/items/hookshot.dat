@@ -1,0 +1,38 @@
+animation{
+  name = "hook",
+  src_image = "items/hookshot.png",
+  directions = {
+    { x = 0, y = 0, frame_width = 16, frame_height = 16, origin_x = 4, origin_y = 8 },
+  },
+}
+animation{
+  name = "hook_multidirectional",
+  src_image = "items/hookshot.png",
+  directions = {
+    { x = 0, y = 0, frame_width = 16, frame_height = 16, origin_x = 4, origin_y = 13 },
+    { x = 16, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 17 },
+    { x = 16, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 0, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 1 },
+  },
+}
+animation{
+  name = "link",
+  src_image = "items/hookshot.png",
+  directions = {
+    { x = 48, y = 8, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 4 },
+  },
+}
+animation{
+  name = "rope_slack",
+  src_image = "items/hookshot.png",
+  directions = {
+    { x = 0, y = 48, frame_width = 96, frame_height = 16, origin_x = 0, origin_y = 8 },
+  },
+}
+animation{
+  name = "rope_taut",
+  src_image = "items/hookshot.png",
+  directions = {
+    { x = 0, y = 32, frame_width = 96, frame_height = 3, origin_x = 0, origin_y = 1 },
+  },
+}

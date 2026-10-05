@@ -1,0 +1,16 @@
+animation{
+  name = "stopped",
+  src_image = "hud/message_queue_background.png",
+  directions = {
+    { x = 0, y = 0, frame_width = 112, frame_height = 16, origin_x = 56, origin_y = 17 },
+  },
+}
+animation{
+  name = "flash",
+  src_image = "hud/message_queue_background.png",
+  frame_delay = 50,
+  frame_to_loop_on = 6,
+  directions = {
+    { x = 0, y = 16, frame_width = 112, frame_height = 16, origin_x = 56, origin_y = 17, num_frames = 7, num_columns = 1 },
+  },
+}

@@ -1,0 +1,18 @@
+animation{
+  name = "flash",
+  src_image = "effects/hit_slash_flash.png",
+  frame_delay = 60,
+  directions = {
+    { x = 0, y = 0, frame_width = 32, frame_height = 16, origin_x = 16, origin_y = 9, num_frames = 4 },
+    { x = 0, y = 16, frame_width = 32, frame_height = 16, origin_x = 16, origin_y = 9, num_frames = 4 },
+    { x = 0, y = 32, frame_width = 32, frame_height = 16, origin_x = 16, origin_y = 9, num_frames = 4 },
+    { x = 0, y = 48, frame_width = 32, frame_height = 16, origin_x = 16, origin_y = 9, num_frames = 4 },
+    { x = 0, y = 64, frame_width = 32, frame_height = 16, origin_x = 16, origin_y = 9, num_frames = 4 },
+    { x = 0, y = 80, frame_width = 32, frame_height = 16, origin_x = 16, origin_y = 9, num_frames = 4 },
+    { x = 0, y = 96, frame_width = 32, frame_height = 16, origin_x = 16, origin_y = 9, num_frames = 4 },
+    { x = 0, y = 112, frame_width = 32, frame_height = 16, origin_x = 16, origin_y = 9, num_frames = 4 },
+    { x = 0, y = 128, frame_width = 48, frame_height = 16, origin_x = 24, origin_y = 13, num_frames = 3 },
+    { x = 0, y = 144, frame_width = 48, frame_height = 16, origin_x = 24, origin_y = 13, num_frames = 3 },
+    { x = 0, y = 160, frame_width = 48, frame_height = 16, origin_x = 24, origin_y = 13, num_frames = 3 },
+  },
+}

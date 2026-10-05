@@ -1,0 +1,18 @@
+animation{
+  name = "stopped",
+  src_image = "npc/bone_king.png",
+  frame_delay = 320,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 32, frame_width = 48, frame_height = 80, origin_x = 24, origin_y = 77, num_frames = 2 },
+    { x = 0, y = 112, frame_width = 48, frame_height = 80, origin_x = 24, origin_y = 77, num_frames = 2 },
+  },
+}
+animation{
+  name = "pointing",
+  src_image = "npc/bone_king.png",
+  directions = {
+    { x = 96, y = 32, frame_width = 64, frame_height = 80, origin_x = 24, origin_y = 77 },
+    { x = 96, y = 112, frame_width = 64, frame_height = 80, origin_x = 40, origin_y = 77 },
+  },
+}

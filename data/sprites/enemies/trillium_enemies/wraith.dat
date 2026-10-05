@@ -1,0 +1,82 @@
+animation{
+  name = "walking",
+  src_image = "enemies/trillium_enemies/wraith.png",
+  frame_delay = 120,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 0, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 4 },
+    { x = 0, y = 32, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 4 },
+    { x = 0, y = 64, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 4 },
+    { x = 0, y = 96, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 4 },
+  },
+}
+animation{
+  name = "backslash_attack",
+  src_image = "enemies/trillium_enemies/wraith.png",
+  frame_delay = 70,
+  directions = {
+    { x = 416, y = 0, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 3 },
+    { x = 416, y = 32, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 3 },
+    { x = 416, y = 64, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 3 },
+    { x = 416, y = 96, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 3 },
+  },
+}
+animation{
+  name = "backslash_windup",
+  src_image = "enemies/trillium_enemies/wraith.png",
+  frame_delay = 200,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 352, y = 0, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 2 },
+    { x = 352, y = 32, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 2 },
+    { x = 352, y = 64, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 2 },
+    { x = 352, y = 96, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 2 },
+  },
+}
+animation{
+  name = "hurt",
+  src_image = "enemies/trillium_enemies/wraith.png",
+  frame_delay = 60,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 128, y = 0, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 2 },
+    { x = 128, y = 32, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 2 },
+    { x = 128, y = 64, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 2 },
+    { x = 128, y = 96, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 2 },
+  },
+}
+animation{
+  name = "slash_attack",
+  src_image = "enemies/trillium_enemies/wraith.png",
+  frame_delay = 70,
+  directions = {
+    { x = 256, y = 0, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 3 },
+    { x = 256, y = 32, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 3 },
+    { x = 256, y = 64, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 3 },
+    { x = 256, y = 96, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 3 },
+  },
+}
+animation{
+  name = "slash_windup",
+  src_image = "enemies/trillium_enemies/wraith.png",
+  frame_delay = 200,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 192, y = 0, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 2 },
+    { x = 192, y = 32, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 2 },
+    { x = 192, y = 64, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 2 },
+    { x = 192, y = 96, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 2 },
+  },
+}
+animation{
+  name = "stopped",
+  src_image = "enemies/trillium_enemies/wraith.png",
+  frame_delay = 170,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 0, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 4 },
+    { x = 0, y = 32, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 4 },
+    { x = 0, y = 64, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 4 },
+    { x = 0, y = 96, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 4 },
+  },
+}

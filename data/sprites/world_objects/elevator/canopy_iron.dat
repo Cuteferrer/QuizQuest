@@ -1,0 +1,7 @@
+animation{
+  name = "canopy",
+  src_image = "world_objects/elevators.png",
+  directions = {
+    { x = 336, y = 0, frame_width = 48, frame_height = 160, origin_x = 24, origin_y = 157 },
+  },
+}

@@ -1,0 +1,10 @@
+animation{
+  name = "stopped",
+  src_image = "foliage/foliage.png",
+  directions = {
+    { x = 128, y = 288, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 144, y = 288, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 128, y = 304, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 144, y = 304, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}

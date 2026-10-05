@@ -1,0 +1,8 @@
+animation{
+  name = "beam",
+  src_image = "lights/slant_beams.png",
+  directions = {
+    { x = 160, y = 0, frame_width = 32, frame_height = 176, origin_x = 16, origin_y = 13 },
+    { x = 192, y = 0, frame_width = 48, frame_height = 176, origin_x = 24, origin_y = 13 },
+  },
+}

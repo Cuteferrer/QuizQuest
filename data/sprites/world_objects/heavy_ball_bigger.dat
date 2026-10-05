@@ -1,0 +1,21 @@
+animation{
+  name = "on_ground",
+  src_image = "world_objects/heavy_ball.png",
+  directions = {
+    { x = 32, y = 8, frame_width = 32, frame_height = 24, origin_x = 16, origin_y = 21 },
+  },
+}
+animation{
+  name = "stopped",
+  src_image = "world_objects/heavy_ball.png",
+  directions = {
+    { x = 64, y = 8, frame_width = 32, frame_height = 24, origin_x = 16, origin_y = 21 },
+  },
+}
+animation{
+  name = "walking",
+  src_image = "world_objects/heavy_ball.png",
+  directions = {
+    { x = 64, y = 8, frame_width = 32, frame_height = 24, origin_x = 16, origin_y = 21 },
+  },
+}

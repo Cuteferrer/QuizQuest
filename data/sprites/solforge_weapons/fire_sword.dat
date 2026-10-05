@@ -1,0 +1,42 @@
+animation{
+  name = "swing",
+  src_image = "solforge_weapons/fire_sword.png",
+  frame_delay = 50,
+  directions = {
+    { x = 0, y = 0, frame_width = 48, frame_height = 48, origin_x = 16, origin_y = 37, num_frames = 7 },
+    { x = 0, y = 96, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 45, num_frames = 7 },
+    { x = 0, y = 48, frame_width = 48, frame_height = 48, origin_x = 32, origin_y = 37, num_frames = 7 },
+    { x = 0, y = 144, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 21, num_frames = 7 },
+  },
+}
+animation{
+  name = "reverse_swing",
+  src_image = "solforge_weapons/fire_sword.png",
+  frame_delay = 60,
+  directions = {
+    { x = 0, y = 192, frame_width = 48, frame_height = 48, origin_x = 16, origin_y = 29, num_frames = 6 },
+    { x = 0, y = 288, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 45, num_frames = 6 },
+    { x = 0, y = 240, frame_width = 48, frame_height = 48, origin_x = 32, origin_y = 29, num_frames = 6 },
+    { x = 0, y = 336, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 21, num_frames = 6 },
+  },
+}
+animation{
+  name = "reverse_swing_windup",
+  src_image = "solforge_weapons/fire_sword.png",
+  directions = {
+    { x = 0, y = 192, frame_width = 48, frame_height = 48, origin_x = 16, origin_y = 29 },
+    { x = 0, y = 288, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 45 },
+    { x = 0, y = 240, frame_width = 48, frame_height = 48, origin_x = 32, origin_y = 29 },
+    { x = 0, y = 336, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 21 },
+  },
+}
+animation{
+  name = "swing_windup",
+  src_image = "solforge_weapons/fire_sword.png",
+  directions = {
+    { x = 0, y = 0, frame_width = 48, frame_height = 48, origin_x = 16, origin_y = 37 },
+    { x = 0, y = 96, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 45 },
+    { x = 0, y = 48, frame_width = 48, frame_height = 48, origin_x = 32, origin_y = 37 },
+    { x = 0, y = 144, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 21 },
+  },
+}

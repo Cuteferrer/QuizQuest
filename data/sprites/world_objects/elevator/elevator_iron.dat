@@ -1,0 +1,7 @@
+animation{
+  name = "platform",
+  src_image = "world_objects/elevators.png",
+  directions = {
+    { x = 48, y = 0, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 45 },
+  },
+}

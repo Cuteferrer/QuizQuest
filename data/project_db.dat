@@ -1,10 +1,22 @@
+map{ id = "battle", description = "Battle arena for fighting " }
 map{ id = "first_map", description = "First map" }
 
+tileset{ id = "bottomless_cliffs", description = "bottomless_cliffs" }
 tileset{ id = "castle", description = "Castle" }
+tileset{ id = "dungeon/blue", description = "dungeon/blue" }
+tileset{ id = "grass_brown", description = "grass_brown" }
 tileset{ id = "house", description = "House" }
 tileset{ id = "oceanset_inside", description = "Oceanset-Inside" }
 tileset{ id = "oceanset_outside", description = "Oceanset-Outside" }
+tileset{ id = "out/outside_buildings", description = "out/outside_buildings" }
 tileset{ id = "outside", description = "Light Overworld" }
+tileset{ id = "trillium_castle", description = "trillium_castle" }
+tileset{ id = "trillium_cave", description = "trillium_cave" }
+tileset{ id = "trillium_charred_lands", description = "trillium_charred_lands" }
+tileset{ id = "trillium_interior", description = "trillium_interior" }
+tileset{ id = "trillium_ruins", description = "trillium_ruins" }
+tileset{ id = "trillium_snow", description = "trillium_snow" }
+tileset{ id = "trillium_town", description = "trillium_town" }
 
 sprite{ id = "animals/bird_red", description = "Red Bird" }
 sprite{ id = "animals/butterfly_blue", description = "Butterfly blue" }
@@ -122,6 +134,7 @@ sprite{ id = "hud/icon_item_2", description = "Item 2 icon" }
 sprite{ id = "hud/icon_pause", description = "Pause icon" }
 sprite{ id = "hud/magic_bar", description = "Magic bar" }
 sprite{ id = "menus/arrow", description = "Arrow" }
+sprite{ id = "menus/battle_start" }
 sprite{ id = "menus/options_cursor", description = "Options cursor" }
 sprite{ id = "menus/solarus_logo", description = "Solarus logo" }
 sprite{ id = "menus/team_logo", description = "Solarus Team logo" }
@@ -364,7 +377,7 @@ file{ path = "scripts/game_manager.lua", author = "Christopho", license = "GPL v
 file{ path = "scripts/hud", license = "GPL v3" }
 file{ path = "scripts/hud/action_icon.lua", author = "Christopho", license = "GPL v3" }
 file{ path = "scripts/hud/attack_icon.lua", author = "Olivier Cléro", license = "GPL v3" }
-file{ path = "scripts/hud/hearts.lua", author = "Christopho", license = "GPL v3" }
+file{ path = "scripts/hud/hearts.lua.old", author = "Christopho", license = "GPL v3" }
 file{ path = "scripts/hud/hud.lua", author = "Christopho, Olivier Cléro", license = "GPL v3" }
 file{ path = "scripts/hud/hud_config.lua", author = "Christopho", license = "GPL v3" }
 file{ path = "scripts/hud/hud_icon.lua", author = "Olivier Cléro", license = "GPL v3" }
@@ -376,7 +389,6 @@ file{ path = "scripts/language_manager.lua", author = "Christopho", license = "G
 file{ path = "scripts/menus", license = "GPL v3" }
 file{ path = "scripts/menus/dialog_box.lua", author = "Christopho", license = "GPL v3" }
 file{ path = "scripts/menus/initial_menus_config.lua", author = "Christopho", license = "GPL v3" }
-file{ path = "scripts/menus/solarus_logo.lua", author = "Maxs", license = "GPL v3" }
 file{ path = "scripts/menus/start_game.lua", author = "Christopho", license = "GPL v3" }
 file{ path = "scripts/multi_events.lua", author = "Christopho, std::gregwar", license = "GPL v3" }
 file{ path = "scripts/text_fx_helper.lua", author = "Olivier Cléro", license = "GPL v3" }

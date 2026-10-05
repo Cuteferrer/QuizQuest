@@ -1,0 +1,8 @@
+animation{
+  name = "normal",
+  src_image = "effects/dash_burst.png",
+  frame_delay = 30,
+  directions = {
+    { x = 0, y = 0, frame_width = 48, frame_height = 32, origin_x = 40, origin_y = 16, num_frames = 4 },
+  },
+}

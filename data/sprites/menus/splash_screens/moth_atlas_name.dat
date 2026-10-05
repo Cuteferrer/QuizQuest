@@ -1,0 +1,7 @@
+animation{
+  name = "max",
+  src_image = "menus/splash_screens/moths.png",
+  directions = {
+    { x = 144, y = 64, frame_width = 48, frame_height = 32, origin_x = 24, origin_y = 16 },
+  },
+}

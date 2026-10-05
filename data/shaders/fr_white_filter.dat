@@ -1,0 +1,4 @@
+shader{
+  fragment_file = "fr_white_filter.frag.glsl",
+  scaling_factor = 1,
+}

@@ -1,0 +1,17 @@
+animation{
+  name = "stopped",
+  src_image = "foliage/foliage.png",
+  frame_delay = 360,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 224, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 4 },
+  },
+}
+animation{
+  name = "stopped (copy)",
+  src_image = "foliage/foliage.png",
+  frame_delay = 70,
+  directions = {
+    { x = 0, y = 240, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 4 },
+  },
+}

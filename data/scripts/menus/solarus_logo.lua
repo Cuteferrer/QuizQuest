@@ -15,19 +15,19 @@ local solarus_logo_menu = {}
 local surface = sol.surface.create(201, 48)
 
 -- Solarus title sprite.
-local title = sol.sprite.create("menus/solarus_logo")
+local title = sol.sprite.create("menus/solarus_logo/solarus_logo")
 title:set_animation("title")
 
 -- Solarus subtitle sprite.
-local subtitle = sol.sprite.create("menus/solarus_logo")
+local subtitle = sol.sprite.create("menus/solarus_logo/solarus_logo")
 subtitle:set_animation("subtitle")
 
 -- Sun sprite.
-local sun = sol.sprite.create("menus/solarus_logo")
+local sun = sol.sprite.create("menus/solarus_logo/solarus_logo")
 sun:set_animation("sun")
 
 -- Sword sprite.
-local sword = sol.sprite.create("menus/solarus_logo")
+local sword = sol.sprite.create("menus/solarus_logo/solarus_logo")
 sword:set_animation("sword")
 
 -- Black square below the sun.
@@ -97,7 +97,7 @@ function solarus_logo_menu:step1()
   sword:stop_movement()
   sword:set_xy(-48, 48)
   -- Play a sound.
-  sol.audio.play_sound("diarandor/solarus_logo")
+  sol.audio.play_sound("solarus_logo/solarus_logo")
   -- Update the surface.
   rebuild_surface()
 end
@@ -209,12 +209,5 @@ function solarus_logo_menu:on_key_pressed(key)
   end
 end
 
-local game_meta = sol.main.get_metatable("game")
-game_meta:register_event("on_started", function()
-  -- A game was started during the logo, possibly from a debug key or automated tests.
-  sol.menu.stop(solarus_logo_menu)
-end)
-
 -- Return the menu to the caller.
 return solarus_logo_menu
-

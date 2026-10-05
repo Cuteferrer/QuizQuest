@@ -1,0 +1,21 @@
+animation{
+  name = "thrust_windup",
+  src_image = "enemies/shadblow_enemies/skeleton_soldier.png",
+  directions = {
+    { x = 0, y = 368, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29 },
+    { x = 0, y = 336, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29 },
+    { x = 16, y = 400, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29 },
+    { x = 0, y = 256, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29 },
+  },
+}
+animation{
+  name = "thrust_attack",
+  src_image = "enemies/shadblow_enemies/skeleton_soldier.png",
+  frame_delay = 70,
+  directions = {
+    { x = 0, y = 368, frame_width = 48, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 6 },
+    { x = 0, y = 320, frame_width = 32, frame_height = 48, origin_x = 16, origin_y = 45, num_frames = 6 },
+    { x = 0, y = 400, frame_width = 48, frame_height = 32, origin_x = 40, origin_y = 29, num_frames = 6 },
+    { x = 0, y = 256, frame_width = 32, frame_height = 64, origin_x = 16, origin_y = 29, num_frames = 6 },
+  },
+}

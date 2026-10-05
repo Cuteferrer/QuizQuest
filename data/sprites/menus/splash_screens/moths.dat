@@ -1,0 +1,9 @@
+animation{
+  name = "moths",
+  src_image = "menus/splash_screens/moths.png",
+  frame_delay = 120,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 0, frame_width = 48, frame_height = 32, origin_x = 24, origin_y = 16, num_frames = 10, num_columns = 5 },
+  },
+}

@@ -1,0 +1,8 @@
+animation{
+  name = "killed",
+  src_image = "hero_projectiles/hero_projectiles.png",
+  frame_delay = 40,
+  directions = {
+    { x = 0, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 9, num_frames = 4 },
+  },
+}
