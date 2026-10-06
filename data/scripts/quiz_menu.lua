@@ -11,7 +11,6 @@ local FONT = "enter_command"
 local QUESTIONS_FILE = "questions/fragen.json"
 local IMAGE_DIR = "images/"                 -- media.src -> images/<src>.png
 
--- ---- макет в координатах квеста (подгони под quest size) ----
 local PROMPT_X, PROMPT_Y        = 16, 12
 local PROMPT_IMG_W, PROMPT_IMG_H = 96, 50
 local OPT_X, OPT_Y0, OPT_STEP   = 16, 110, 20
@@ -21,7 +20,6 @@ local ENEMY_HEARTS_X, ENEMY_HEARTS_Y   = 244, 96
 local PLAYER_HEARTS_X, PLAYER_HEARTS_Y = 10, 10
 local HEART                     = 10
 local PROMPT_W = 288
--- -------------------------------------------------------------
 
 -- questions load
 local questions_by_id = nil

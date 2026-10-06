@@ -4,6 +4,7 @@ map{ id = "first_map", description = "First map" }
 tileset{ id = "bottomless_cliffs", description = "bottomless_cliffs" }
 tileset{ id = "castle", description = "Castle" }
 tileset{ id = "dungeon/blue", description = "dungeon/blue" }
+tileset{ id = "dungeon/gray", description = "dungeon/gray" }
 tileset{ id = "grass_brown", description = "grass_brown" }
 tileset{ id = "house", description = "House" }
 tileset{ id = "oceanset_inside", description = "Oceanset-Inside" }

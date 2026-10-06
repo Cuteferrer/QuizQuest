@@ -1,28 +1,29 @@
 dialog{
-  id = "Welcome",
-  next = "Welcome.Two",
-  question = true,
+  id = "Handygarage",
+  next = "Handygarage.2",
   text = [[
-Welcome to the QuizQuest!!
-Meow
-WTF
+Handygarage. 
+Hängt hier seit Anfang 
+des Jahres.
 ]],
 }
 
 dialog{
-  id = "Welcome.Two",
+  id = "Handygarage.2",
+  next = "Handygarage.3",
   text = [[
-I beg you.
+Darin sieht man 
+ein vergessenes Handy.
 ]],
 }
 
 dialog{
-  id = "uml1",
-  question = true,
+  id = "Handygarage.3",
+  question = "1",
   text = [[
-What is a UML?
-idk
-some shit
+Mitnehmen?
+Nein
+Ja
 ]],
 }
 
