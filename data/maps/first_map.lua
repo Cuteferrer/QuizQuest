@@ -12,11 +12,10 @@ local game = map:get_game()
 
 
 function npc1:on_interaction()
-	-- Запоминаем набор анимаций текущего спрайта npc1.
-game.quiz_return_map  = map:get_id()          -- id текущей карты
-game.quiz_return_dest = "near_npc"            -- destination на этой карте рядом с NPC
+game.quiz_return_map  = map:get_id()          -- current map id
+game.quiz_return_dest = "near_npc"            -- destination on the map near NPC
 	game.shared_npc_animation_set = npc1:get_sprite():get_animation_set()
-	-- Переходим на другую карту.
+	-- next map transition
 	map:get_hero():teleport("battle", "start")
 end
 

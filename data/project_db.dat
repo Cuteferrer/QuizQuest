@@ -1,5 +1,6 @@
 map{ id = "battle", description = "Battle arena for fighting " }
 map{ id = "first_map", description = "First map" }
+map{ id = "flur" }
 
 tileset{ id = "bottomless_cliffs", description = "bottomless_cliffs" }
 tileset{ id = "castle", description = "Castle" }

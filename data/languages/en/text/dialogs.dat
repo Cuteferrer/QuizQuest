@@ -27,3 +27,28 @@ Ja
 ]],
 }
 
+dialog{
+  id = "Tafel_N002",
+  next = "Tafel_N002.zeichnen",
+  question = "1",
+  text = [[
+Soll ich etwas zeichnen?
+Ja
+Nein
+]],
+}
+
+dialog{
+  id = "Tafel_N002.zeichnen",
+  text = [[
+Was soll ich zeichnen?
+]],
+}
+
+dialog{
+  id = "old_rechner",
+  text = [[
+Altes Rechner mit Maus
+]],
+}
+
