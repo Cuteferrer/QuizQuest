@@ -26,7 +26,7 @@ local questions_by_id = nil
 local function load_index()
 	if questions_by_id then return questions_by_id end
 	local f, err = sol.file.open(QUESTIONS_FILE)
-	if not f then error("Не открыть " .. QUESTIONS_FILE .. ": " .. tostring(err)) end
+	if not f then error("Unable to open " .. QUESTIONS_FILE .. ": " .. tostring(err)) end
 	local content = f:read("*a")
 	f:close()
 	content = content:gsub("^\239\187\191", "")  
