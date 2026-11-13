@@ -2,6 +2,7 @@ map{ id = "Level4/Start4", description = "Starting-room" }
 map{ id = "battle", description = "Battle arena for fighting " }
 map{ id = "first_map", description = "First map" }
 map{ id = "flur" }
+map{ id = "level_julian" }
 
 tileset{ id = "bottomless_cliffs", description = "bottomless_cliffs" }
 tileset{ id = "castle", description = "Castle" }
@@ -358,9 +359,8 @@ file{ path = "items/sword.lua", author = "Christopho", license = "GPL v3" }
 file{ path = "items/tunic.lua", author = "Christopho", license = "GPL v3" }
 file{ path = "languages/en/text/strings.dat", author = "Christopho", license = "CC BY-SA 4.0" }
 file{ path = "main.lua", author = "Christopho", license = "GPL v3" }
-file{ path = "maps/Level4", author = "Fabian Ecker", }
-file{ path = "maps/Level4/Start4.dat", author = "Fabian Ecker", }
-file{ path = "maps/Level4/Start4.lua", author = "Fabian Ecker", }
+file{ path = "maps/level_julian.dat", author = "Julian", }
+file{ path = "maps/level_julian.lua", author = "Julian", }
 file{ path = "musics/eduardo", author = "Eduardo Dueñas", license = "CC BY-SA 4.0" }
 file{ path = "musics/eduardo/boss.ogg", author = "Eduardo Dueñas", license = "CC BY-SA 4.0" }
 file{ path = "musics/eduardo/cave.ogg", author = "Eduardo Dueñas", license = "CC BY-SA 4.0" }
