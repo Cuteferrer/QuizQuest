@@ -1,0 +1,417 @@
+[
+{
+"id": "AE2_DEV_Q001",
+"topic": "SQL / Datenbanken",
+"type": "single_choice",
+"question": "Sie möchten aus der Datenbank alle Kunden abfragen, die noch keine Bestellung aufgegeben haben. Welches SQL-Statement verknüpft die Tabellen korrekt und filtert die gewünschten Datensätze heraus?",
+"media": {
+"type": "image",
+"src": "AE2_DEV_Q001.png",
+"alt": "ER-Diagramm mit zwei Tabellen: Kunden (KundenID, Name) und Bestellungen (BestellID, KundenID, Datum)."
+},
+"options": [
+{ "id": "A", "text": "SELECT k.Name FROM Kunden k LEFT JOIN Bestellungen b ON k.KundenID = b.KundenID WHERE b.KundenID IS NULL;" },
+{ "id": "B", "text": "SELECT k.Name FROM Kunden k INNER JOIN Bestellungen b ON k.KundenID = b.KundenID WHERE b.KundenID IS NULL;" },
+{ "id": "C", "text": "SELECT k.Name FROM Kunden k LEFT JOIN Bestellungen b ON k.KundenID = b.KundenID WHERE b.KundenID = NULL;" },
+{ "id": "D", "text": "SELECT k.Name FROM Kunden k RIGHT JOIN Bestellungen b ON k.KundenID = b.KundenID WHERE k.KundenID IS NULL;" }
+],
+"correct_answers": ["A"],
+"explanation": "Ein LEFT JOIN behält alle Kunden. Kunden ohne Bestellung haben in den Spalten der Ergebnistabelle für 'Bestellungen' den Wert NULL. Die Bedingung IS NULL ist zwingend erforderlich, da Vergleiche mit = NULL in SQL 'UNKNOWN' ergeben."
+},
+{
+"id": "AE2_DEV_Q002",
+"topic": "SQL / Datenbanken",
+"type": "single_choice",
+"question": "Gegeben ist die Tabelle 'Bestellpositionen' mit dem zusammengesetzten Primärschlüssel (BestellID, ArtikelID) und den weiteren Spalten Menge, ArtikelName und ArtikelPreis. Welcher funktionale Zusammenhang verletzt hier die 2. Normalform (2NF)?",
+"media": null,
+"options": [
+{ "id": "A", "text": "ArtikelName ist nur vom Teil-Schlüssel ArtikelID abhängig und nicht vom gesamten Primärschlüssel." },
+{ "id": "B", "text": "Menge ist direkt vom zusammengesetzten Primärschlüssel (BestellID, ArtikelID) abhängig." },
+{ "id": "C", "text": "ArtikelPreis ist transitiv von der BestellID über den Kunden abhängig." },
+{ "id": "D", "text": "Die Spalte BestellID enthält mehrfache (nicht-atomare) Werte pro Zeile." }
+],
+"correct_answers": ["A"],
+"explanation": "Die 2. Normalform fordert, dass jedes Nichtschlüsselattribut voll funktional vom gesamten Primärschlüssel abhängt. Da ArtikelName nur von ArtikelID abhängt (Teil-Schlüsselabhängigkeit), liegt ein Verstoß gegen die 2NF vor."
+},
+{
+"id": "AE2_DEV_Q003",
+"topic": "SQL / Datenbanken",
+"type": "single_choice",
+"question": "Sie sollen die Anzahl aller Projekte pro Abteilung ermitteln, deren durchschnittliche Projektdauer mehr als 30 Tage beträgt. Welche SQL-Klausel ist syntaktisch und logisch korrekt?",
+"media": {
+"type": "image",
+"src": "AE2_DEV_Q003.png",
+"alt": "Tabellenausschnitt der Tabelle 'Projekte' mit den Spalten ProjektID, AbteilungID und Dauer."
+},
+"options": [
+{ "id": "A", "text": "SELECT AbteilungID, COUNT(*) FROM Projekte GROUP BY AbteilungID HAVING AVG(Dauer) > 30;" },
+{ "id": "B", "text": "SELECT AbteilungID, COUNT(*) FROM Projekte WHERE AVG(Dauer) > 30 GROUP BY AbteilungID;" },
+{ "id": "C", "text": "SELECT AbteilungID, COUNT(*) FROM Projekte GROUP BY AbteilungID WHERE AVG(Dauer) > 30;" },
+{ "id": "D", "text": "SELECT AbteilungID, COUNT(*) FROM Projekte HAVING AVG(Dauer) > 30;" }
+],
+"correct_answers": ["A"],
+"explanation": "Aggregatfunktionen wie AVG() dürfen nicht in der WHERE-Klausel stehen. Um nach einer Aggregation zu filtern, muss HAVING nach der GROUP BY-Klausel eingesetzt werden."
+},
+{
+"id": "AE2_DEV_Q004",
+"topic": "SQL / Datenbanken",
+"type": "single_choice",
+"question": "Eine Datenbankrelation befindet sich bereits in der 2. Normalform (2NF). Unter welcher Bedingung ist auch die 3. Normalform (3NF) erfüllt?",
+"media": null,
+"options": [
+{ "id": "A", "text": "Kein Nichtschlüsselattribut ist transitiv von einem Kandidatenschlüssel abhängig." },
+{ "id": "B", "text": "Alle Spalten enthalten ausschließlich atomare Werte." },
+{ "id": "C", "text": "Jedes Nichtschlüsselattribut hängt voll funktional vom Primärschlüssel ab." },
+{ "id": "D", "text": "Sämtliche Fremdschlüssel verweisen auf einen bestehenden Primärschlüssel." }
+],
+"correct_answers": ["A"],
+"explanation": "Die 3NF ist erreicht, wenn die Relation in 2NF vorliegt und kein Nichtschlüsselattribut transitiv von einem Schlüsselattribut abhängt (d.h. kein Nichtschlüsselattribut bestimmt ein anderes Nichtschlüsselattribut)."
+},
+{
+"id": "AE2_DEV_Q005",
+"topic": "SQL / Datenbanken",
+"type": "single_choice",
+"question": "Sie nutzen das Statement SELECT * FROM Kunden WHERE KundenID NOT IN (SELECT KundenID FROM Bestellungen). Welches Problem entsteht, wenn die Spalte Bestellungen.KundenID mindestens einen Wert NULL enthält?",
+"media": null,
+"options": [
+{ "id": "A", "text": "Die Abfrage liefert eine leere Ergebnismenge zurück, da der Vergleich mit NULL bei NOT IN immer UNKNOWN ergibt." },
+{ "id": "B", "text": "Die Abfrage ignoriert die NULL-Werte automatisch und gibt alle passenden Kunden aus." },
+{ "id": "C", "text": "Das SQL-Statement bricht mit einem Syntaxfehler ab." },
+{ "id": "D", "text": "Es werden fälschlicherweise alle Kunden aus der Tabelle ausgegeben." }
+],
+"correct_answers": ["A"],
+"explanation": "In SQL führt ein NOT IN (..., NULL) dazu, dass jede Zeilenprüfung den Wahrheitswert UNKNOWN annimmt. Dadurch liefert die gesamte WHERE-Bedingung niemals TRUE und das Ergebnis bleibt leer."
+},
+{
+"id": "AE2_DEV_Q006",
+"topic": "SQL / Datenbanken",
+"type": "single_choice",
+"question": "Welche SQL-Abfrage berechnet den Gesamtumsatz (Menge * Einzelpreis) für jeden Kunden anhand der drei abgebildeten Tabellen korrekt?",
+"media": {
+"type": "image",
+"src": "AE2_DEV_Q006.png",
+"alt": "Schema mit 3 Tabellen: Kunden (KundenID, Name), Bestellungen (BestellID, KundenID), Bestellpositionen (BestellID, Menge, Einzelpreis)."
+},
+"options": [
+{ "id": "A", "text": "SELECT k.Name, SUM(bp.Menge * bp.Einzelpreis) FROM Kunden k JOIN Bestellungen b ON k.KundenID = b.KundenID JOIN Bestellpositionen bp ON b.BestellID = bp.BestellID GROUP BY k.KundenID, k.Name;" },
+{ "id": "B", "text": "SELECT k.Name, SUM(bp.Menge * bp.Einzelpreis) FROM Kunden k, Bestellungen b, Bestellpositionen bp WHERE k.KundenID = bp.BestellID GROUP BY k.Name;" },
+{ "id": "C", "text": "SELECT k.Name, COUNT(bp.Menge * bp.Einzelpreis) FROM Kunden k JOIN Bestellungen b ON k.KundenID = b.KundenID JOIN Bestellpositionen bp ON b.BestellID = bp.BestellID GROUP BY k.Name;" },
+{ "id": "D", "text": "SELECT k.Name, SUM(bp.Menge * bp.Einzelpreis) FROM Kunden k JOIN Bestellpositionen bp ON k.KundenID = bp.BestellID GROUP BY k.Name;" }
+],
+"correct_answers": ["A"],
+"explanation": "Um vom Kunden zur Bestellposition zu gelangen, muss die Zwischentabelle 'Bestellungen' ordnungsgemäß verknüpft werden. Die Aggregatfunktion SUM berechnet den Gesamtumsatz und GROUP BY fasst nach Kunden zusammen."
+},
+{
+"id": "AE2_DEV_Q007",
+"topic": "SQL / Datenbanken",
+"type": "single_choice",
+"question": "Sie möchten in der Tabelle 'Kunden' den Status für alle Kunden auf 'inaktiv' setzen, deren 'LetzterLogin' vor dem '2025-01-01' lag. Welches SQL-Kommando ist korrekt?",
+"media": null,
+"options": [
+{ "id": "A", "text": "UPDATE Kunden SET Status = 'inaktiv' WHERE LetzterLogin < '2025-01-01';" },
+{ "id": "B", "text": "ALTER TABLE Kunden SET Status = 'inaktiv' WHERE LetzterLogin < '2025-01-01';" },
+{ "id": "C", "text": "MODIFY Kunden SET Status = 'inaktiv' WHERE LetzterLogin < '2025-01-01';" },
+{ "id": "D", "text": "UPDATE Kunden WHERE LetzterLogin < '2025-01-01' SET Status = 'inaktiv';" }
+],
+"correct_answers": ["A"],
+"explanation": "Die Syntax zum Aktualisieren von Zeilen lautet: UPDATE Tabelle SET Spalte = Wert WHERE Bedingung;. ALTER TABLE wird für Strukturänderungen verwendet."
+},
+{
+"id": "AE2_DEV_Q008",
+"topic": "Algorithmen & Datenstrukturen",
+"type": "single_choice",
+"question": "Das abgebildete Array [5, 1, 4, 2, 8] soll mit dem 'Bubble Sort'-Algorithmus aufsteigend sortiert werden. Welchen Zustand hat das Array nach dem ersten vollständigen äußeren Durchlauf?",
+"media": {
+"type": "image",
+"src": "AE2_DEV_Q008.png",
+"alt": "Grafik des Ausgangs-Arrays: [5, 1, 4, 2, 8]"
+},
+"options": [
+{ "id": "A", "text": "[1, 4, 2, 5, 8]" },
+{ "id": "B", "text": "[1, 2, 4, 5, 8]" },
+{ "id": "C", "text": "[5, 1, 2, 4, 8]" },
+{ "id": "D", "text": "[1, 5, 4, 2, 8]" }
+],
+"correct_answers": ["A"],
+"explanation": "Schrittfolge des 1. Durchlaufs: Vergleiche 5 & 1 -> [1, 5, 4, 2, 8]; Vergleiche 5 & 4 -> [1, 4, 5, 2, 8]; Vergleiche 5 & 2 -> [1, 4, 2, 5, 8]; Vergleiche 5 & 8 -> keine Änderung. Ergebnis: [1, 4, 2, 5, 8]."
+},
+{
+"id": "AE2_DEV_Q009",
+"topic": "Algorithmen & Datenstrukturen",
+"type": "single_choice",
+"question": "Welche Voraussetzung muss zwingend erfüllt sein, um eine Binäre Suche auf einem Array durchführen zu können, und welche Zeitkomplexität besitzt sie?",
+"media": null,
+"options": [
+{ "id": "A", "text": "Das Array muss sortiert vorliegen; Zeitkomplexität O(log n)." },
+{ "id": "B", "text": "Das Array muss als doppelt verkettete Liste vorliegen; Zeitkomplexität O(1)." },
+{ "id": "C", "text": "Das Array darf keine doppelten Elemente enthalten; Zeitkomplexität O(n)." },
+{ "id": "D", "text": "Alle Werte müssen positiv sein; Zeitkomplexität O(n log n)." }
+],
+"correct_answers": ["A"],
+"explanation": "Eine binäre Suche funktioniert nur auf sortierten Daten, da in jedem Schritt anhand des Mittenwerts eine Hälfte verworfen wird. Durch die stetige Halbierung beträgt der Aufwand O(log n)."
+},
+{
+"id": "AE2_DEV_Q010",
+"topic": "Algorithmen & Datenstrukturen",
+"type": "single_choice",
+"question": "In einem sortierten Array mit 9 Elementen (Indizes 0 bis 8) wird mittels Binärer Suche nach dem Wert 37 gesucht. Welches Element wird als Erstes als Mitte (Mid) geprüft?",
+"media": {
+"type": "image",
+"src": "AE2_DEV_Q010.png",
+"alt": "Array mit Werten: Index 0: 3, 1: 8, 2: 12, 3: 19, 4: 24, 5: 31, 6: 37, 7: 42, 8: 50."
+},
+"options": [
+{ "id": "A", "text": "Das Element an Index 4 (Wert 24)" },
+{ "id": "B", "text": "Das Element an Index 3 (Wert 19)" },
+{ "id": "C", "text": "Das Element an Index 6 (Wert 37)" },
+{ "id": "D", "text": "Das Element an Index 0 (Wert 3)" }
+],
+"correct_answers": ["A"],
+"explanation": "Die Mitte berechnet sich über (0 + 8) / 2 = 4. Das Element an Index 4 ist die Zahl 24."
+},
+{
+"id": "AE2_DEV_Q011",
+"topic": "Algorithmen & Datenstrukturen",
+"type": "single_choice",
+"question": "Auf einen leeren Stack werden nacheinander die Operationen push(10), push(20), pop(), push(30), push(40) und pop() ausgeführt. Welches Element liegt danach oben auf dem Stack?",
+"media": null,
+"options": [
+{ "id": "A", "text": "30" },
+{ "id": "B", "text": "40" },
+{ "id": "C", "text": "20" },
+{ "id": "D", "text": "10" }
+],
+"correct_answers": ["A"],
+"explanation": "Ablauf: push(10) -> [10]; push(20) -> [10, 20]; pop() entfernt 20 -> [10]; push(30) -> [10, 30]; push(40) -> [10, 30, 40]; pop() entfernt 40 -> [10, 30]. Oben liegt nun 30."
+},
+{
+"id": "AE2_DEV_Q012",
+"topic": "Pseudocode",
+"type": "single_choice",
+"question": "Welcher Endwert steht nach Ablauf des abgebildeten Pseudocodes in der Variable 'ergebnis'?",
+"media": {
+"type": "image",
+"src": "AE2_DEV_Q012.png",
+"alt": "Pseudocode: INTEGER ergebnis = 1; FOR i = 1 TO 4 DO IF i MOD 2 == 1 THEN ergebnis = ergebnis * i; END IF; END FOR;"
+},
+"options": [
+{ "id": "A", "text": "3" },
+{ "id": "B", "text": "8" },
+{ "id": "C", "text": "24" },
+{ "id": "D", "text": "12" }
+],
+"correct_answers": ["A"],
+"explanation": "i durchläuft 1, 2, 3, 4. Die IF-Bedingung i MOD 2 == 1 trifft nur für ungerade Zahlen zu (i=1 und i=3). Bei i=1: ergebnis = 1 * 1 = 1. Bei i=3: ergebnis = 1 * 3 = 3. Endstand ist 3."
+},
+{
+"id": "AE2_DEV_Q013",
+"topic": "Pseudocode",
+"type": "single_choice",
+"question": "Gegeben sei folgender Pseudocode:\n\nDOUBLE preis = 100.0\nBOOLEAN istKunde = TRUE\nINTEGER punkte = 50\nIF istKunde AND punkte >= 100 OR preis > 80 THEN\n  preis = preis * 0.9\nEND IF\n\nWelchen Wert hat 'preis' am Ende (bei Standard-Operatorpriorität: AND bindet stäker als OR)?",
+"media": null,
+"options": [
+{ "id": "A", "text": "90.0" },
+{ "id": "B", "text": "100.0" },
+{ "id": "C", "text": "80.0" },
+{ "id": "D", "text": "95.0" }
+],
+"correct_answers": ["A"],
+"explanation": "Aufgrund der Bindung von AND wird zuerst istKunde AND punkte >= 100 ausgewertet (TRUE AND FALSE = FALSE). Danach wird FALSE OR preis > 80 ausgewertet (preis > 80 ist TRUE). Die Bedingung ist somit erfüllt und der Preis wird um 10% auf 90.0 reduziert."
+},
+{
+"id": "AE2_DEV_Q014",
+"topic": "Pseudocode",
+"type": "single_choice",
+"question": "Welchen Wert hat das Element arr[1] nach Ausführung der abgebildeten Zuweisungen?",
+"media": {
+"type": "image",
+"src": "AE2_DEV_Q014.png",
+"alt": "Pseudocode: ARRAY arr = [15, 30, 45]; INTEGER temp = arr[0]; arr[0] = arr[1]; arr[1] = temp;"
+},
+"options": [
+{ "id": "A", "text": "15" },
+{ "id": "B", "text": "30" },
+{ "id": "C", "text": "45" },
+{ "id": "D", "text": "0" }
+],
+"correct_answers": ["A"],
+"explanation": "Der Code führt einen klassichen Tausch der ersten zwei Elemente durch. temp speichert 15 (arr[0]). Anschließend wird arr[0] zu 30 und arr[1] wird der Wert aus temp (15) zugewiesen."
+},
+{
+"id": "AE2_DEV_Q015",
+"topic": "Pseudocode",
+"type": "single_choice",
+"question": "Sie möchten in einer Schleife alle geraden Zahlen von 2 bis 10 (inklusive 10) ausgeben. Welche Schleifenkonstruktion erreicht dies korrekt?",
+"media": null,
+"options": [
+{ "id": "A", "text": "FOR i = 2 TO 10 STEP 2 DO PRINT(i) END FOR" },
+{ "id": "B", "text": "FOR i = 2 TO 10 STEP 1 DO PRINT(i * 2) END FOR" },
+{ "id": "C", "text": "FOR i = 0 TO 10 STEP 2 DO PRINT(i + 2) END FOR" },
+{ "id": "D", "text": "FOR i = 2 WHILE i <= 10 STEP 2 DO PRINT(i) END FOR" }
+],
+"correct_answers": ["A"],
+"explanation": "Die FOR-Schleife mit STEP 2 erhöht die Laufvariable i in jedem Durchlauf um 2, sodass exakt die Werte 2, 4, 6, 8, 10 ausgegeben werden."
+},
+{
+"id": "AE2_DEV_Q016",
+"topic": "Pseudocode",
+"type": "single_choice",
+"question": "Gegeben sei die folgende rekursive Funktion:\n\nFUNCTION calc(n)\n  IF n <= 1 THEN RETURN 1\n  RETURN n + calc(n - 1)\nEND FUNCTION\n\nWelchen Rückgabewert liefert der Aufruf calc(4)?",
+"media": null,
+"options": [
+{ "id": "A", "text": "10" },
+{ "id": "B", "text": "24" },
+{ "id": "C", "text": "8" },
+{ "id": "D", "text": "4" }
+],
+"correct_answers": ["A"],
+"explanation": "Rekursionsauflösung: calc(4) = 4 + calc(3) = 4 + 3 + calc(2) = 4 + 3 + 2 + calc(1) = 4 + 3 + 2 + 1 = 10."
+},
+{
+"id": "AE2_DEV_Q017",
+"topic": "Fehleranalyse",
+"type": "single_choice",
+"question": "Der abgebildete Pseudocode soll alle Werte des Arrays verarbeiten, erzeugt jedoch beim Ausführen einen Fehler. Welcher Fehler liegt vor?",
+"media": {
+"type": "image",
+"src": "Image_Q017.png",
+"alt": "Pseudocode: ARRAY zahlen = [10, 20, 30]; INTEGER summe = 0; FOR i = 0 TO 3 DO summe = summe + zahlen[i]; END FOR"
+},
+"options": [
+{ "id": "A", "text": "Off-by-one Fehler: Die Schleife läuft bis Index 3, das Array besitzt aber nur die Indizes 0 bis 2." },
+{ "id": "B", "text": "Typfehler: Die Variable summe muss als Float deklariert werden." },
+{ "id": "C", "text": "Syntaxfehler: Arrays dürfen im Pseudocode nicht mit eckigen Klammern deklariert werden." },
+{ "id": "D", "text": "Initialisierungsfehler: Das Array ist vor der Schleife leer." }
+],
+"correct_answers": ["A"],
+"explanation": "Ein Array der Länge 3 mit 0-basierter Indizierung hat die Indizes 0, 1 und 2. Der Schleifendurchlauf für i = 3 greift über die Grenzen hinaus (IndexOutOfBoundsException)."
+},
+{
+"id": "AE2_DEV_Q018",
+"topic": "Fehleranalyse",
+"type": "single_choice",
+"question": "Eine Funktion soll prüfen, ob eine E-Mail gültig ist (sie muss ein '@' enthalten UND mindestens 5 Zeichen lang sein). Im Code steht:\nIF email.contains('@') OR email.length() >= 5 THEN RETURN TRUE\nWelcher logische Fehler liegt hier vor?",
+"media": null,
+"options": [
+{ "id": "A", "text": "Durch 'OR' reicht bereits eine der beiden Bedingungen aus (z.B. 5 Zeichen ohne '@')." },
+{ "id": "B", "text": "Der Befehl email.length() wirft einen Syntaxfehler bei Zeichenketten." },
+{ "id": "C", "text": "Strings können in IF-Bedingungen nicht verknüpft werden." },
+{ "id": "D", "text": "Das Programm stürzt ab, wenn die E-Mail genau 5 Zeichen lang ist." }
+],
+"correct_answers": ["A"],
+"explanation": "Anstelle von OR muss ein logisches UND (AND) genutzt werden, damit beide Prüfkriterien zwingend gleichzeitig erfüllt sein müssen."
+},
+{
+"id": "AE2_DEV_Q019",
+"topic": "Fehleranalyse",
+"type": "single_choice",
+"question": "In welcher Zeile und durch welche Ursache tritt der im abgebildeten Konsolen-Stacktrace gezeigte Laufzeitfehler auf?",
+"media": {
+"type": "image",
+"src": "AE2_DEV_Q019.png",
+"alt": "Screenshot Konsolenausgabe: java.lang.NullPointerException: Cannot invoke String.toLowerCase() because user.email is null at com.shop.UserService.validateUser(UserService.java:24)"
+},
+"options": [
+{ "id": "A", "text": "Zeile 24: Es wird versucht, eine Methode auf 'user.email' aufzurufen, obwohl dieses Attribut den Wert null hat." },
+{ "id": "B", "text": "Zeile 24: Eine Zahl konnte nicht in einen String konvertiert werden." },
+{ "id": "C", "text": "Zeile 1: Die Klasse UserService wurde im Projektpfad nicht gefunden." },
+{ "id": "D", "text": "Zeile 24: Die Variable 'user' ist nicht deklariert worden." }
+],
+"correct_answers": ["A"],
+"explanation": "Der Stacktrace nennt explizit Zeile 24 in UserService.java. Die NullPointerException entsteht dort, weil user.email den Wert null hat und darauf toLowerCase() aufgerufen werden soll."
+},
+{
+"id": "AE2_DEV_Q020",
+"topic": "Fehleranalyse",
+"type": "single_choice",
+"question": "Zwei parallel laufende Threads T1 und T2 greifen auf die Ressourcen R1 und R2 zu. T1 sperrt R1 und wartet auf R2. T2 sperrt R2 und wartet zeitgleich auf R1. Wie nennt man diesen Zustand?",
+"media": null,
+"options": [
+{ "id": "A", "text": "Deadlock (Wechselseitige Blockierung)" },
+{ "id": "B", "text": "Memory Leak (Speicherleck)" },
+{ "id": "C", "text": "Stack Overflow (Stapelüberlauf)" },
+{ "id": "D", "text": "NullPointer-Konflikt" }
+],
+"correct_answers": ["A"],
+"explanation": "Ein Deadlock tritt auf, wenn zwei oder mehr Threads zyklisch auf Ressourcen warten, die vom jeweils anderen Thread blockiert sind."
+},
+{
+"id": "AE2_DEV_Q021",
+"topic": "Fehleranalyse",
+"type": "single_choice",
+"question": "Die abgebildete SQL-Abfrage bricht mit einer Fehlermeldung ab. Welche Ursache hat der Fehler?",
+"media": {
+"type": "image",
+"src": "AE2_DEV_Q021.png",
+"alt": "SQL Code: SELECT AbteilungID, COUNT() FROM Mitarbeiter WHERE COUNT() > 5 GROUP BY AbteilungID;"
+},
+"options": [
+{ "id": "A", "text": "Aggregatfunktionen wie COUNT(*) dürfen nicht in der WHERE-Klausel stehen, sondern gehören in ein HAVING nach der Gruppierung." },
+{ "id": "B", "text": "Das Schlüsselwort GROUP BY darf nicht in Verbindung mit COUNT(*) genutzt werden." },
+{ "id": "C", "text": "In der SELECT-Zeile fehlt der Tabellenname vor AbteilungID." },
+{ "id": "D", "text": "COUNT(*) muss zwingend durch SUM(*) ersetzt werden." }
+],
+"correct_answers": ["A"],
+"explanation": "Die WHERE-Klausel filtert Datenzeilen vor der Gruppierung. Gruppenbasierte Filterungen auf aggregierten Daten müssen zwingend mit HAVING nach GROUP BY erfolgen."
+},
+{
+"id": "AE2_DEV_Q022",
+"topic": "Fehleranalyse",
+"type": "single_choice",
+"question": "Welchen Wert erhält die Variable 'rabatt' im folgenden Quellcode-Ausschnitt, wenn umsatz = 1500 ist?\n\nDOUBLE rabatt = 0.0\nIF umsatz > 1000 THEN\n  rabatt = 0.1\nELSE IF umsatz > 500 THEN\n  rabatt = 0.05\nEND IF",
+"media": null,
+"options": [
+{ "id": "A", "text": "0.1" },
+{ "id": "B", "text": "0.05" },
+{ "id": "C", "text": "0.15" },
+{ "id": "D", "text": "0.0" }
+],
+"correct_answers": ["A"],
+"explanation": "Da die Bedingung umsatz > 1000 (1500 > 1000) zutrifft, wird rabatt = 0.1 zugewiesen. Der nachfolgende ELSE IF-Zweig wird gar nicht mehr ausgewertet."
+},
+{
+"id": "AE2_DEV_Q023",
+"topic": "Fehleranalyse",
+"type": "single_choice",
+"question": "Gegeben ist eine Funktion INTEGER FUNCTION dividiere(INTEGER a, INTEGER b) RETURN a / b. Welcher Fall muss vor der Berechnung abgefangen werden, um einen Absturz zu verhindern?",
+"media": null,
+"options": [
+{ "id": "A", "text": "b == 0 (Division durch Null)" },
+{ "id": "B", "text": "a < b (Ergebnis kleiner als 1)" },
+{ "id": "C", "text": "a == 0 (Zähler ist Null)" },
+{ "id": "D", "text": "a < 0 (Negative Eingabe)" }
+],
+"correct_answers": ["A"],
+"explanation": "Eine Division durch 0 ist mathematisch nicht definiert und löst in den meisten Programmiersprachen eine ArithmeticException / ZeroDivisionError aus."
+},
+{
+"id": "AE2_DEV_Q024",
+"topic": "Softwarequalität",
+"type": "single_choice",
+"question": "Eine Methode verarbeiteBestellung() führt die Preisberechnung durch, schreibt die Daten in die Datenbank und erzeugt zusätzlich eine PDF-Rechnung. Gegen welches Prinzip verstößt diese Methode?",
+"media": null,
+"options": [
+{ "id": "A", "text": "Single Responsibility Principle (SRP) – Eine Komponente sollte nur eine einzige Aufgabe/Verantwortung haben." },
+{ "id": "B", "text": "Don't Repeat Yourself (DRY) – Vermeidung von dupliziertem Code." },
+{ "id": "C", "text": "Open/Closed Principle (OCP) – Offen für Erweiterung, geschlossen für Veränderung." },
+{ "id": "D", "text": "YAGNI (You Ain't Gonna Need It) – Vermeidung nicht benötigter Features." }
+],
+"correct_answers": ["A"],
+"explanation": "Das Single Responsibility Principle fordert, dass eine Funktion oder Klasse genau eine fest umrissene Aufgabe besitzt. Die Bündelung von Logik, DB-Zugriff und PDF-Generierung verletzt SRP."
+},
+{
+"id": "AE2_DEV_Q025",
+"topic": "SQL / Datenbanken",
+"type": "single_choice",
+"question": "Welche SQL-Einschränkung (Constraint) stellt gleichzeitig sicher, dass in einer Spalte keine NULL-Werte vorkommen dürfen und alle gespeicherten Werte eindeutig sein müssen?",
+"media": null,
+"options": [
+{ "id": "A", "text": "PRIMARY KEY" },
+{ "id": "B", "text": "FOREIGN KEY" },
+{ "id": "C", "text": "UNIQUE" },
+{ "id": "D", "text": "CHECK" }
+],
+"correct_answers": ["A"],
+"explanation": "Ein PRIMARY KEY vereint automatisch die Eigenschaften NOT NULL und UNIQUE. Ein reiner UNIQUE-Constraint erlaubt in vielen Datenbanksystemen (wie PostgreSQL oder Oracle) standardmäßig auch NULL-Werte."
+}
+]
