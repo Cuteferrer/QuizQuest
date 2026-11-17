@@ -8,7 +8,12 @@ local json = require("scripts/json")
 local quiz_menu = {}
 
 local FONT = "enter_command"                     
-local QUESTIONS_FILE = "questions/fragen.json"
+local QUESTIONS_FILES = {
+	"questions/AE2_UML_Fragen.json",
+	"questions/AE2_ENTWICKLUNG_Fragen.json",
+	"questions/AE2_PM_Fragen.json",
+	"questions/AE2_WISO_Fragen.json",
+}
 local IMAGE_DIR = "images/"                 -- media.src -> images/<src>.png
 
 local PROMPT_X, PROMPT_Y        = 16, 12
@@ -25,14 +30,16 @@ local PROMPT_W = 288
 local questions_by_id = nil
 local function load_index()
 	if questions_by_id then return questions_by_id end
-	local f, err = sol.file.open(QUESTIONS_FILE)
-	if not f then error("Unable to open " .. QUESTIONS_FILE .. ": " .. tostring(err)) end
-	local content = f:read("*a")
-	f:close()
-	content = content:gsub("^\239\187\191", "")  
 	questions_by_id = {}
-	for _, q in ipairs(json.decode(content)) do
-		questions_by_id[q.id] = q
+	for _, path in ipairs(QUESTIONS_FILES) do
+		local f, err = sol.file.open(path)
+		if not f then error("Unable to open " .. path .. ": " .. tostring(err)) end
+		local content = f:read("*a")
+		f:close()
+		content = content:gsub("^\239\187\191", "")
+		for _, q in ipairs(json.decode(content)) do
+			questions_by_id[q.id] = q
+		end
 	end
 	return questions_by_id
 end

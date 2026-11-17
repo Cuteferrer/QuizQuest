@@ -1,0 +1,617 @@
+properties{
+  x = 0,
+  y = 0,
+  width = 320,
+  height = 240,
+  min_layer = 0,
+  max_layer = 2,
+  tileset = "house",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 16,
+  width = 288,
+  height = 208,
+  pattern = "ground_cross_grey",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 0,
+  width = 8,
+  height = 8,
+  pattern = "wall_green_3",
+}
+
+tile{
+  layer = 0,
+  x = 312,
+  y = 0,
+  width = 8,
+  height = 8,
+  pattern = "wall_green_1",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 232,
+  width = 8,
+  height = 8,
+  pattern = "wall_green_5",
+}
+
+tile{
+  layer = 0,
+  x = 312,
+  y = 232,
+  width = 8,
+  height = 8,
+  pattern = "wall_green_7",
+}
+
+tile{
+  layer = 0,
+  x = 8,
+  y = 8,
+  width = 8,
+  height = 8,
+  pattern = "wall_green_3",
+}
+
+tile{
+  layer = 0,
+  x = 304,
+  y = 8,
+  width = 8,
+  height = 8,
+  pattern = "wall_green_1",
+}
+
+tile{
+  layer = 0,
+  x = 8,
+  y = 224,
+  width = 8,
+  height = 8,
+  pattern = "wall_green_5",
+}
+
+tile{
+  layer = 0,
+  x = 304,
+  y = 224,
+  width = 8,
+  height = 8,
+  pattern = "wall_green_7",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 0,
+  width = 8,
+  height = 8,
+  pattern = "wall_up_green_2",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 8,
+  width = 8,
+  height = 8,
+  pattern = "wall_green_2",
+}
+
+tile{
+  layer = 0,
+  x = 56,
+  y = 0,
+  width = 248,
+  height = 8,
+  pattern = "wall_up_green_2",
+}
+
+tile{
+  layer = 0,
+  x = 56,
+  y = 8,
+  width = 248,
+  height = 8,
+  pattern = "wall_green_2",
+}
+
+tile{
+  layer = 0,
+  x = 24,
+  y = 0,
+  width = 32,
+  height = 16,
+  pattern = "ground_cross_grey",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 0,
+  width = 8,
+  height = 16,
+  pattern = "wall_green_0",
+}
+
+tile{
+  layer = 0,
+  x = 56,
+  y = 0,
+  width = 8,
+  height = 16,
+  pattern = "wall_green_4",
+}
+
+tile{
+  layer = 0,
+  x = 8,
+  y = 0,
+  width = 8,
+  height = 8,
+  pattern = "wall_up_green_2",
+}
+
+tile{
+  layer = 0,
+  x = 304,
+  y = 0,
+  width = 8,
+  height = 8,
+  pattern = "wall_up_green_2",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 232,
+  width = 288,
+  height = 8,
+  pattern = "wall_up_green_6",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 224,
+  width = 288,
+  height = 8,
+  pattern = "wall_green_6",
+}
+
+tile{
+  layer = 0,
+  x = 8,
+  y = 232,
+  width = 8,
+  height = 8,
+  pattern = "wall_up_green_6",
+}
+
+tile{
+  layer = 0,
+  x = 304,
+  y = 232,
+  width = 8,
+  height = 8,
+  pattern = "wall_up_green_6",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 16,
+  width = 8,
+  height = 208,
+  pattern = "wall_up_green_4",
+}
+
+tile{
+  layer = 0,
+  x = 8,
+  y = 16,
+  width = 8,
+  height = 208,
+  pattern = "wall_green_4",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 8,
+  width = 8,
+  height = 8,
+  pattern = "wall_up_green_4",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 224,
+  width = 8,
+  height = 8,
+  pattern = "wall_up_green_4",
+}
+
+tile{
+  layer = 0,
+  x = 312,
+  y = 16,
+  width = 8,
+  height = 168,
+  pattern = "wall_up_green_0",
+}
+
+tile{
+  layer = 0,
+  x = 304,
+  y = 16,
+  width = 8,
+  height = 168,
+  pattern = "wall_green_0",
+}
+
+tile{
+  layer = 0,
+  x = 312,
+  y = 216,
+  width = 8,
+  height = 8,
+  pattern = "wall_up_green_0",
+}
+
+tile{
+  layer = 0,
+  x = 304,
+  y = 216,
+  width = 8,
+  height = 8,
+  pattern = "wall_green_0",
+}
+
+tile{
+  layer = 0,
+  x = 304,
+  y = 184,
+  width = 16,
+  height = 32,
+  pattern = "ground_cross_grey",
+}
+
+tile{
+  layer = 0,
+  x = 304,
+  y = 176,
+  width = 16,
+  height = 8,
+  pattern = "wall_green_6",
+}
+
+tile{
+  layer = 0,
+  x = 304,
+  y = 216,
+  width = 16,
+  height = 8,
+  pattern = "wall_green_2",
+}
+
+tile{
+  layer = 0,
+  x = 312,
+  y = 8,
+  width = 8,
+  height = 8,
+  pattern = "wall_up_green_0",
+}
+
+tile{
+  layer = 0,
+  x = 312,
+  y = 224,
+  width = 8,
+  height = 8,
+  pattern = "wall_up_green_0",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 0,
+  width = 240,
+  height = 160,
+  pattern = "wall_green_ceiling",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 168,
+  width = 240,
+  height = 8,
+  pattern = "wall_green_2",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 0,
+  width = 8,
+  height = 160,
+  pattern = "wall_green_0",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 160,
+  width = 240,
+  height = 8,
+  pattern = "wall_up_green_2",
+}
+
+tile{
+  layer = 0,
+  x = 72,
+  y = 0,
+  width = 8,
+  height = 160,
+  pattern = "wall_up_green_0",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 160,
+  width = 8,
+  height = 8,
+  pattern = "wall_green_0",
+}
+
+tile{
+  layer = 0,
+  x = 72,
+  y = 160,
+  width = 8,
+  height = 8,
+  pattern = "wall_corner_up_green_5",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 168,
+  width = 8,
+  height = 8,
+  pattern = "wall_corner_green_5",
+}
+
+tile{
+  layer = 0,
+  x = 72,
+  y = 168,
+  width = 8,
+  height = 8,
+  pattern = "wall_green_2",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 0,
+  width = 8,
+  height = 8,
+  pattern = "wall_up_green_2",
+}
+
+tile{
+  layer = 0,
+  x = 72,
+  y = 0,
+  width = 8,
+  height = 8,
+  pattern = "wall_green_1",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 8,
+  width = 8,
+  height = 8,
+  pattern = "wall_green_1",
+}
+
+tile{
+  layer = 0,
+  x = 72,
+  y = 8,
+  width = 8,
+  height = 8,
+  pattern = "wall_up_green_0",
+}
+
+tile{
+  layer = 0,
+  x = 304,
+  y = 160,
+  width = 8,
+  height = 8,
+  pattern = "wall_up_green_2",
+}
+
+tile{
+  layer = 0,
+  x = 312,
+  y = 160,
+  width = 8,
+  height = 8,
+  pattern = "wall_green_1",
+}
+
+tile{
+  layer = 0,
+  x = 304,
+  y = 168,
+  width = 8,
+  height = 8,
+  pattern = "wall_green_1",
+}
+
+tile{
+  layer = 0,
+  x = 312,
+  y = 168,
+  width = 8,
+  height = 8,
+  pattern = "wall_up_green_0",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 224,
+  width = 32,
+  height = 16,
+  pattern = "window_big_6",
+}
+
+tile{
+  layer = 0,
+  x = 208,
+  y = 224,
+  width = 32,
+  height = 16,
+  pattern = "window_big_6",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 40,
+  width = 16,
+  height = 32,
+  pattern = "window_big_4",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 208,
+  width = 16,
+  height = 16,
+  pattern = "lamp_blue",
+}
+
+tile{
+  layer = 0,
+  x = 288,
+  y = 176,
+  width = 16,
+  height = 16,
+  pattern = "lamp_blue",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 16,
+  width = 16,
+  height = 16,
+  pattern = "lamp_blue",
+}
+
+teletransporter{
+  name = "entrance_tp",
+  layer = 0,
+  x = 304,
+  y = 184,
+  width = 16,
+  height = 32,
+  transition = "fade",
+  destination_map = "Level4/Room1_4",
+  destination = "exit",
+}
+
+destination{
+  name = "entrance",
+  layer = 0,
+  x = 288,
+  y = 205,
+  direction = 2,
+}
+
+teletransporter{
+  name = "exit_tp",
+  layer = 0,
+  x = 24,
+  y = 0,
+  width = 32,
+  height = 16,
+  transition = "fade",
+  destination_map = "Level4/Room2_4",
+  destination = "entrance",
+}
+
+destination{
+  name = "exit",
+  layer = 0,
+  x = 40,
+  y = 37,
+  direction = 3,
+}
+
+npc{
+  name = "lehrer",
+  layer = 0,
+  x = 40,
+  y = 109,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/wise_old_man_green",
+}
+
+wall{
+  name = "barrier_1",
+  layer = 0,
+  x = 16,
+  y = 96,
+  width = 16,
+  height = 16,
+  stops_hero = true,
+  stops_npcs = false,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  name = "barrier_2",
+  layer = 0,
+  x = 48,
+  y = 96,
+  width = 16,
+  height = 16,
+  stops_hero = true,
+  stops_npcs = false,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+destination{
+  name = "near_npc",
+  layer = 0,
+  x = 40,
+  y = 141,
+  direction = 1,
+}

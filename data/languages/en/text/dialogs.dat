@@ -52,3 +52,91 @@ Altes Rechner mit Maus
 ]],
 }
 
+
+dialog{
+  id = "level4.flur1.intro",
+  text = [[
+Halt! Hier kommt nur
+durch, wer UML-
+Diagramme versteht.
+Zeig mir, was du
+kannst!
+]],
+}
+
+dialog{
+  id = "level4.flur1.done",
+  text = [[
+Sehr gut! Der Weg zum
+Informatikraum ist
+frei.
+]],
+}
+
+dialog{
+  id = "level4.flur2.intro",
+  text = [[
+Moment mal! Bevor du
+in die Bibliothek
+gehst: ein paar
+Fragen zur
+Softwareentwicklung!
+]],
+}
+
+dialog{
+  id = "level4.flur2.done",
+  text = [[
+Gut programmiert!
+Die Bibliothek ist
+gleich da vorne.
+]],
+}
+
+dialog{
+  id = "level4.flur3.intro",
+  text = [[
+Willkommen in der
+Pausenhalle! Ins
+Lehrerzimmer nur mit
+Wissen über
+Projektmanagement!
+]],
+}
+
+dialog{
+  id = "level4.flur3.done",
+  text = [[
+Projekt erfolgreich
+abgeschlossen! Geh
+ruhig weiter.
+]],
+}
+
+dialog{
+  id = "level4.flur4.intro",
+  text = [[
+Letzte Prüfung vor dem
+Prüfungsraum: Fragen
+zu Wirtschaft und
+Sozialkunde!
+]],
+}
+
+dialog{
+  id = "level4.flur4.done",
+  text = [[
+Bestanden! Viel Glück
+im Prüfungsraum.
+]],
+}
+
+dialog{
+  id = "level4.exit_todo",
+  text = [[
+Diese Tür führt zum
+nächsten Level...
+Sie ist noch
+verschlossen.
+]],
+}
