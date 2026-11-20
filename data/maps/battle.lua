@@ -7,22 +7,12 @@ local quiz_ids = { "AE2_UML_Q001", "AE2_UML_Q002", "AE2_UML_Q003", "AE2_UML_Q008
 local function start_quiz()
 	local hero = map:get_hero()
 	hero:freeze()
-	-- An NPC can choose its own questions via game.quiz_ids (e.g. Level 4 hallways).
-	local ids = game.quiz_ids or quiz_ids
-	quiz_menu.start(map, ids, game.shared_npc_animation_set, function(result, score)
+	quiz_menu.start(map, quiz_ids, game.shared_npc_animation_set, function(result, score)
 	if result == "win" then
-		-- Remember the victory if the NPC asked for it (e.g. "level4_flur1_done").
-		if game.quiz_win_value then
-			game:set_value(game.quiz_win_value, true)
-		end
-		game.quiz_ids = nil
-		game.quiz_win_value = nil
 		-- Back to NPC
 		hero:unfreeze()
 		hero:teleport(game.quiz_return_map, game.quiz_return_dest)
   elseif result == "exit" then
-		game.quiz_ids = nil
-		game.quiz_win_value = nil
 		hero:unfreeze()
 		hero:teleport(game.quiz_return_map, game.quiz_return_dest)
 	else

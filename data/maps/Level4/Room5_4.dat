@@ -1635,8 +1635,7 @@ teletransporter{
   y = 256,
   width = 32,
   height = 16,
-  transition = "fade",
-  destination_map = "Level4/Flur4_4",
+  destination_map = "Level4/Flur5_4",
   destination = "exit",
 }
 
@@ -1652,7 +1651,7 @@ sensor{
   name = "level_exit",
   layer = 0,
   x = 144,
-  y = 0,
+  y = -8,
   width = 32,
   height = 16,
 }
@@ -1664,3 +1663,22 @@ destination{
   y = 37,
   direction = 3,
 }
+
+npc{
+  name = "Room5_4_Schueler",
+  layer = 0,
+  x = 160,
+  y = 69,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/kaleido",
+}
+
+destination{
+  name = "near_npc",
+  layer = 0,
+  x = 160,
+  y = 93,
+  direction = 1,
+}
+

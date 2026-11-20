@@ -530,18 +530,6 @@ tile{
   pattern = "lamp_blue",
 }
 
-teletransporter{
-  name = "entrance_tp",
-  layer = 0,
-  x = 304,
-  y = 184,
-  width = 16,
-  height = 32,
-  transition = "fade",
-  destination_map = "Level4/Room1_4",
-  destination = "exit",
-}
-
 destination{
   name = "entrance",
   layer = 0,
@@ -557,8 +545,7 @@ teletransporter{
   y = 0,
   width = 32,
   height = 16,
-  transition = "fade",
-  destination_map = "Level4/Room2_4",
+  destination_map = "Level4/Room1_4",
   destination = "entrance",
 }
 
@@ -570,48 +557,3 @@ destination{
   direction = 3,
 }
 
-npc{
-  name = "lehrer",
-  layer = 0,
-  x = 40,
-  y = 109,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/wise_old_man_green",
-}
-
-wall{
-  name = "barrier_1",
-  layer = 0,
-  x = 16,
-  y = 96,
-  width = 16,
-  height = 16,
-  stops_hero = true,
-  stops_npcs = false,
-  stops_enemies = true,
-  stops_blocks = true,
-  stops_projectiles = true,
-}
-
-wall{
-  name = "barrier_2",
-  layer = 0,
-  x = 48,
-  y = 96,
-  width = 16,
-  height = 16,
-  stops_hero = true,
-  stops_npcs = false,
-  stops_enemies = true,
-  stops_blocks = true,
-  stops_projectiles = true,
-}
-
-destination{
-  name = "near_npc",
-  layer = 0,
-  x = 40,
-  y = 141,
-  direction = 1,
-}

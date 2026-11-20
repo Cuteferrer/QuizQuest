@@ -6,6 +6,14 @@
 
 local map = ...
 local game = map:get_game()
+-- Schueler-NPC: startet das Quiz im Level-4-Battleraum
+function Room4_4_Schueler:on_interaction()
+  game.quiz_return_map  = map:get_id()          -- current map id
+  game.quiz_return_dest = "near_npc"            -- destination on the map near NPC
+  game.shared_npc_animation_set = Room4_4_Schueler:get_sprite():get_animation_set()
+  map:get_hero():teleport("Level4/BattleMap_Level4", "start")
+end
+
 
 -- Event called at initialization time, as soon as this map is loaded.
 function map:on_started()

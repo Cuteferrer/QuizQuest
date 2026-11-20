@@ -603,15 +603,6 @@ tile{
 }
 
 tile{
-  layer = 1,
-  x = 56,
-  y = 32,
-  width = 16,
-  height = 8,
-  pattern = "chair_up_blue_3",
-}
-
-tile{
   layer = 0,
   x = 56,
   y = 40,
@@ -1260,19 +1251,18 @@ tile{
 }
 
 teletransporter{
-  name = "entrance_tp",
+  name = "exit_tp",
   layer = 0,
   x = 136,
   y = 240,
   width = 32,
   height = 16,
-  transition = "fade",
-  destination_map = "Level4/Flur1_4",
-  destination = "exit",
+  destination_map = "Level4/Flur3_4",
+  destination = "entrance",
 }
 
 destination{
-  name = "entrance",
+  name = "exit",
   layer = 0,
   x = 152,
   y = 232,
@@ -1280,21 +1270,48 @@ destination{
 }
 
 teletransporter{
-  name = "exit_tp",
+  name = "entrance_tp",
   layer = 0,
   x = 304,
   y = 48,
   width = 16,
   height = 32,
-  transition = "fade",
   destination_map = "Level4/Flur2_4",
-  destination = "entrance",
+  destination = "exit",
 }
 
 destination{
-  name = "exit",
+  name = "entrance",
   layer = 0,
   x = 288,
   y = 69,
   direction = 2,
 }
+
+tile{
+  layer = 1,
+  x = 56,
+  y = 32,
+  width = 16,
+  height = 8,
+  pattern = "chair_up_blue_3",
+}
+
+npc{
+  name = "Room2_4_Schueler",
+  layer = 0,
+  x = 160,
+  y = 61,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/kaleido",
+}
+
+destination{
+  name = "near_npc",
+  layer = 0,
+  x = 160,
+  y = 85,
+  direction = 1,
+}
+

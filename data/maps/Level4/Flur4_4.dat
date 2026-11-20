@@ -174,7 +174,7 @@ tile{
   layer = 0,
   x = 16,
   y = 440,
-  width = 32,
+  width = 96,
   height = 8,
   pattern = "wall_up_navy_6",
 }
@@ -183,54 +183,9 @@ tile{
   layer = 0,
   x = 16,
   y = 432,
-  width = 32,
+  width = 96,
   height = 8,
   pattern = "wall_navy_6",
-}
-
-tile{
-  layer = 0,
-  x = 80,
-  y = 440,
-  width = 32,
-  height = 8,
-  pattern = "wall_up_navy_6",
-}
-
-tile{
-  layer = 0,
-  x = 80,
-  y = 432,
-  width = 32,
-  height = 8,
-  pattern = "wall_navy_6",
-}
-
-tile{
-  layer = 0,
-  x = 48,
-  y = 432,
-  width = 32,
-  height = 16,
-  pattern = "ground_square_grey",
-}
-
-tile{
-  layer = 0,
-  x = 40,
-  y = 432,
-  width = 8,
-  height = 16,
-  pattern = "wall_navy_0",
-}
-
-tile{
-  layer = 0,
-  x = 80,
-  y = 432,
-  width = 8,
-  height = 16,
-  pattern = "wall_navy_4",
 }
 
 tile{
@@ -292,7 +247,16 @@ tile{
   x = 120,
   y = 16,
   width = 8,
-  height = 416,
+  height = 376,
+  pattern = "wall_up_navy_0",
+}
+
+tile{
+  layer = 0,
+  x = 120,
+  y = 424,
+  width = 8,
+  height = 8,
   pattern = "wall_up_navy_0",
 }
 
@@ -301,8 +265,44 @@ tile{
   x = 112,
   y = 16,
   width = 8,
-  height = 416,
+  height = 376,
   pattern = "wall_navy_0",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 424,
+  width = 8,
+  height = 8,
+  pattern = "wall_navy_0",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 392,
+  width = 16,
+  height = 32,
+  pattern = "ground_square_grey",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 384,
+  width = 16,
+  height = 8,
+  pattern = "wall_navy_6",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 424,
+  width = 16,
+  height = 8,
+  pattern = "wall_navy_2",
 }
 
 tile{
@@ -1000,7 +1000,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 96,
+  x = 16,
   y = 408,
   width = 16,
   height = 16,
@@ -1010,21 +1010,20 @@ tile{
 teletransporter{
   name = "entrance_tp",
   layer = 0,
-  x = 48,
-  y = 432,
-  width = 32,
-  height = 16,
-  transition = "fade",
-  destination_map = "Level4/Room4_4",
+  x = 112,
+  y = 392,
+  width = 16,
+  height = 32,
+  destination_map = "Level4/Room3_4",
   destination = "exit",
 }
 
 destination{
   name = "entrance",
   layer = 0,
-  x = 64,
-  y = 424,
-  direction = 1,
+  x = 96,
+  y = 413,
+  direction = 2,
 }
 
 teletransporter{
@@ -1034,8 +1033,7 @@ teletransporter{
   y = 0,
   width = 32,
   height = 16,
-  transition = "fade",
-  destination_map = "Level4/Room5_4",
+  destination_map = "Level4/Room4_4",
   destination = "entrance",
 }
 
@@ -1047,44 +1045,6 @@ destination{
   direction = 3,
 }
 
-npc{
-  name = "lehrer",
-  layer = 0,
-  x = 64,
-  y = 69,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/wise_old_man_yellow",
-}
-
-wall{
-  name = "barrier_1",
-  layer = 0,
-  x = 16,
-  y = 56,
-  width = 40,
-  height = 16,
-  stops_hero = true,
-  stops_npcs = false,
-  stops_enemies = true,
-  stops_blocks = true,
-  stops_projectiles = true,
-}
-
-wall{
-  name = "barrier_2",
-  layer = 0,
-  x = 72,
-  y = 56,
-  width = 40,
-  height = 16,
-  stops_hero = true,
-  stops_npcs = false,
-  stops_enemies = true,
-  stops_blocks = true,
-  stops_projectiles = true,
-}
-
 destination{
   name = "near_npc",
   layer = 0,
@@ -1092,3 +1052,4 @@ destination{
   y = 101,
   direction = 1,
 }
+

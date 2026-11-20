@@ -3,6 +3,14 @@
 
 local map = ...
 local game = map:get_game()
+-- Schueler-NPC: startet das Quiz im Level-4-Battleraum
+function Room5_4_Schueler:on_interaction()
+  game.quiz_return_map  = map:get_id()          -- current map id
+  game.quiz_return_dest = "near_npc"            -- destination on the map near NPC
+  game.shared_npc_animation_set = Room5_4_Schueler:get_sprite():get_animation_set()
+  map:get_hero():teleport("Level4/BattleMap_Level4", "start")
+end
+
 
 -- TODO: Hier die Map und Destination des naechsten Levels eintragen,
 -- z.B. NEXT_LEVEL_MAP = "Level5/Room1_5" und NEXT_LEVEL_DEST = "start".

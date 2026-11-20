@@ -28,6 +28,23 @@ Ja
 }
 
 dialog{
+  id = "Room1_4_Schueler",
+  next = "Room1_4_Schueler.2",
+  text = [[
+Hallo, du hast es erfolgreich 
+bis Level 4 geschafft!
+]],
+}
+
+dialog{
+  id = "Room1_4_Schueler.2",
+  text = [[
+Nun wirst du mit WiSo 
+Fragen durchlöchert!
+]],
+}
+
+dialog{
   id = "Tafel_N002",
   next = "Tafel_N002.zeichnen",
   question = "1",
@@ -46,12 +63,23 @@ Was soll ich zeichnen?
 }
 
 dialog{
-  id = "old_rechner",
+  id = "level4.exit_todo",
   text = [[
-Altes Rechner mit Maus
+Diese Tür führt zum
+nächsten Level...
+Sie ist noch
+verschlossen.
 ]],
 }
 
+dialog{
+  id = "level4.flur1.done",
+  text = [[
+Sehr gut! Der Weg zum
+Informatikraum ist
+frei.
+]],
+}
 
 dialog{
   id = "level4.flur1.intro",
@@ -65,11 +93,11 @@ kannst!
 }
 
 dialog{
-  id = "level4.flur1.done",
+  id = "level4.flur2.done",
   text = [[
-Sehr gut! Der Weg zum
-Informatikraum ist
-frei.
+Gut programmiert!
+Die Bibliothek ist
+gleich da vorne.
 ]],
 }
 
@@ -85,11 +113,11 @@ Softwareentwicklung!
 }
 
 dialog{
-  id = "level4.flur2.done",
+  id = "level4.flur3.done",
   text = [[
-Gut programmiert!
-Die Bibliothek ist
-gleich da vorne.
+Projekt erfolgreich
+abgeschlossen! Geh
+ruhig weiter.
 ]],
 }
 
@@ -105,11 +133,10 @@ Projektmanagement!
 }
 
 dialog{
-  id = "level4.flur3.done",
+  id = "level4.flur4.done",
   text = [[
-Projekt erfolgreich
-abgeschlossen! Geh
-ruhig weiter.
+Bestanden! Viel Glück
+im Prüfungsraum.
 ]],
 }
 
@@ -124,19 +151,9 @@ Sozialkunde!
 }
 
 dialog{
-  id = "level4.flur4.done",
+  id = "old_rechner",
   text = [[
-Bestanden! Viel Glück
-im Prüfungsraum.
+Altes Rechner mit Maus
 ]],
 }
 
-dialog{
-  id = "level4.exit_todo",
-  text = [[
-Diese Tür führt zum
-nächsten Level...
-Sie ist noch
-verschlossen.
-]],
-}

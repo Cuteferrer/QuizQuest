@@ -1,7 +1,9 @@
+map{ id = "Level4/BattleMap_Level4", description = "Level4/BattleMap_Level4" }
 map{ id = "Level4/Flur1_4", description = "Level4/Flur1_4" }
 map{ id = "Level4/Flur2_4", description = "Level4/Flur2_4" }
 map{ id = "Level4/Flur3_4", description = "Level4/Flur3_4" }
 map{ id = "Level4/Flur4_4", description = "Level4/Flur4_4" }
+map{ id = "Level4/Flur5_4", description = "Level4/Flur5_4" }
 map{ id = "Level4/Room1_4", description = "Level4/Room1_4" }
 map{ id = "Level4/Room2_4", description = "Level4/Room2_4" }
 map{ id = "Level4/Room3_4", description = "Level4/Room3_4" }
@@ -10,7 +12,6 @@ map{ id = "Level4/Room5_4", description = "Level4/Room5_4" }
 map{ id = "battle", description = "Battle arena for fighting " }
 map{ id = "first_map", description = "First map" }
 map{ id = "flur" }
-map{ id = "level_julian" }
 
 tileset{ id = "bottomless_cliffs", description = "bottomless_cliffs" }
 tileset{ id = "castle", description = "Castle" }
@@ -72,7 +73,6 @@ sprite{ id = "destructibles/grass_green_3", description = "Grass 3 (green)" }
 sprite{ id = "destructibles/grass_green_5", description = "Grass 5 (green)" }
 sprite{ id = "destructibles/grass_green_7", description = "Grass 7 (green)" }
 sprite{ id = "destructibles/grass_square", description = "Square grass" }
-sprite{ id = "destructibles/pot", description = "Pot" }
 sprite{ id = "destructibles/stone_brown", description = "Stone (brown)" }
 sprite{ id = "destructibles/stone_white", description = "Stone (white)" }
 sprite{ id = "destructibles/vase", description = "Vase" }
@@ -122,7 +122,6 @@ sprite{ id = "entities/items", description = "Items" }
 sprite{ id = "entities/rupee_icon", description = "Money icon" }
 sprite{ id = "entities/shadow", description = "Shadow" }
 sprite{ id = "entities/star", description = "Star" }
-sprite{ id = "entities/torch", description = "Torch" }
 sprite{ id = "ground_effects/fall_on_hole", description = "Fall on hole" }
 sprite{ id = "ground_effects/lava_splash", description = "Lava splash" }
 sprite{ id = "ground_effects/leaves", description = "Leaves" }
@@ -152,10 +151,8 @@ sprite{ id = "menus/battle_start" }
 sprite{ id = "menus/options_cursor", description = "Options cursor" }
 sprite{ id = "menus/solarus_logo", description = "Solarus logo" }
 sprite{ id = "menus/team_logo", description = "Solarus Team logo" }
-sprite{ id = "npc/bone_king", description = "Bone King" }
 sprite{ id = "npc/kaleido", description = "Kaleido" }
 sprite{ id = "npc/sign", description = "Sign" }
-sprite{ id = "npc/wizard", description = "Wizard" }
 sprite{ id = "npc/woman_1a", description = "Woman 1a" }
 sprite{ id = "npc/woman_1b", description = "Woman 1b" }
 sprite{ id = "npc/woman_1c", description = "Woman 1c" }
@@ -372,6 +369,8 @@ file{ path = "items/tunic.lua", author = "Christopho", license = "GPL v3" }
 file{ path = "languages/en/text/strings.dat", author = "Christopho", license = "CC BY-SA 4.0" }
 file{ path = "main.lua", author = "Christopho", license = "GPL v3" }
 file{ path = "maps/Level4", author = "Fabian Ecker", }
+file{ path = "maps/Level4/BattleMap_Level4.dat", author = "Fabian Ecker", }
+file{ path = "maps/Level4/BattleMap_Level4.lua", author = "Fabian Ecker", }
 file{ path = "maps/Level4/Flur1_4.dat", author = "Fabian Ecker", }
 file{ path = "maps/Level4/Flur1_4.lua", author = "Fabian Ecker", }
 file{ path = "maps/Level4/Flur2_4.dat", author = "Fabian Ecker", }
@@ -380,10 +379,10 @@ file{ path = "maps/Level4/Flur3_4.dat", author = "Fabian Ecker", }
 file{ path = "maps/Level4/Flur3_4.lua", author = "Fabian Ecker", }
 file{ path = "maps/Level4/Flur4_4.dat", author = "Fabian Ecker", }
 file{ path = "maps/Level4/Flur4_4.lua", author = "Fabian Ecker", }
+file{ path = "maps/Level4/Flur5_4.dat", author = "Fabian Ecker", }
+file{ path = "maps/Level4/Flur5_4.lua", author = "Fabian Ecker", }
 file{ path = "maps/Level4/Room1_4.dat", author = "Fabian Ecker", }
 file{ path = "maps/Level4/Room1_4.lua", author = "Fabian Ecker", }
-file{ path = "maps/level_julian.dat", author = "Julian", }
-file{ path = "maps/level_julian.lua", author = "Julian", }
 file{ path = "maps/Level4/Room2_4.dat", author = "Fabian Ecker", }
 file{ path = "maps/Level4/Room2_4.lua", author = "Fabian Ecker", }
 file{ path = "maps/Level4/Room3_4.dat", author = "Fabian Ecker", }

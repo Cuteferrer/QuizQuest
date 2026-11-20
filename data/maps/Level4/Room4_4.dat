@@ -174,7 +174,16 @@ tile{
   layer = 0,
   x = 16,
   y = 232,
-  width = 288,
+  width = 128,
+  height = 8,
+  pattern = "wall_up_crimson_6",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 232,
+  width = 128,
   height = 8,
   pattern = "wall_up_crimson_6",
 }
@@ -183,9 +192,45 @@ tile{
   layer = 0,
   x = 16,
   y = 224,
-  width = 288,
+  width = 128,
   height = 8,
   pattern = "wall_crimson_6",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 224,
+  width = 128,
+  height = 8,
+  pattern = "wall_crimson_6",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 224,
+  width = 32,
+  height = 16,
+  pattern = "ground_wood_mosaic_big_1",
+}
+
+tile{
+  layer = 0,
+  x = 136,
+  y = 224,
+  width = 8,
+  height = 16,
+  pattern = "wall_crimson_0",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 224,
+  width = 8,
+  height = 16,
+  pattern = "wall_crimson_4",
 }
 
 tile{
@@ -247,7 +292,7 @@ tile{
   x = 312,
   y = 16,
   width = 8,
-  height = 144,
+  height = 208,
   pattern = "wall_up_crimson_0",
 }
 
@@ -256,53 +301,8 @@ tile{
   x = 304,
   y = 16,
   width = 8,
-  height = 144,
+  height = 208,
   pattern = "wall_crimson_0",
-}
-
-tile{
-  layer = 0,
-  x = 312,
-  y = 192,
-  width = 8,
-  height = 32,
-  pattern = "wall_up_crimson_0",
-}
-
-tile{
-  layer = 0,
-  x = 304,
-  y = 192,
-  width = 8,
-  height = 32,
-  pattern = "wall_crimson_0",
-}
-
-tile{
-  layer = 0,
-  x = 304,
-  y = 160,
-  width = 16,
-  height = 32,
-  pattern = "ground_wood_mosaic_big_1",
-}
-
-tile{
-  layer = 0,
-  x = 304,
-  y = 152,
-  width = 16,
-  height = 8,
-  pattern = "wall_crimson_6",
-}
-
-tile{
-  layer = 0,
-  x = 304,
-  y = 192,
-  width = 16,
-  height = 8,
-  pattern = "wall_crimson_2",
 }
 
 tile{
@@ -405,15 +405,6 @@ tile{
 }
 
 tile{
-  layer = 1,
-  x = 104,
-  y = 64,
-  width = 16,
-  height = 8,
-  pattern = "chair_up_pink_3",
-}
-
-tile{
   layer = 0,
   x = 104,
   y = 72,
@@ -429,15 +420,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "chair_pink_1",
-}
-
-tile{
-  layer = 1,
-  x = 136,
-  y = 64,
-  width = 16,
-  height = 8,
-  pattern = "chair_up_pink_3",
 }
 
 tile{
@@ -459,15 +441,6 @@ tile{
 }
 
 tile{
-  layer = 1,
-  x = 168,
-  y = 64,
-  width = 16,
-  height = 8,
-  pattern = "chair_up_pink_3",
-}
-
-tile{
   layer = 0,
   x = 168,
   y = 72,
@@ -483,15 +456,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "chair_pink_1",
-}
-
-tile{
-  layer = 1,
-  x = 200,
-  y = 64,
-  width = 16,
-  height = 8,
-  pattern = "chair_up_pink_3",
 }
 
 tile{
@@ -1198,7 +1162,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 112,
+  x = 96,
   y = 224,
   width = 32,
   height = 16,
@@ -1207,7 +1171,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 176,
+  x = 192,
   y = 224,
   width = 32,
   height = 16,
@@ -1217,21 +1181,20 @@ tile{
 teletransporter{
   name = "entrance_tp",
   layer = 0,
-  x = 304,
-  y = 160,
-  width = 16,
-  height = 32,
-  transition = "fade",
-  destination_map = "Level4/Flur3_4",
+  x = 144,
+  y = 224,
+  width = 32,
+  height = 16,
+  destination_map = "Level4/Flur4_4",
   destination = "exit",
 }
 
 destination{
   name = "entrance",
   layer = 0,
-  x = 288,
-  y = 181,
-  direction = 2,
+  x = 160,
+  y = 216,
+  direction = 1,
 }
 
 teletransporter{
@@ -1241,8 +1204,7 @@ teletransporter{
   y = 0,
   width = 32,
   height = 16,
-  transition = "fade",
-  destination_map = "Level4/Flur4_4",
+  destination_map = "Level4/Flur5_4",
   destination = "entrance",
 }
 
@@ -1253,3 +1215,58 @@ destination{
   y = 37,
   direction = 3,
 }
+
+tile{
+  layer = 1,
+  x = 104,
+  y = 64,
+  width = 16,
+  height = 8,
+  pattern = "chair_up_pink_3",
+}
+
+tile{
+  layer = 1,
+  x = 136,
+  y = 64,
+  width = 16,
+  height = 8,
+  pattern = "chair_up_pink_3",
+}
+
+tile{
+  layer = 1,
+  x = 168,
+  y = 64,
+  width = 16,
+  height = 8,
+  pattern = "chair_up_pink_3",
+}
+
+tile{
+  layer = 1,
+  x = 200,
+  y = 64,
+  width = 16,
+  height = 8,
+  pattern = "chair_up_pink_3",
+}
+
+npc{
+  name = "Room4_4_Schueler",
+  layer = 0,
+  x = 248,
+  y = 109,
+  direction = 2,
+  subtype = 1,
+  sprite = "npc/kaleido",
+}
+
+destination{
+  name = "near_npc",
+  layer = 0,
+  x = 272,
+  y = 109,
+  direction = 2,
+}
+

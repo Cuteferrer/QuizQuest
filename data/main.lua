@@ -14,6 +14,7 @@ function sol.main:on_started()
 
 	sol.main.load_settings()
 	math.randomseed(os.time())
+	sol.video.set_fullscreen(not sol.video.is_fullscreen())
 
 	-- Logo.
 	local logo_menu = {}
