@@ -1,65 +1,64 @@
 # QuizQuest
 
-**2D-RPG-Lernspiel zur Prüfungsvorbereitung (AP Teil 2, Fachinformatiker Anwendungsentwicklung)**
+**2D RPG learning game for exam preparation (AP Part 2, IT Specialist for Application Development)**
 
-> Projektsimulation an der Berufsschule zur Vorbereitung auf das IHK-Abschlussprojekt.
-> Das Team tritt als fiktive Firma **Mr.Bit GmbH** auf, die Berufsschule als Auftraggeber.
+> Project simulation at vocational school in preparation for the IHK final project.
+> The team acts as the fictional company **Mr.Bit GmbH**, with the vocational school as the client.
 
-## Worum geht's?
+## What's it about?
 
-QuizQuest ist ein Top-down-RPG im Retro-Stil. Die Spielwelt ist ein Schulgebäude, Mitschüler sind Gegner, Lehrer die Bosse. Gekämpft wird mit Wissen: Jede richtige Antwort kostet den Gegner 1 HP, jede falsche den Spieler ein Herz.
+QuizQuest is a retro-style top-down RPG. The game world is a school building, classmates are the enemies and teachers are the bosses. You fight with knowledge: every correct answer costs the enemy 1 HP, every wrong answer costs the player one heart.
 
-- **4 Level**, je ein Themengebiet: Projektmanagement, Entwicklung, UML, WiSo
-- **25 Fragen pro Level** (Single- und Multiple-Choice), verteilt auf 4 Mitschüler und 1 Lehrer à 5 Fragen
-- **3 Herzen pro Level**, Bosskampf mit 100-Sekunden-Timer
-- Lösung und Erklärung erst nach der richtigen Antwort
-- Automatischer Checkpoint nach jedem geschafften Level
-- Tutorial im ersten Raum von Level 1
+- **4 levels**, one topic each: Project Management, Development, UML, Economics & Social Studies (WiSo)
+- **25 questions per level** (single and multiple choice), split across 4 classmates and 1 teacher with 5 questions each
+- **3 hearts per level**, boss fight with a 100-second timer
+- Solution and explanation shown only after the correct answer
+- Automatic checkpoint after each completed level
+- Tutorial in the first room of level 1
 
-## Technik
+## Tech Stack
 
-| Komponente | Verwendet |
+| Component | Used |
 |---|---|
 | Engine | [Solarus](https://www.solarus-games.org/) 2.1 |
 | Editor | Solarus Quest Editor |
-| Sprache | Lua (LuaJIT) |
-| Grafik | LibreSprite (Pixel-Art) |
-| Fragen | JSON-Dateien in `data/questions/` |
-| Plattform | Windows, Linux · offline · nur Tastatur |
+| Language | Lua (LuaJIT) |
+| Graphics | LibreSprite (pixel art) |
+| Questions | JSON files in `data/questions/` |
+| Platform | Windows, Linux · offline · keyboard only |
 
-## Starten
+## Getting Started
 
-1. [Solarus Launcher / Quest Editor](https://www.solarus-games.org/en/development/download) installieren
-2. Repository klonen:
+1. Install the [Solarus Launcher / Quest Editor](https://www.solarus-games.org/en/development/download)
+2. Clone the repository:
    ```bash
    git clone https://github.com/Cuteferrer/QuizQuest.git
    ```
-3. Im Quest Editor den Ordner `QuizQuest` öffnen und das Spiel starten (oder im Solarus Launcher den Ordner hinzufügen)
+3. Open the `QuizQuest` folder in the Quest Editor and run the game (or add the folder in the Solarus Launcher)
 
-## Steuerung
+## Controls
 
-| Taste | Funktion |
+| Key | Action |
 |---|---|
-| Pfeiltasten | Bewegen / Antwort auswählen |
-| Aktionstaste | NPC ansprechen, Kampf starten |
-| Leertaste | Antwort markieren |
-| Enter | Antwort bestätigen |
-| Escape | Pausemenü / Kampf abbrechen |
+| Arrow keys | Move / select answer |
+| Action key | Talk to NPC, start fight |
+| Space | Mark answer |
+| Enter | Confirm answer |
+| Escape | Pause menu / cancel fight |
 
-## Projektstruktur
+## Project Structure
 
 ```
 data/
-├── maps/        Klassenzimmer, Flure, Lehrerräume
-├── questions/   Fragenkataloge (JSON) je Themengebiet
-├── scripts/     Spiellogik (game_manager, quiz_menu, json, HUD, Menüs)
-├── sprites/     Figuren und Objekte
-├── tilesets/    Kachelgrafiken
-└── main.lua     Einstiegspunkt
+├── maps/        Classrooms, hallways, teachers' rooms
+├── questions/   Question catalogs (JSON) per topic
+├── scripts/     Game logic (game_manager, quiz_menu, json, HUD, menus)
+├── sprites/     Characters and objects
+├── tilesets/    Tile graphics
+└── main.lua     Entry point
 ```
-|
 
-## Lizenz
+## License
 
-Projektcode: siehe [LICENSE](LICENSE). Die Solarus-Engine steht unter der GPL v3.
-QuizQuest ist ein Schulprojekt und nur für den Einsatz an der BSZ 3 Regensburg vorgesehen.
+Project code: see [LICENSE](LICENSE). The Solarus engine is licensed under the GPL v3.
+QuizQuest is a school project and is intended for use at BSZ 3 Regensburg only.
