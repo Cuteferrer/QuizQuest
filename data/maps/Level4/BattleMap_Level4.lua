@@ -29,10 +29,34 @@ local quiz_ids = {
     "AE2_WISO_Q024",
     "AE2_WISO_Q025",
 }
+
+-- Jedes Level (Room1_4 .. Room5_4) bekommt 5 Fragen aus quiz_ids:
+-- Level 1 = Fragen 1-5, Level 2 = Fragen 6-10, ..., Level 5 = Fragen 21-25.
+local QUESTIONS_PER_LEVEL = 5
+
+-- Ermittelt das Level aus der Map, von der der Spieler kommt (z.B. "Level4/Room3_4" -> 3).
+local function get_level()
+	local level = tonumber(tostring(game.quiz_return_map):match("Room(%d+)_4"))
+	return level or 1
+end
+
+-- Liefert die Fragen-IDs fuer ein Level.
+local function get_level_quiz_ids(level)
+	local ids = {}
+	local first = (level - 1) * QUESTIONS_PER_LEVEL + 1
+	for i = first, first + QUESTIONS_PER_LEVEL - 1 do
+		if quiz_ids[i] then
+			ids[#ids + 1] = quiz_ids[i]
+		end
+	end
+	return ids
+end
+
 local function start_quiz()
 	local hero = map:get_hero()
 	hero:freeze()
-	quiz_menu.start(map, quiz_ids, game.shared_npc_animation_set, function(result, score)
+  local level_quiz_ids = get_level_quiz_ids(get_level())
+	quiz_menu.start(map, level_quiz_ids, game.shared_npc_animation_set, function(result, score)
 	if result == "win" then
 		-- Back to NPC
 		hero:unfreeze()

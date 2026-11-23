@@ -14,10 +14,15 @@ local QUESTIONS_FILES = {
 	"questions/AE2_PM_Fragen.json",
 	"questions/AE2_WISO_Fragen.json",
 }
-local IMAGE_DIR = "images/"                 -- media.src -> images/<src>.png
+local IMAGE_DIR = "images/"                 -- Bild zur Frage: images/<Fragen-ID>.png
 
 local PROMPT_X, PROMPT_Y        = 16, 12
 local PROMPT_IMG_W, PROMPT_IMG_H = 96, 50
+-- Layout, wenn die Frage ein Bild hat: Bild oben rechts, Fragetext links daneben.
+local IMG_X, IMG_Y, IMG_W, IMG_H = 196, 8, 116, 70   -- darunter: Hinweis, dann Gegner-Herzen (y=96)
+local IMG_PROMPT_Y, IMG_PROMPT_W = 28, 172
+-- Vergroesserte Ansicht (Taste Tab)
+local ZOOM_X, ZOOM_Y, ZOOM_W, ZOOM_H = 8, 8, 304, 210
 local OPT_X, OPT_Y0, OPT_STEP   = 16, 110, 20
 local BOX                       = 8      -- checkbox size
 local NPC_X, NPC_Y              = 270, 160
@@ -90,6 +95,7 @@ function quiz_menu.start(context, ids, npc_sprite_id, on_finished)
   local prompt_lines = {}
 	local correct_set = {}       -- correct_set[i] = true for current question
 	local current_image = nil
+	local image_zoomed = false
 	local player_lives = 3
 	local enemy_lives = #questions
 	local score = 0
@@ -101,6 +107,7 @@ function quiz_menu.start(context, ids, npc_sprite_id, on_finished)
   local heart_empty = sol.sprite.create("hud/empty_heart")
 
 	local prompt_text = sol.text_surface.create{ font = FONT, horizontal_alignment = "left" }
+	local hint_text = sol.text_surface.create{ font = FONT, horizontal_alignment = "left" }
 	local option_texts = {}
 	local function option_text(i)
 		if not option_texts[i] then
@@ -111,11 +118,20 @@ function quiz_menu.start(context, ids, npc_sprite_id, on_finished)
 	end
 
 	local image_cache = {}
+	-- Laedt images/<Fragen-ID>.png, falls vorhanden (sonst nil).
 	local function get_image(path)
 		if not path then return nil end
 		if image_cache[path] == nil then
-			local ok, surf = pcall(sol.surface.load, path)
-			image_cache[path] = ok and surf or false
+			local surf = false
+			if sol.file.exists(path) then
+				local ok, s = pcall(sol.surface.load, path)
+				if ok and s then
+					surf = s
+				else
+					print("quiz: Bild konnte nicht geladen werden: " .. path)
+				end
+			end
+			image_cache[path] = surf
 		end
 		return image_cache[path] or nil
 	end
@@ -124,7 +140,9 @@ function quiz_menu.start(context, ids, npc_sprite_id, on_finished)
 		local q = questions[q_index]
 		num_options = #q.options
 		prompt_text:set_text(q.question or "")
-    prompt_lines = wrap(q.question or "", FONT, 16, PROMPT_W)
+		current_image = get_image(IMAGE_DIR .. q.id .. ".png")
+		image_zoomed = false
+		prompt_lines = wrap(q.question or "", FONT, 16, current_image and IMG_PROMPT_W or PROMPT_W)
 		for i = 1, num_options do
 			option_text(i):set_text(q.options[i].text or "")
 		end
@@ -134,7 +152,6 @@ function quiz_menu.start(context, ids, npc_sprite_id, on_finished)
 		for i = 1, num_options do
 			if correct_ids[q.options[i].id] then correct_set[i] = true end
 		end
-		current_image = q.media and q.media.src and get_image(IMAGE_DIR .. q.media.src .. ".png") or nil
 		marked = {}
 		cursor = 1
 	end
@@ -162,11 +179,17 @@ function quiz_menu.start(context, ids, npc_sprite_id, on_finished)
 
 	local previous_video_draw = sol.video.on_draw
 
+	-- Zeichnet das Bild in die Box (seitenverhaeltnistreu, zentriert).
 	local function draw_image(screen, surface, qx, qy, box_w, box_h, scale)
 		if not surface then return end
 		local sw, sh = surface:get_size()
-		surface:set_scale(box_w * scale / sw, box_h * scale / sh)
-		surface:draw(screen, qx * scale, qy * scale)
+		local fit = math.min(box_w / sw, box_h / sh)
+		local dw, dh = sw * fit, sh * fit
+		local dx, dy = qx + (box_w - dw) / 2, qy + (box_h - dh) / 2
+		screen:fill_color({255, 255, 255}, math.floor((dx - 1) * scale), math.floor((dy - 1) * scale),
+			math.ceil((dw + 2) * scale), math.ceil((dh + 2) * scale))
+		surface:set_scale(fit * scale, fit * scale)
+		surface:draw(screen, math.floor(dx * scale), math.floor(dy * scale))
 	end
 
 local function draw_hearts(screen, full_count, total, qx, qy, scale)
@@ -185,26 +208,45 @@ end
 		load_question()
 	end
 
-	function menu:on_key_released(command)
+	-- Wichtig: Tasten werden beim DRUECKEN ausgewertet und sowohl Druecken als auch
+	-- Loslassen werden komplett verschluckt (return true). Vorher wurde nur das
+	-- Loslassen abgefangen: das Druecken (z.B. Pfeil hoch/runter) kam beim Spiel an,
+	-- das Loslassen aber nie -> nach der Rueckkehr lief der Held endlos weiter.
+	function menu:on_key_pressed(command)
+		-- Bild vergroessern / verkleinern
+		if current_image and command == "tab" then
+			image_zoomed = not image_zoomed
+			return true
+		end
+		if image_zoomed then
+			if command == "escape" or command == "return" or command == "space" then
+				image_zoomed = false
+			end
+			return true
+		end
 		if command == "up" then
 			cursor = (cursor - 2) % num_options + 1
-			return true
 		elseif command == "down" then
 			cursor = cursor % num_options + 1
-			return true
-  		elseif command == "space" then
+		elseif command == "space" then
 			marked[cursor] = (not marked[cursor]) or nil   -- Check / Uncheck
-			return true
 		elseif command == "return" then
 			confirm()
-			return true
-    elseif command == "escape" then
-     menu.result = "exit"
+		elseif command == "escape" then
+			menu.result = "exit"
 			sol.menu.stop(menu)
-      return false
 		end
-		return false
+		return true
 	end
+
+	function menu:on_key_released(command)
+		return true
+	end
+
+	function menu:on_joypad_button_pressed() return true end
+	function menu:on_joypad_button_released() return true end
+	function menu:on_joypad_axis_moved() return true end
+	function menu:on_joypad_hat_moved() return true end
 
 	function menu:on_finished()
 		sol.video.on_draw = previous_video_draw
@@ -221,14 +263,29 @@ end
 			for i = 1, num_options do
 				option_text(i):set_font_size(math.floor(14 * scale))
 			end
+			hint_text:set_font_size(math.floor(10 * scale))
 			last_scale = scale
 		end
 
 		screen:fill_color({0, 0, 0, 150})
 
-		draw_image(screen, current_image, PROMPT_X, PROMPT_Y, PROMPT_IMG_W, PROMPT_IMG_H, scale)
-		local line_h = 18  
+		-- Vergroesserte Bildansicht
+		if current_image and image_zoomed then
+			screen:fill_color({0, 0, 0, 220})
+			draw_image(screen, current_image, ZOOM_X, ZOOM_Y, ZOOM_W, ZOOM_H, scale)
+			hint_text:set_text("[Tab] zurueck zur Frage")
+			hint_text:draw(screen, ZOOM_X * scale, (ZOOM_Y + ZOOM_H + 10) * scale)
+			return
+		end
+
+		local line_h = 18
 		local ty = PROMPT_Y + PROMPT_IMG_H + 6
+		if current_image then
+			draw_image(screen, current_image, IMG_X, IMG_Y, IMG_W, IMG_H, scale)
+			hint_text:set_text("[Tab] Bild vergroessern")
+			hint_text:draw(screen, IMG_X * scale, (IMG_Y + IMG_H + 6) * scale)
+			ty = IMG_PROMPT_Y
+		end
 		for _, line in ipairs(prompt_lines) do
 			prompt_text:set_text(line)
 			prompt_text:draw(screen, PROMPT_X * scale, ty * scale)
