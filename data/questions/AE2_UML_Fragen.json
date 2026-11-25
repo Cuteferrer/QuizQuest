@@ -21,7 +21,7 @@
     "question": "Welches objektorientierte Konzept wird im abgebildeten Diagramm durch den Pfeil mit der geschlossenen, nicht ausgemalten Spitze dargestellt?",
     "media": {
       "type": "image",
-      "src": "image_Q002",
+      "src": "image_agent_tag_8778342727947502313",
       "alt": "UML Klassendiagramm mit Basisklasse und abgeleiteten Klassen"
     },
     "options": [
@@ -55,7 +55,7 @@
     "question": "Welche Aussagen zu den <> und <> Beziehungen im abgebildeten Anwendungsfalldiagramm (Use-Case-Diagramm) sind zutreffend?",
     "media": {
       "type": "image",
-      "src": "image_Q004",
+      "src": "image_agent_tag_8778342727947503498",
       "alt": "Use Case Diagramm mit Site User und Webmaster sowie Include und Extend Beziehungen"
     },
     "options": [
@@ -104,7 +104,7 @@
     "question": "Das abgebildete Diagramm zeigt Kontrollflüsse zwischen verschiedenen Aktionen. Welchem UML-Diagrammtyp ist diese Darstellungsform (Knoten, Übergänge, Start-/Endknoten) am ehesten zuzuordnen?",
     "media": {
       "type": "image",
-      "src": "image_Q007",
+      "src": "image_agent_tag_8778342727947505224",
       "alt": "Abstraktes Flussdiagramm bestehend aus Rechtecken, Rauten und Kontrollflüssen"
     },
     "options": [

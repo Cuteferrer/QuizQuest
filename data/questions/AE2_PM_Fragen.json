@@ -1,0 +1,417 @@
+[
+{
+"id": "AE2_PM_Q001",
+"topic": "Projektmanagement / Agile Methoden (Scrum)",
+"type": "single_choice",
+"question": "Welche Verantwortung obliegt im Scrum-Framework primär dem Product Owner?",
+"media": null,
+"options": [
+{ "id": "A", "text": "Die Zuweisung von Tasks an einzelne Entwickler während der Sprint-Planung" },
+{ "id": "B", "text": "Die Moderation des Daily Scrum und die Beseitigung von Impediments" },
+{ "id": "C", "text": "Die Maximierung des Werts des Produkts und die Verwaltung des Product Backlogs" },
+{ "id": "D", "text": "Die finale technische Architekturentscheidung für das Inkrement" }
+],
+"correct_answers": ["C"],
+"explanation": "Der Product Owner ist für die Maximierung des Produktwerts und die effektive Verwaltung des Product Backlogs verantwortlich. Task-Zuweisungen erfolgen im Entwicklerteam selbstorganisiert, der Scrum Master beseitigt Impediments und leitet das Daily Scrum bei Bedarf an."
+},
+{
+"id": "AE2_PM_Q002",
+"topic": "Projektmanagement / Netzplantechnik",
+"type": "single_choice",
+"question": "Gegeben ist der abgebildete Vorgangsknoten eines Netzplans. Wie hoch ist der Gesamtpuffer (GP) dieses Vorgangs?",
+"media": {
+"type": "image",
+"src": "AE2_PM_Q002.png",
+"alt": "Vorgangsknoten im Netzplan nach DIN 69900: Vorgangskennung V03, Dauer D=5. Oben links (FAZ)=12, oben rechts (FEZ)=17. Unten links (SAZ)=15, unten rechts (SEZ)=20."
+},
+"options": [
+{ "id": "A", "text": "3 Zeiteinheiten" },
+{ "id": "B", "text": "0 Zeiteinheiten" },
+{ "id": "C", "text": "5 Zeiteinheiten" },
+{ "id": "D", "text": "8 Zeiteinheiten" }
+],
+"correct_answers": ["A"],
+"explanation": "Der Gesamtpuffer (GP) berechnet sich aus SAZ - FAZ (oder SEZ - FEZ). Hier: 15 - 12 = 3 (bzw. 20 - 17 = 3 Zeiteinheiten)."
+},
+{
+"id": "AE2_PM_Q003",
+"topic": "Projektmanagement / Anforderungsanalyse",
+"type": "multiple_choice",
+"question": "Welche der folgenden Merkmale kennzeichnen typischerweise das Lastenheft im Unterschied zum Pflichtenheft? (Wähle zwei Antworten)",
+"media": null,
+"options": [
+{ "id": "A", "text": "Es wird primär vom Auftraggeber (Kunden) formuliert." },
+{ "id": "B", "text": "Es beschreibt detailliert die technische Umsetzung und Systemarchitektur." },
+{ "id": "C", "text": "Es dient als konkrete Ausführungsanweisung für das Software-Entwicklungsteam." },
+{ "id": "D", "text": "Es beschreibt das 'Was' und 'Wozu' aus Sicht der Fachanforderung." }
+],
+"correct_answers": ["A", "D"],
+"explanation": "Das Lastenheft enthält die Gesamtheit der Anforderungen des Auftraggebers (Was/Wozu). Das Pflichtenheft wird vom Auftragnehmer erstellt und beschreibt das 'Wie' der technischen Umsetzung."
+},
+{
+"id": "AE2_PM_Q004",
+"topic": "Projektmanagement / Netzplantechnik",
+"type": "single_choice",
+"question": "Betrachten Sie das abgebildete Gantt-Diagramm eines Softwareprojekts. Welcher Pfad bildet den kritischen Pfad?",
+"media": {
+"type": "image",
+"src": "AE2_PM_Q004.png",
+"alt": "Gantt-Diagramm mit Vorgängen A bis E. A (Dauer 3d) -> B (Dauer 5d) -> E (Dauer 4d) bilden eine durchgehende Kette ohne Puffer. C (Dauer 2d) und D (Dauer 3d) laufen parallel zu B mit Freiräumen."
+},
+"options": [
+{ "id": "A", "text": "Pfad A -> C -> D -> E" },
+{ "id": "B", "text": "Pfad C -> D" },
+{ "id": "C", "text": "Pfad A -> D -> E" },
+{ "id": "D", "text": "Pfad A -> B -> E" }
+],
+"correct_answers": ["D"],
+"explanation": "Der kritische Pfad ist der längste Pfad durch den Netzplan/das Diagramm, bei dem die Pufferzeiten 0 betragen. Pfad A (3d) + B (5d) + E (4d) = 12 Tage ohne zeitlichen Spielraum."
+},
+{
+"id": "AE2_PM_Q005",
+"topic": "Projektmanagement / Aufwandsschätzung",
+"type": "single_choice",
+"question": "Welches Ziel verfolgt der Einsatz der Fibonacci-Folge (1, 2, 3, 5, 8, 13, 21...) beim Planning Poker?",
+"media": null,
+"options": [
+{ "id": "A", "text": "Genaue Abrechnung der geleisteten Personenstunden gegenüber dem Auftraggeber" },
+{ "id": "B", "text": "Berücksichtigung der exponentiell steigenden Unsicherheit bei größeren Aufgaben" },
+{ "id": "C", "text": "Exakte Festlegung der Kalendertage bis zur Fertigstellung einer User Story" },
+{ "id": "D", "text": "Errechnung des mathematischen Mittelwerts aller Abgebenen Schätzungen" }
+],
+"correct_answers": ["B"],
+"explanation": "Die nicht-linearen Abstände der Fibonacci-Folge spiegeln wider, dass die Unsicherheit und das Risiko bei der Schätzung mit zunehmender Größe der Aufgabe steigen."
+},
+{
+"id": "AE2_PM_Q006",
+"topic": "Projektmanagement / Nutzwertanalyse",
+"type": "single_choice",
+"question": "Basierend auf der abgebildeten Nutzwertanalyse: Welches Softwaresystem (A oder B) erzielt den höheren Gesamtnutzwert und wie hoch ist dieser?",
+"media": {
+"type": "image",
+"src": "AE2_PM_Q006.png",
+"alt": "Tabelle einer Nutzwertanalyse. Kriterium 1: Usability (Gewichtung 40%), System A: 8 Pkt, System B: 6 Pkt. Kriterium 2: Performance (Gewichtung 30%), System A: 5 Pkt, System B: 9 Pkt. Kriterium 3: Preis (Gewichtung 30%), System A: 7 Pkt, System B: 5 Pkt."
+},
+"options": [
+{ "id": "A", "text": "System B mit einem Gesamtnutzwert von 6,6" },
+{ "id": "B", "text": "System A mit einem Gesamtnutzwert von 6,7" },
+{ "id": "C", "text": "System A mit einem Gesamtnutzwert von 6,8" },
+{ "id": "D", "text": "System B mit einem Gesamtnutzwert von 6,8" }
+],
+"correct_answers": ["C"],
+"explanation": "System A: (0,4 * 8) + (0,3 * 5) + (0,3 * 7) = 3,2 + 1,5 + 2,1 = 6,8. System B: (0,4 * 6) + (0,3 * 9) + (0,3 * 5) = 2,4 + 2,7 + 1,5 = 6,6. System A ist mit 6,8 besser."
+},
+{
+"id": "AE2_PM_Q007",
+"topic": "Projektmanagement / Risikomanagement",
+"type": "single_choice",
+"question": "Ein Projektteam ermittelt für den Ausfall eines Kernservers eine Eintrittswahrscheinlichkeit von 10 % und einen Schadenswert von 50.000 €. Wie hoch ist der Risikowert (Risikoerwartungswert)?",
+"media": null,
+"options": [
+{ "id": "A", "text": "500 €" },
+{ "id": "B", "text": "45.000 €" },
+{ "id": "C", "text": "50.000 €" },
+{ "id": "D", "text": "5.000 €" }
+],
+"correct_answers": ["D"],
+"explanation": "Der Risikowert errechnet sich aus Eintrittswahrscheinlichkeit * Schadensausmaß. 10 % von 50.000 € = 0,10 * 50.000 € = 5.000 €."
+},
+{
+"id": "AE2_PM_Q008",
+"topic": "Projektmanagement / Agile Methoden (Kanban)",
+"type": "single_choice",
+"question": "Sie sehen das folgende Kanban-Board während eines Daily Standups. Welches Problem liegt in der Phase 'In Progress' vor und wie sollte das Team reagieren?",
+"media": {
+"type": "image",
+"src": "AE2_PM_Q008.png",
+"alt": "Kanban-Board mit den Spalten 'Backlog', 'Ready', 'In Progress (WIP Limit: 3)', 'Testing' und 'Done'. In der Spalte 'In Progress' befinden sich 5 Kärtchen (User Stories)."
+},
+"options": [
+{ "id": "A", "text": "Das WIP-Limit ist überschritten; es dürfen keine neuen Aufgaben begonnen werden, bis der Engpass aufgelöst ist." },
+{ "id": "B", "text": "Die Spalte 'Testing' ist leer; Aufgaben müssen sofort aus 'In Progress' dorthin verschoben werden." },
+{ "id": "C", "text": "Das WIP-Limit ist zu niedrig angesetzt; es muss permanent auf 5 erhöht werden." },
+{ "id": "D", "text": "Es liegt kein Fehler vor, da WIP-Limits nur Empfehlungen ohne Verbindlichkeit darstellen." }
+],
+"correct_answers": ["A"],
+"explanation": "In 'In Progress' befinden sich 5 Tickets bei einem WIP-Limit (Work in Progress) von 3. Das Limit ist überschritten. Im Sinne des Flow-Prinzips muss das Team zuerst bestehende Aufgaben fertigstellen/unterstützen, bevor neues begonnen wird."
+},
+{
+"id": "AE2_PM_Q009",
+"topic": "Projektmanagement / Wirtschaftlichkeit",
+"type": "single_choice",
+"question": "Ein IT-Projekt verursacht einmalige Entwicklungskosten von 120.000 €. Durch die Software werden jährlich 40.000 € an Betriebskosten eingespart. Nach wie vielen Jahren ist der Amortisationszeitpunkt (Payback Period) erreicht (ohne Zinsberücksichtigung)?",
+"media": null,
+"options": [
+{ "id": "A", "text": "2 Jahre" },
+{ "id": "B", "text": "4 Jahre" },
+{ "id": "C", "text": "3 Jahre" },
+{ "id": "D", "text": "5 Jahre" }
+],
+"correct_answers": ["C"],
+"explanation": "Amortisationszeit = Anschaffungskosten / jährliche Einsparung = 120.000 € / 40.000 €/Jahr = 3 Jahre."
+},
+{
+"id": "AE2_PM_Q010",
+"topic": "Projektmanagement / Agile Methoden (Scrum)",
+"type": "single_choice",
+"question": "Die abgebildete Grafik zeigt ein Sprint Burn-down-Chart am Tag 6 eines 10-tägigen Sprints. Welche Aussage trifft auf den aktuellen Projektverlauf zu?",
+"media": {
+"type": "image",
+"src": "AE2_PM_Q010.png",
+"alt": "Burn-down-Chart. X-Achse: Tage 1-10, Y-Achse: Remaining Story Points (0-50). Gestrichelte Ideallinie von (0,50) zu (10,0). Durchgezogene Ist-Linie verläuft an Tag 6 deutlich oberhalb der Ideallinie bei 30 Story Points (Soll wäre 20)."
+},
+"options": [
+{ "id": "A", "text": "Das Team liegt hinter dem Zeitplan, da noch mehr Restaufwand verbleibt als nach der Ideallinie vorgesehen." },
+{ "id": "B", "text": "Das Team ist dem Zeitplan voraus und wird mehr Story Points fertigstellen als geplant." },
+{ "id": "C", "text": "Die Velocity des Teams hat sich im Vergleich zum letzten Sprint verdoppelt." },
+{ "id": "D", "text": "Der Sprint ist erfolgreich beendet, da noch 30 Story Points abgearbeitet wurden." }
+],
+"correct_answers": ["A"],
+"explanation": "Liegt die Ist-Linie im Burn-down-Chart über der Ideallinie, verbleibt zu diesem Zeitpunkt mehr Restaufwand als geplant. Das Team ist somit im Verzug."
+},
+{
+"id": "AE2_PM_Q011",
+"topic": "Projektmanagement / Anforderungsanalyse",
+"type": "single_choice",
+"question": "Nach welchem Standard-Schema wird eine User Story im agilen Requirements Engineering typischerweise strukturiert?",
+"media": null,
+"options": [
+{ "id": "A", "text": "Wenn [Ereignis], dann muss [System] das [Ergebnis] ausführen." },
+{ "id": "B", "text": "Das System muss [Funktion] bieten, unter der Bedingung [Qualitätskriterium]." },
+{ "id": "C", "text": "Als [Rolle] möchte ich [Funktion/Ziel], um [Nutzen/Wert]." },
+{ "id": "D", "text": "Ich als Entwickler benötige [Schnittstelle], damit [Modul] funktioniert." }
+],
+"correct_answers": ["C"],
+"explanation": "Das klassische Template einer User Story lautet: 'Als [Rolle] möchte ich [Ziel/Wunsch], um [Nutzen/Mehrwert] zu erreichen'."
+},
+{
+"id": "AE2_PM_Q012",
+"topic": "Projektmanagement / Anforderungsanalyse",
+"type": "single_choice",
+"question": "Welches Qualitätskriterium aus den INVEST-Kriterien für User Stories wird in der untenstehenden Abbildung verletzt?",
+"media": {
+"type": "image",
+"src": "AE2_PM_Q012.png",
+"alt": "Abbildung einer User Story Card. Titel: 'Gesamte Kundenverwaltung überarbeiten'. Beschreibung: 'Als Admin möchte ich alle Stammdaten, Rechnungen und Historien verwalten, um das Gesamtsystem zu modernisieren.' Story Points: 89."
+},
+"options": [
+{ "id": "A", "text": "I - Independent (Unabhängig)" },
+{ "id": "B", "text": "V - Valuable (Wertvoll)" },
+{ "id": "C", "text": "T - Testable (Testbar)" },
+{ "id": "D", "text": "S - Small (Klein / Schätzbar klein)" }
+],
+"correct_answers": ["D"],
+"explanation": "Mit 89 Story Points ist die User Story viel zu groß (Epic-Größe) für die Bearbeitung in einem einzelnen Sprint. Sie verletzt das Kriterium 'Small' (S) und muss geschnitten werden."
+},
+{
+"id": "AE2_PM_Q013",
+"topic": "Projektmanagement / Klassisches PM (V-Modell)",
+"type": "single_choice",
+"question": "Welche Testphase im V-Modell verifiziert primär die Anforderungen aus dem Lastenheft bzw. die Systemanforderungen aus Sicht des Endanwenders?",
+"media": null,
+"options": [
+{ "id": "A", "text": "Komponententest / Modultest" },
+{ "id": "B", "text": "Abnahmetest (Acceptance Test / Abnahmetest durch den Kunden)" },
+{ "id": "C", "text": "Integrationstest" },
+{ "id": "D", "text": "Code-Review" }
+],
+"correct_answers": ["B"],
+"explanation": "Im V-Modell steht die Anforderungsdefinition/das Lastenheft auf der obersten Ebene der linken Seite dem Abnahmetest (User Acceptance Test) auf der obersten Ebene der rechten Seite gegenüber."
+},
+{
+"id": "AE2_PM_Q014",
+"topic": "Projektmanagement / Klassisches PM (V-Modell)",
+"type": "single_choice",
+"question": "Welche Zuordnung entspricht der korrekten Testebene für das 'Grobe Systemdesign' im gezeigten V-Modell?",
+"media": {
+"type": "image",
+"src": "AE2_PM_Q014.png",
+"alt": "V-Modell Diagramm. Links schräg nach unten: 1. Anforderungsdefinition, 2. Grobes Systemdesign, 3. Feinentwurf, 4. Implementierung. Rechts schräg nach oben: Testebene T1, Testebene T2, Testebene T3."
+},
+"options": [
+{ "id": "A", "text": "Integrationstest / Systemintegrationstest" },
+{ "id": "B", "text": "Unit-Test / Modultest" },
+{ "id": "C", "text": "User Acceptance Test" },
+{ "id": "D", "text": "Statische Codeanalyse" }
+],
+"correct_answers": ["A"],
+"explanation": "Das grobe Systemdesign (Architektur/Schnittstellen) wird im V-Modell auf der gegenüberliegenden Rechten Seite durch den Integrationstest überprüft."
+},
+{
+"id": "AE2_PM_Q015",
+"topic": "Projektmanagement / Risikomanagement",
+"type": "multiple_choice",
+"question": "Welche der folgenden Strategien stellen adäquate Maßnahmen zur Risikobewältigung (Risk Response) dar? (Wähle zwei Antworten)",
+"media": null,
+"options": [
+{ "id": "A", "text": "Risikoeliminierung durch Ignorieren der Projektrisiken" },
+{ "id": "B", "text": "Risikovermeidung (z. B. Verzicht auf eine kritische Technologie)" },
+{ "id": "C", "text": "Risikokompensation durch nachträgliche Budgeterhöhung ohne Dokumentation" },
+{ "id": "D", "text": "Risikoverlagerung / -übertragung (z. B. Abschluss einer Versicherung oder Outsourcing)" }
+],
+"correct_answers": ["B", "D"],
+"explanation": "Klassische Strategien im Risikomanagement sind Vermeidung, Verminderung, Verlagerung (Übertragung) und Akzeptanz."
+},
+{
+"id": "AE2_PM_Q016",
+"topic": "Projektmanagement / Risikomanagement",
+"type": "single_choice",
+"question": "Betrachten Sie die abgebildete Risiko-Matrix. In welchem Bereich befindet sich ein Risiko mit 'Hoher Eintrittswahrscheinlichkeit' und 'Mittlerem Schadensausmaß', und welche Priorität hat es?",
+"media": {
+"type": "image",
+"src": "AE2_PM_Q016.png",
+"alt": "Risiko-Matrix 3x3. Y-Achse: Eintrittswahrscheinlich (Gering, Mittel, Hoch). X-Achse: Schadensausmaß (Gering, Mittel, Hoch). Farbfelder: Grün (niedrig), Gelb (mittel), Rot (hoch). Schnittpunkt Hoch/Mittel ist GELB mit Priorität 2."
+},
+"options": [
+{ "id": "A", "text": "Grüner Bereich (Niedrige Priorität)" },
+{ "id": "B", "text": "Roter Bereich (Kritische Priorität - sofortiger Projektstopp)" },
+{ "id": "C", "text": "Gelber / Orangener Bereich (Mittlere bis Hohe Priorität)" },
+{ "id": "D", "text": "Außerhalb der Matrix, da unklassifizierbar" }
+],
+"correct_answers": ["C"],
+"explanation": "Der Schnittpunkt von 'Hohe Wahrscheinlichkeit' und 'Mittleres Ausmaß' liegt im mittleren bis erhöhten Aufmerksamkeitsbereich (Gelb/Orange) und erfordert definierte Maßnahmen."
+},
+{
+"id": "AE2_PM_Q017",
+"topic": "Projektmanagement / Aufwandsschätzung",
+"type": "single_choice",
+"question": "Bei der PERT-Drei-Punkt-Schätzung werden folgende Werte ermittelt: Optimistischer Aufwand (O) = 4 Tage, Wahrscheinlicher Aufwand (M) = 7 Tage, Pessimistischer Aufwand (P) = 16 Tage. Wie hoch ist der erwartete Aufwand (E)?",
+"media": null,
+"options": [
+{ "id": "A", "text": "8,0 Tage" },
+{ "id": "B", "text": "7,0 Tage" },
+{ "id": "C", "text": "9,0 Tage" },
+{ "id": "D", "text": "10,0 Tage" }
+],
+"correct_answers": ["A"],
+"explanation": "Die PERT-Formel lautet: E = (O + 4M + P) / 6. Berechnung: (4 + 4*7 + 16) / 6 = (4 + 28 + 16) / 6 = 48 / 6 = 8 Tage."
+},
+{
+"id": "AE2_PM_Q018",
+"topic": "Projektmanagement / Netzplantechnik",
+"type": "single_choice",
+"question": "Welche Bedeutung hat ein 'Freier Puffer' (FP) im Unterschied zum 'Gesamtpuffer' (GP)?",
+"media": null,
+"options": [
+{ "id": "A", "text": "Der Freie Puffer gibt an, wie lange das gesamte Projekt maximal verzögert werden darf." },
+{ "id": "B", "text": "Der Freie Puffer ist die Zeit, um die ein Vorgang verschoben werden kann, ohne den frühesten Start seines Nachfolgers zu verschieben." },
+{ "id": "C", "text": "Der Freie Puffer beschreibt die Zeitreserve, die nur dem Projektleiter persönlich zur Verfügung steht." },
+{ "id": "D", "text": "Der Freie Puffer ist immer genau doppelt so groß wie der Gesamtpuffer." }
+],
+"correct_answers": ["B"],
+"explanation": "Der Freie Puffer (FP) betrifft nur die direkte Beziehung zum Nachfolger (FP = FAZ(Nachfolger) - FEZ(aktueller Vorgang)). Der Gesamtpuffer (GP) bezieht sich auf das Projektende."
+},
+{
+"id": "AE2_PM_Q019",
+"topic": "Projektmanagement / Agile Methoden (Scrum)",
+"type": "single_choice",
+"question": "Welche Aussage beschreibt das Hauptziel der 'Sprint Retrospektive' am Ende eines Sprints korrekt?",
+"media": null,
+"options": [
+{ "id": "A", "text": "Präsentation des fertigen Produktinkrements gegenüber den Stakeholdern zur Abnahme" },
+{ "id": "B", "text": "Detailliertes Schätzen der User Stories für den nächsten Sprint" },
+{ "id": "C", "text": "Aktualisierung des Projektbudgets und Nachverhandlung des Vertrages" },
+{ "id": "D", "text": "Überprüfung und Verbesserung der Zusammenarbeit, Prozesse und Werkzeuge des Scrum-Teams" }
+],
+"correct_answers": ["D"],
+"explanation": "Das Sprint Review dient der Abnahme/Inspektion des Inkrements mit Stakeholdern. Die Sprint Retrospektive fokussiert sich intern auf die kontinuierliche Verbesserung von Teamarbeit, Prozess und Tools."
+},
+{
+"id": "AE2_PM_Q020",
+"topic": "Projektmanagement / Projektorganisation",
+"type": "single_choice",
+"question": "Die Abbildung zeigt eine bestimmte Form der Projektorganisation in einem Unternehmen. Um welche Organisationsform handelt es sich?",
+"media": {
+"type": "image",
+"src": "AE2_PM_Q020.png",
+"alt": "Organigramm. Vertikale Fachabteilungen (Beschaffung, Entwicklung, Vertrieb). Horizontal verläuft die Projektleitung und hat direkte fachliche Weisungsbefugnis gegenüber den zugeordneten Mitarbeitern der Abteilungen."
+},
+"options": [
+{ "id": "A", "text": "Stabs-Projektorganisation (Einfluss-Projektorganisation)" },
+{ "id": "B", "text": "Matrix-Projektorganisation" },
+{ "id": "C", "text": "Autonome / Reine Projektorganisation" },
+{ "id": "D", "text": "Linienorganisation ohne Projekte" }
+],
+"correct_answers": ["B"],
+"explanation": "In der Matrix-Projektorganisation teilen sich Projektleiter (fachlich) und Abteilungsleiter (disziplinarisch) die Führung der Mitarbeiter. Dies wird im Organigramm durch Überschneidung von Linie und Projekt dargestellt."
+},
+{
+"id": "AE2_PM_Q021",
+"topic": "Projektmanagement / Wirtschaftlichkeit",
+"type": "single_choice",
+"question": "Was versteht man unter dem Begriff 'Sunk Costs' (Ehren- bzw. versunkene Kosten) im Projektmanagement?",
+"media": null,
+"options": [
+{ "id": "A", "text": "Bereits getätigte Ausgaben, die nicht mehr rückgängig gemacht werden können und bei künftigen Entscheidungen unberücksichtigt bleiben sollten" },
+{ "id": "B", "text": "Kosten, die in der Zukunft durch unvorhergesehene Risiken entstehen werden" },
+{ "id": "C", "text": "Der kalkulatorische Gewinn, der durch das Projekt erwirtschaftet wird" },
+{ "id": "D", "text": "Die laufenden Wartungskosten nach der Übergabe des Softwareprodukts" }
+],
+"correct_answers": ["A"],
+"explanation": "Sunk Costs sind in der Vergangenheit angefallene, irreversible Kosten. Sie dürfen rational keinen Einfluss auf die Entscheidung über den Fortführungs- oder Abbruchstatus eines Projekts haben."
+},
+{
+"id": "AE2_PM_Q022",
+"topic": "Projektmanagement / Aufwandsschätzung",
+"type": "multiple_choice",
+"question": "Welche der folgenden Einflussfaktoren fließen typischerweise direkt in die Berechnung der Function-Point-Analyse (FPA) ein? (Wähle zwei Antworten)",
+"media": null,
+"options": [
+{ "id": "A", "text": "Die gewählte Programmiersprache (z. B. C++ vs. Python)" },
+{ "id": "B", "text": "Anzahl und Komplexität der externen Eingaben (Inputs) und Abfragen (Queries)" },
+{ "id": "C", "text": "Die Stundensätze der eingesetzten Softwareentwickler" },
+{ "id": "D", "text": "Anzahl und Komplexität der internen Logikdatenbestände (Internal Logical Files)" }
+],
+"correct_answers": ["B", "D"],
+"explanation": "Die Function-Point-Analyse bewertet den funktionalen Umfang aus Anwendersicht basierend auf 5 Funktionstypen: Eingaben, Ausgaben, Abfragen, interne Datenbestände und externe Schnittstellen. Die Technologie/Programmiersprache ist primär unabhängig von den unbereinigten Function Points."
+},
+{
+"id": "AE2_PM_Q023",
+"topic": "Projektmanagement / Netzplantechnik",
+"type": "single_choice",
+"question": "Welche minimale Gesamtdauer ergibt sich für das Projekt aus dem dargestellten Netzplan?",
+"media": {
+"type": "image",
+"src": "media/pm_q023.png",
+"alt": "Netzplan mit Startknoten (t=0). Pfad 1: A (Dauer 4) -> B (Dauer 6) -> End. Pfad 2: C (Dauer 3) -> D (Dauer 8) -> End. Pfad 3: E (Dauer 2) -> End."
+},
+"options": [
+{ "id": "A", "text": "10 Zeiteinheiten" },
+{ "id": "B", "text": "23 Zeiteinheiten" },
+{ "id": "C", "text": "11 Zeiteinheiten" },
+{ "id": "D", "text": "14 Zeiteinheiten" }
+],
+"correct_answers": ["C"],
+"explanation": "Pfad 1 (A+B) = 4 + 6 = 10. Pfad 2 (C+D) = 3 + 8 = 11. Pfad 3 (E) = 2. Die Gesamtdauer des Projekts wird durch den längsten Pfad bestimmt = 11 Zeiteinheiten."
+},
+{
+"id": "AE2_PM_Q024",
+"topic": "Projektmanagement / Klassisches PM",
+"type": "single_choice",
+"question": "Welcher Kernaspekt beschreibt das 'Magische Dreieck' des Projektmanagements?",
+"media": null,
+"options": [
+{ "id": "A", "text": "Das Zusammenspiel von Scrum Master, Product Owner und Entwicklerteam" },
+{ "id": "B", "text": "Die drei Phasen des Risikomanagements: Identifikation, Bewertung und Steuerung" },
+{ "id": "C", "text": "Die Dreiteilung der Testebenen in Unit-, Integrations- und Systemtest" },
+{ "id": "D", "text": "Die Konkurrenz und Abhängigkeit der Zielgrößen Zeit (Termine), Kosten (Budget) und Qualität/Leistungsumfang (Scope)" }
+],
+"correct_answers": ["D"],
+"explanation": "Das Magische Dreieck verdeutlicht, dass die Dimensionen Zeit, Kosten und Leistung/Qualität in direkter Abhängigkeit zueinander stehen; eine Änderung einer Zielgröße wirkt sich auf die anderen aus."
+},
+{
+"id": "AE2_PM_Q025",
+"topic": "Projektmanagement / Agile Methoden (Scrum)",
+"type": "single_choice",
+"question": "Ein Scrum-Team plant einen 2-wöchigen Sprint. Während des laufenden Sprints fordert der Kunde eine dringende neue Funktion an. Wie muss gemäß Scrum verfahren werden?",
+"media": null,
+"options": [
+{ "id": "A", "text": "Die Entwickler bauen die Funktion sofort ein und verlängern den Sprint um 3 Tage." },
+{ "id": "B", "text": "Der Product Owner nimmt die Anforderung entgegen, bewertet sie und ordnet sie für zukünftige Sprints im Product Backlog ein." },
+{ "id": "C", "text": "Der Scrum Master tauscht eigenmächtig zwei bestehende Tasks gegen die neue Funktion aus." },
+{ "id": "D", "text": "Die Anforderung wird ohne Rücksprache sofort im Daily Scrum in den Sprint Backlog aufgenommen." }
+],
+"correct_answers": ["B"],
+"explanation": "Der laufende Sprint Backlog ist geschützt, um Fokus zu gewährleisten. Neue Anforderungen werden vom Product Owner im Product Backlog priorisiert und frühestens im nächsten Sprint-Planning berücksichtigt."
+}
+]

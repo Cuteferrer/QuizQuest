@@ -28,6 +28,23 @@ Ja
 }
 
 dialog{
+  id = "Room1_4_Schueler",
+  next = "Room1_4_Schueler.2",
+  text = [[
+Hallo, du hast es erfolgreich 
+bis Level 4 geschafft!
+]],
+}
+
+dialog{
+  id = "Room1_4_Schueler.2",
+  text = [[
+Nun wirst du mit WiSo 
+Fragen durchlöchert!
+]],
+}
+
+dialog{
   id = "Tafel_N002",
   next = "Tafel_N002.zeichnen",
   question = "1",
@@ -46,9 +63,90 @@ Was soll ich zeichnen?
 }
 
 dialog{
-  id = "closed",
+  id = "level4.exit_todo",
   text = [[
-Gesperrt
+Diese Tür führt zum
+nächsten Level...
+Sie ist noch
+verschlossen.
+]],
+}
+
+dialog{
+  id = "level4.flur1.done",
+  text = [[
+Sehr gut! Der Weg zum
+Informatikraum ist
+frei.
+]],
+}
+
+dialog{
+  id = "level4.flur1.intro",
+  text = [[
+Halt! Hier kommt nur
+durch, wer UML-
+Diagramme versteht.
+Zeig mir, was du
+kannst!
+]],
+}
+
+dialog{
+  id = "level4.flur2.done",
+  text = [[
+Gut programmiert!
+Die Bibliothek ist
+gleich da vorne.
+]],
+}
+
+dialog{
+  id = "level4.flur2.intro",
+  text = [[
+Moment mal! Bevor du
+in die Bibliothek
+gehst: ein paar
+Fragen zur
+Softwareentwicklung!
+]],
+}
+
+dialog{
+  id = "level4.flur3.done",
+  text = [[
+Projekt erfolgreich
+abgeschlossen! Geh
+ruhig weiter.
+]],
+}
+
+dialog{
+  id = "level4.flur3.intro",
+  text = [[
+Willkommen in der
+Pausenhalle! Ins
+Lehrerzimmer nur mit
+Wissen über
+Projektmanagement!
+]],
+}
+
+dialog{
+  id = "level4.flur4.done",
+  text = [[
+Bestanden! Viel Glück
+im Prüfungsraum.
+]],
+}
+
+dialog{
+  id = "level4.flur4.intro",
+  text = [[
+Letzte Prüfung vor dem
+Prüfungsraum: Fragen
+zu Wirtschaft und
+Sozialkunde!
 ]],
 }
 

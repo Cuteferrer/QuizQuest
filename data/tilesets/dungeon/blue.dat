@@ -19267,6 +19267,16 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "2718",
+  ground = "traversable",
+  default_layer = 0,
+  x = 0,
+  y = 560,
+  width = 48,
+  height = 48,
+}
+
+tile_pattern{
   id = "272",
   ground = "empty",
   default_layer = 2,
@@ -42050,17 +42060,6 @@ tile_pattern{
 }
 
 tile_pattern{
-  id = "wall.corner.1-9",
-  ground = "wall",
-  default_layer = 0,
-  x = 0,
-  y = 560,
-  width = 24,
-  height = 24,
-  repeat_mode = "none",
-}
-
-tile_pattern{
   id = "wall.corner.1-jabu",
   ground = "wall",
   default_layer = 0,
@@ -42154,17 +42153,6 @@ tile_pattern{
   default_layer = 0,
   x = 24,
   y = 432,
-  width = 24,
-  height = 24,
-  repeat_mode = "none",
-}
-
-tile_pattern{
-  id = "wall.corner.2-9",
-  ground = "wall",
-  default_layer = 0,
-  x = 24,
-  y = 560,
   width = 24,
   height = 24,
   repeat_mode = "none",
@@ -42270,17 +42258,6 @@ tile_pattern{
 }
 
 tile_pattern{
-  id = "wall.corner.3-9",
-  ground = "wall",
-  default_layer = 0,
-  x = 0,
-  y = 584,
-  width = 24,
-  height = 24,
-  repeat_mode = "none",
-}
-
-tile_pattern{
   id = "wall.corner.3-jabu",
   ground = "wall",
   default_layer = 0,
@@ -42374,17 +42351,6 @@ tile_pattern{
   default_layer = 0,
   x = 24,
   y = 456,
-  width = 24,
-  height = 24,
-  repeat_mode = "none",
-}
-
-tile_pattern{
-  id = "wall.corner.4-9",
-  ground = "wall",
-  default_layer = 0,
-  x = 24,
-  y = 584,
   width = 24,
   height = 24,
   repeat_mode = "none",
@@ -51035,6 +51001,14 @@ tile_pattern{
   y = 480,
   width = 16,
   height = 16,
+}
+
+border_set{
+  id = "Floor_julian",
+  pattern_0 = "wall.corner.1-9",
+  pattern_1 = "wall.corner.2-9",
+  pattern_2 = "wall.corner.3-9",
+  pattern_3 = "wall.corner.4-9",
 }
 
 border_set{

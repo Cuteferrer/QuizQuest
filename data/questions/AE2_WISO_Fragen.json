@@ -1,0 +1,417 @@
+[
+  {
+    "id": "AE2_WISO_Q001",
+    "topic": "WiSo / Berufsausbildung (BBiG – Probezeit)",
+    "type": "single_choice",
+    "question": "Welche Dauer der Probezeit ist nach dem Berufsbildungsgesetz (BBiG) für ein Ausbildungsverhältnis zulässig?",
+    "media": null,
+    "options": [
+      { "id": "A", "text": "Mindestens zwei Wochen, höchstens drei Monate" },
+      { "id": "B", "text": "Mindestens einen Monat, höchstens vier Monate" },
+      { "id": "C", "text": "Genau sechs Monate, wie bei einem Arbeitsverhältnis" },
+      { "id": "D", "text": "Die Dauer kann frei zwischen Ausbildendem und Auszubildendem vereinbart werden" }
+    ],
+    "correct_answers": ["B"],
+    "explanation": "Nach § 20 BBiG beginnt das Ausbildungsverhältnis mit einer Probezeit von mindestens einem Monat und höchstens vier Monaten. Während der Probezeit kann beidseitig jederzeit ohne Einhaltung einer Frist und ohne Angabe von Gründen gekündigt werden."
+  },
+  {
+    "id": "AE2_WISO_Q002",
+    "topic": "WiSo / Entgeltabrechnung",
+    "type": "single_choice",
+    "question": "Gegeben ist der abgebildete Auszug aus einer Gehaltsabrechnung. Wie hoch ist das Nettoentgelt des Mitarbeiters?",
+    "media": {
+      "type": "image",
+      "src": "AE2_WISO_Q002.png",
+      "alt": "Gehaltsabrechnung November 2026, Steuerklasse I, keine Kirchensteuer, kinderlos. Bruttogehalt: 3.000,00 €. Abzüge: Lohnsteuer 330,00 €, Solidaritätszuschlag 0,00 €, Krankenversicherung (AN-Anteil) 262,50 €, Rentenversicherung (AN-Anteil) 279,00 €, Arbeitslosenversicherung (AN-Anteil) 39,00 €, Pflegeversicherung (AN-Anteil inkl. Kinderlosenzuschlag) 72,00 €. Nettoentgelt: ?"
+    },
+    "options": [
+      { "id": "A", "text": "2.670,00 €" },
+      { "id": "B", "text": "2.347,50 €" },
+      { "id": "C", "text": "2.017,50 €" },
+      { "id": "D", "text": "1.687,50 €" }
+    ],
+    "correct_answers": ["C"],
+    "explanation": "Vom Bruttogehalt werden Steuern und Sozialversicherungsbeiträge abgezogen: 330,00 + 262,50 + 279,00 + 39,00 + 72,00 = 982,50 €. Netto = 3.000,00 − 982,50 = 2.017,50 €. 2.670,00 € zieht nur die Lohnsteuer ab, 2.347,50 € nur die Sozialversicherung."
+  },
+  {
+    "id": "AE2_WISO_Q003",
+    "topic": "WiSo / Berufsausbildung (BBiG – Kündigung)",
+    "type": "single_choice",
+    "question": "Ein Auszubildender im zweiten Ausbildungsjahr möchte seine Ausbildung abbrechen, um ein Studium zu beginnen. Welche Aussage zur Kündigung ist richtig?",
+    "media": null,
+    "options": [
+      { "id": "A", "text": "Er kann mit einer Frist von vier Wochen schriftlich unter Angabe des Kündigungsgrundes kündigen." },
+      { "id": "B", "text": "Er kann fristlos mündlich kündigen, da er sich beruflich umorientiert." },
+      { "id": "C", "text": "Eine Kündigung ist nach der Probezeit nur durch den Ausbildenden möglich." },
+      { "id": "D", "text": "Es gelten die gesetzlichen Kündigungsfristen des § 622 BGB." }
+    ],
+    "correct_answers": ["A"],
+    "explanation": "Nach § 22 Abs. 2 Nr. 2 BBiG kann der Auszubildende nach der Probezeit mit einer Frist von vier Wochen kündigen, wenn er die Berufsausbildung aufgeben oder sich für eine andere Berufstätigkeit ausbilden lassen will. Die Kündigung muss schriftlich und unter Angabe des Grundes erfolgen."
+  },
+  {
+    "id": "AE2_WISO_Q004",
+    "topic": "WiSo / Urlaubsrecht (Teilurlaub)",
+    "type": "single_choice",
+    "question": "Gegeben ist der abgebildete Auszug aus einem Arbeitsvertrag. Wie viele Urlaubstage stehen der Mitarbeiterin im Jahr 2026 zu?",
+    "media": {
+      "type": "image",
+      "src": "AE2_WISO_Q004.png",
+      "alt": "Auszug Arbeitsvertrag: Arbeitnehmerin Lena Schmid, Beginn des Arbeitsverhältnisses: 01.08.2026, unbefristet, 5-Tage-Woche. § 7 Urlaub: Die Arbeitnehmerin erhält einen Jahresurlaub von 30 Arbeitstagen. Im Übrigen gelten die gesetzlichen Bestimmungen."
+    },
+    "options": [
+      { "id": "A", "text": "12 Tage" },
+      { "id": "B", "text": "30 Tage" },
+      { "id": "C", "text": "10 Tage" },
+      { "id": "D", "text": "13 Tage" }
+    ],
+    "correct_answers": ["D"],
+    "explanation": "Da die Wartezeit von sechs Monaten (§ 4 BUrlG) im Kalenderjahr nicht erfüllt wird, besteht Anspruch auf Teilurlaub von 1/12 pro vollem Beschäftigungsmonat (§ 5 BUrlG). August bis Dezember = 5 Monate: 30 × 5 / 12 = 12,5 Tage. Bruchteile von mindestens einem halben Tag werden auf einen ganzen Tag aufgerundet, also 13 Tage."
+  },
+  {
+    "id": "AE2_WISO_Q005",
+    "topic": "WiSo / Berufsausbildung (BBiG – Ende der Ausbildung)",
+    "type": "single_choice",
+    "question": "Wann endet ein Ausbildungsverhältnis, wenn der Auszubildende die Abschlussprüfung vor Ablauf der vertraglich vereinbarten Ausbildungszeit besteht?",
+    "media": null,
+    "options": [
+      { "id": "A", "text": "Mit dem im Ausbildungsvertrag festgelegten Enddatum" },
+      { "id": "B", "text": "Mit der Bekanntgabe des Ergebnisses durch den Prüfungsausschuss" },
+      { "id": "C", "text": "Mit Zugang des Prüfungszeugnisses per Post" },
+      { "id": "D", "text": "Am Ende des Monats, in dem die Prüfung bestanden wurde" }
+    ],
+    "correct_answers": ["B"],
+    "explanation": "Nach § 21 Abs. 2 BBiG endet das Ausbildungsverhältnis bei Bestehen der Abschlussprüfung vor Ablauf der Ausbildungszeit mit der Bekanntgabe des Ergebnisses durch den Prüfungsausschuss."
+  },
+  {
+    "id": "AE2_WISO_Q006",
+    "topic": "WiSo / Arbeitszeitgesetz (Ruhepausen)",
+    "type": "single_choice",
+    "question": "Gegeben ist der abgebildete Auszug aus einem Schichtplan eines volljährigen Mitarbeiters. Welche Aussage zur Einhaltung des Arbeitszeitgesetzes (ArbZG) ist richtig?",
+    "media": {
+      "type": "image",
+      "src": "AE2_WISO_Q006.png",
+      "alt": "Schichtplan Dienstag, Mitarbeiter Tobias Weber (32 Jahre): Arbeitsbeginn 07:30 Uhr, Pause 12:00 bis 12:30 Uhr, Arbeitsende 17:30 Uhr. Keine weiteren Pausen eingetragen."
+    },
+    "options": [
+      { "id": "A", "text": "Der Plan ist korrekt, da bei mehr als sechs Stunden Arbeitszeit 30 Minuten Pause genügen." },
+      { "id": "B", "text": "Der Plan ist fehlerhaft, da bei mehr als neun Stunden Arbeitszeit mindestens 45 Minuten Pause vorgeschrieben sind." },
+      { "id": "C", "text": "Der Plan ist fehlerhaft, da die tägliche Arbeitszeit grundsätzlich nie acht Stunden überschreiten darf." },
+      { "id": "D", "text": "Der Plan ist korrekt, da Pausen erst ab zehn Stunden Arbeitszeit verlängert werden müssen." }
+    ],
+    "correct_answers": ["B"],
+    "explanation": "Die Arbeitszeit beträgt 10 Stunden Anwesenheit minus 30 Minuten Pause = 9,5 Stunden. Nach § 4 ArbZG sind bei mehr als sechs bis neun Stunden 30 Minuten, bei mehr als neun Stunden 45 Minuten Pause vorgeschrieben. Eine Verlängerung auf bis zu 10 Stunden ist nach § 3 ArbZG zulässig, wenn im Durchschnitt von sechs Monaten 8 Stunden werktäglich nicht überschritten werden."
+  },
+  {
+    "id": "AE2_WISO_Q007",
+    "topic": "WiSo / Betriebsverfassung (Jugend- und Auszubildendenvertretung)",
+    "type": "single_choice",
+    "question": "Wer ist bei der Wahl der Jugend- und Auszubildendenvertretung (JAV) wahlberechtigt?",
+    "media": null,
+    "options": [
+      { "id": "A", "text": "Alle Arbeitnehmer unter 30 Jahren" },
+      { "id": "B", "text": "Ausschließlich Auszubildende, unabhängig vom Alter" },
+      { "id": "C", "text": "Arbeitnehmer unter 18 Jahren sowie Auszubildende unter 25 Jahren" },
+      { "id": "D", "text": "Alle Arbeitnehmer, die auch den Betriebsrat wählen dürfen" }
+    ],
+    "correct_answers": ["C"],
+    "explanation": "Nach § 60 und § 61 BetrVG sind Arbeitnehmer, die das 18. Lebensjahr noch nicht vollendet haben, sowie zu ihrer Berufsausbildung Beschäftigte, die das 25. Lebensjahr noch nicht vollendet haben, wahlberechtigt. Eine JAV wird gewählt, wenn mindestens fünf solcher Beschäftigten im Betrieb tätig sind und ein Betriebsrat besteht. Die Amtszeit beträgt zwei Jahre."
+  },
+  {
+    "id": "AE2_WISO_Q008",
+    "topic": "WiSo / Arbeitsrecht (Kündigungsfristen)",
+    "type": "single_choice",
+    "question": "Gegeben ist der abgebildete Sachverhalt. Zu welchem Termin endet das Arbeitsverhältnis frühestens?",
+    "media": {
+      "type": "image",
+      "src": "AE2_WISO_Q008.png",
+      "alt": "Sachverhalt: Arbeitnehmer Jonas Meier ist seit dem 01.03.2019 ununterbrochen bei der ByteWerk GmbH beschäftigt. Der Arbeitsvertrag enthält keine abweichende Regelung zu Kündigungsfristen, es gilt kein Tarifvertrag. Die ordentliche Kündigung durch den Arbeitgeber geht Herrn Meier am 10.11.2026 zu. Auszug § 622 Abs. 2 BGB: Betriebszugehörigkeit 2 Jahre = 1 Monat, 5 Jahre = 2 Monate, 8 Jahre = 3 Monate, jeweils zum Ende eines Kalendermonats."
+    },
+    "options": [
+      { "id": "A", "text": "08.12.2026" },
+      { "id": "B", "text": "31.12.2026" },
+      { "id": "C", "text": "31.01.2027" },
+      { "id": "D", "text": "28.02.2027" }
+    ],
+    "correct_answers": ["C"],
+    "explanation": "Zum Zeitpunkt der Kündigung besteht das Arbeitsverhältnis 7 Jahre und gut 8 Monate. Damit gilt nach § 622 Abs. 2 BGB eine Frist von zwei Monaten zum Ende eines Kalendermonats. Ab dem 10.11.2026 gerechnet endet das Arbeitsverhältnis zum 31.01.2027. Die 3-Monats-Frist würde erst ab 8 Jahren gelten."
+  },
+  {
+    "id": "AE2_WISO_Q009",
+    "topic": "WiSo / Betriebsverfassung (Betriebsrat)",
+    "type": "single_choice",
+    "question": "Welche Aussage zum Betriebsrat nach dem Betriebsverfassungsgesetz (BetrVG) ist richtig?",
+    "media": null,
+    "options": [
+      { "id": "A", "text": "Ein Betriebsrat kann in Betrieben mit in der Regel mindestens fünf ständigen wahlberechtigten Arbeitnehmern gewählt werden, von denen drei wählbar sind." },
+      { "id": "B", "text": "Der Betriebsrat wird vom Arbeitgeber für eine Amtszeit von zwei Jahren eingesetzt." },
+      { "id": "C", "text": "Ein Betriebsrat ist erst ab 20 Beschäftigten zulässig." },
+      { "id": "D", "text": "Leitende Angestellte sind bei der Betriebsratswahl wählbar und wahlberechtigt." }
+    ],
+    "correct_answers": ["A"],
+    "explanation": "Nach § 1 BetrVG werden Betriebsräte in Betrieben mit in der Regel mindestens fünf ständigen wahlberechtigten Arbeitnehmern gewählt, von denen drei wählbar sind. Die regelmäßige Amtszeit beträgt vier Jahre (§ 21 BetrVG). Leitende Angestellte fallen nicht unter das BetrVG."
+  },
+  {
+    "id": "AE2_WISO_Q010",
+    "topic": "WiSo / Rechtsformen (Handelsregister, Prokura)",
+    "type": "single_choice",
+    "question": "Gegeben ist der abgebildete Handelsregisterauszug. Welche Handlung darf Herr Bauer ohne besondere Befugnis NICHT vornehmen?",
+    "media": {
+      "type": "image",
+      "src": "AE2_WISO_Q010.png",
+      "alt": "Handelsregisterauszug Amtsgericht Regensburg, Abteilung B, HRB 12345. Firma: ByteWerk GmbH, Sitz: Regensburg. Gegenstand: Entwicklung und Vertrieb von Software. Stammkapital: 25.000,00 EUR. Geschäftsführerin: Anna Huber, einzelvertretungsberechtigt. Prokura: Einzelprokura Max Bauer."
+    },
+    "options": [
+      { "id": "A", "text": "Einen neuen Softwareentwickler einstellen" },
+      { "id": "B", "text": "Einen Bankkredit für das Unternehmen aufnehmen" },
+      { "id": "C", "text": "Einen Rechtsstreit für das Unternehmen vor Gericht führen" },
+      { "id": "D", "text": "Ein Betriebsgrundstück des Unternehmens verkaufen" }
+    ],
+    "correct_answers": ["D"],
+    "explanation": "Die Prokura ermächtigt nach § 49 HGB zu allen gerichtlichen und außergerichtlichen Geschäften, die der Betrieb eines Handelsgewerbes mit sich bringt, also auch Einstellungen, Kreditaufnahmen und Prozessführung. Zur Veräußerung und Belastung von Grundstücken ist der Prokurist nur ermächtigt, wenn ihm diese Befugnis besonders erteilt wurde."
+  },
+  {
+    "id": "AE2_WISO_Q011",
+    "topic": "WiSo / Tarifrecht (Günstigkeitsprinzip)",
+    "type": "single_choice",
+    "question": "Ein für den Betrieb geltender Tarifvertrag sieht 28 Urlaubstage vor. Im Arbeitsvertrag einer Mitarbeiterin sind 30 Urlaubstage vereinbart. Welche Regelung gilt?",
+    "media": null,
+    "options": [
+      { "id": "A", "text": "28 Tage, da der Tarifvertrag dem Arbeitsvertrag immer vorgeht" },
+      { "id": "B", "text": "30 Tage, da abweichende Abmachungen zugunsten des Arbeitnehmers zulässig sind" },
+      { "id": "C", "text": "24 Tage, da das Bundesurlaubsgesetz Vorrang vor allen Verträgen hat" },
+      { "id": "D", "text": "29 Tage als Mittelwert, bis der Betriebsrat entschieden hat" }
+    ],
+    "correct_answers": ["B"],
+    "explanation": "Nach dem Günstigkeitsprinzip (§ 4 Abs. 3 TVG) sind vom Tarifvertrag abweichende Abmachungen zulässig, wenn sie eine Änderung zugunsten des Arbeitnehmers enthalten. Der Tarifvertrag legt Mindestbedingungen fest, die nicht unterschritten, aber überschritten werden dürfen."
+  },
+  {
+    "id": "AE2_WISO_Q012",
+    "topic": "WiSo / Unternehmensorganisation (Organisationsformen)",
+    "type": "single_choice",
+    "question": "Gegeben ist das abgebildete Organigramm. Um welche Organisationsform handelt es sich und welches Merkmal trifft zu?",
+    "media": {
+      "type": "image",
+      "src": "AE2_WISO_Q012.png",
+      "alt": "Organigramm: Oben die Geschäftsleitung. Seitlich an der Verbindungslinie unterhalb der Geschäftsleitung hängt ein Kästchen 'Rechtsberatung / Datenschutz'. Unter der Geschäftsleitung drei Abteilungen: Einkauf, Vertrieb, IT. Unter jeder Abteilung jeweils zwei Gruppen. Jede Stelle ist nur über eine einzige Linie mit genau einer übergeordneten Stelle verbunden."
+    },
+    "options": [
+      { "id": "A", "text": "Matrixorganisation – jede Stelle erhält Weisungen von zwei Instanzen" },
+      { "id": "B", "text": "Mehrliniensystem – Spezialisten erteilen fachliche Weisungen an alle Abteilungen" },
+      { "id": "C", "text": "Stabliniensystem – die Stabsstelle berät die Geschäftsleitung, hat aber keine Weisungsbefugnis" },
+      { "id": "D", "text": "Spartenorganisation – die Abteilungen sind nach Produkten gegliedert" }
+    ],
+    "correct_answers": ["C"],
+    "explanation": "Es handelt sich um ein Einliniensystem, das um eine Stabsstelle ergänzt ist (Stabliniensystem). Stabsstellen unterstützen und beraten die Leitung fachlich, besitzen jedoch keine Weisungsbefugnis gegenüber den Linienstellen. Der klare Dienstweg bleibt erhalten."
+  },
+  {
+    "id": "AE2_WISO_Q013",
+    "topic": "WiSo / Tarifrecht (Friedenspflicht)",
+    "type": "single_choice",
+    "question": "Was versteht man unter der Friedenspflicht im Tarifrecht?",
+    "media": null,
+    "options": [
+      { "id": "A", "text": "Während der Laufzeit eines Tarifvertrags dürfen um die darin geregelten Inhalte keine Arbeitskämpfe geführt werden." },
+      { "id": "B", "text": "Arbeitnehmer müssen sich während eines Streiks gegenüber dem Arbeitgeber neutral verhalten." },
+      { "id": "C", "text": "Der Betriebsrat darf nicht zu Streiks aufrufen." },
+      { "id": "D", "text": "Der Arbeitgeber darf während der Tarifverhandlungen keine Kündigungen aussprechen." }
+    ],
+    "correct_answers": ["A"],
+    "explanation": "Die Friedenspflicht verbietet den Tarifparteien, während der Laufzeit eines Tarifvertrags Arbeitskampfmaßnahmen (Streik, Aussperrung) zu Themen durchzuführen, die im geltenden Tarifvertrag geregelt sind. Die Friedenspflicht des Betriebsrats nach § 74 BetrVG ist davon zu unterscheiden; Option C beschreibt diese, nicht die tarifliche Friedenspflicht."
+  },
+  {
+    "id": "AE2_WISO_Q014",
+    "topic": "WiSo / Arbeitsschutz (Sicherheitskennzeichnung)",
+    "type": "single_choice",
+    "question": "Zu welcher Kategorie der Sicherheitskennzeichnung gehört das abgebildete Zeichen?",
+    "media": {
+      "type": "image",
+      "src": "AE2_WISO_Q014.png",
+      "alt": "Kreisrundes Sicherheitszeichen mit blauem Hintergrund und weißem Symbol eines Kopfes mit aufgesetztem Gehörschutz (Kapselgehörschutz)."
+    },
+    "options": [
+      { "id": "A", "text": "Verbotszeichen" },
+      { "id": "B", "text": "Warnzeichen" },
+      { "id": "C", "text": "Rettungszeichen" },
+      { "id": "D", "text": "Gebotszeichen" }
+    ],
+    "correct_answers": ["D"],
+    "explanation": "Gebotszeichen sind rund mit blauem Hintergrund und weißem Symbol und schreiben ein bestimmtes Verhalten vor, hier 'Gehörschutz benutzen'. Verbotszeichen sind rund mit rotem Rand und Querbalken, Warnzeichen dreieckig mit gelbem Hintergrund, Rettungszeichen rechteckig mit grünem Hintergrund."
+  },
+  {
+    "id": "AE2_WISO_Q015",
+    "topic": "WiSo / Rechtsformen (GmbH)",
+    "type": "single_choice",
+    "question": "Welche Aussage zur Gesellschaft mit beschränkter Haftung (GmbH) ist richtig?",
+    "media": null,
+    "options": [
+      { "id": "A", "text": "Die Gesellschafter haften mit ihrem gesamten Privatvermögen für die Verbindlichkeiten der GmbH." },
+      { "id": "B", "text": "Das Mindeststammkapital beträgt 25.000 €; den Gläubigern haftet nur das Gesellschaftsvermögen." },
+      { "id": "C", "text": "Eine GmbH kann ohne Eintragung ins Handelsregister gegründet werden." },
+      { "id": "D", "text": "Das Mindeststammkapital beträgt 50.000 €, davon ist ein Viertel bei Gründung einzuzahlen." }
+    ],
+    "correct_answers": ["B"],
+    "explanation": "Die GmbH ist eine juristische Person (Kapitalgesellschaft) mit einem Mindeststammkapital von 25.000 € (§ 5 GmbHG). Bei der Anmeldung müssen insgesamt mindestens 12.500 € eingezahlt sein. Den Gläubigern haftet nur das Gesellschaftsvermögen. Die GmbH entsteht erst mit Eintragung in das Handelsregister (Abteilung B). 50.000 € ist das Mindestgrundkapital der AG."
+  },
+  {
+    "id": "AE2_WISO_Q016",
+    "topic": "WiSo / Tarifrecht (Ablauf von Tarifverhandlungen)",
+    "type": "single_choice",
+    "question": "Gegeben ist das abgebildete Ablaufschema einer Tarifauseinandersetzung. Welcher Schritt gehört in das mit '?' markierte Feld?",
+    "media": {
+      "type": "image",
+      "src": "AE2_WISO_Q016.png",
+      "alt": "Ablaufdiagramm von links nach rechts: Kündigung des alten Tarifvertrags → Tarifverhandlungen → Scheitern der Verhandlungen → Schlichtung → Scheitern der Schlichtung → ? → Streik (ggf. Aussperrung) → Neue Verhandlungen und Einigung → Zweite Urabstimmung → Neuer Tarifvertrag."
+    },
+    "options": [
+      { "id": "A", "text": "Allgemeinverbindlicherklärung durch das Bundesarbeitsministerium" },
+      { "id": "B", "text": "Urabstimmung der Gewerkschaftsmitglieder über einen Streik" },
+      { "id": "C", "text": "Beginn der Friedenspflicht" },
+      { "id": "D", "text": "Anhörung des Betriebsrats" }
+    ],
+    "correct_answers": ["B"],
+    "explanation": "Nach dem Scheitern der Schlichtung führt die Gewerkschaft eine Urabstimmung durch. Nach den Satzungen der meisten Gewerkschaften müssen mindestens 75 % der abstimmenden Mitglieder einem unbefristeten Streik zustimmen. Nach einer Einigung folgt die zweite Urabstimmung, für die Annahme genügen meist 25 %."
+  },
+  {
+    "id": "AE2_WISO_Q017",
+    "topic": "WiSo / Rechtsformen (KG)",
+    "type": "single_choice",
+    "question": "Wie haftet ein Kommanditist in einer Kommanditgesellschaft (KG) gegenüber den Gläubigern der Gesellschaft?",
+    "media": null,
+    "options": [
+      { "id": "A", "text": "Unbeschränkt, unmittelbar und solidarisch mit seinem Privatvermögen" },
+      { "id": "B", "text": "Gar nicht, da nur die Gesellschaft haftet" },
+      { "id": "C", "text": "Nur bis zur Höhe seiner im Handelsregister eingetragenen Einlage" },
+      { "id": "D", "text": "Bis zum Doppelten seiner Einlage" }
+    ],
+    "correct_answers": ["C"],
+    "explanation": "In der KG haftet mindestens ein Gesellschafter (Komplementär) unbeschränkt. Der Kommanditist (Teilhafter) haftet nur bis zur Höhe seiner im Handelsregister eingetragenen Einlage; ist diese vollständig geleistet, ist seine Haftung ausgeschlossen (§ 171 HGB). Er ist zudem von der Geschäftsführung ausgeschlossen."
+  },
+  {
+    "id": "AE2_WISO_Q018",
+    "topic": "WiSo / Sozialversicherung",
+    "type": "single_choice",
+    "question": "Gegeben ist die abgebildete Übersicht über die Zweige der gesetzlichen Sozialversicherung. Welcher Eintrag gehört in das mit '?' markierte Feld?",
+    "media": {
+      "type": "image",
+      "src": "AE2_WISO_Q018.png",
+      "alt": "Tabelle mit den Spalten 'Versicherungszweig', 'Träger', 'Beitragszahlung'. Zeile 1: Krankenversicherung, Krankenkassen, AN und AG. Zeile 2: Pflegeversicherung, Pflegekassen, AN und AG. Zeile 3: Rentenversicherung, Deutsche Rentenversicherung, AN und AG. Zeile 4: Arbeitslosenversicherung, Bundesagentur für Arbeit, AN und AG. Zeile 5: Unfallversicherung, ?, nur AG."
+    },
+    "options": [
+      { "id": "A", "text": "Berufsgenossenschaften" },
+      { "id": "B", "text": "Bundesagentur für Arbeit" },
+      { "id": "C", "text": "Gewerbeaufsichtsamt" },
+      { "id": "D", "text": "Deutsche Rentenversicherung" }
+    ],
+    "correct_answers": ["A"],
+    "explanation": "Träger der gesetzlichen Unfallversicherung sind in der gewerblichen Wirtschaft die Berufsgenossenschaften (im öffentlichen Dienst die Unfallkassen). Die Beiträge trägt der Arbeitgeber allein. Sie deckt Arbeitsunfälle, Wegeunfälle und Berufskrankheiten ab. Das Gewerbeaufsichtsamt ist eine staatliche Aufsichtsbehörde, kein Versicherungsträger."
+  },
+  {
+    "id": "AE2_WISO_Q019",
+    "topic": "WiSo / Rechtsformen (AG)",
+    "type": "single_choice",
+    "question": "Welches Organ einer Aktiengesellschaft (AG) bestellt und überwacht den Vorstand?",
+    "media": null,
+    "options": [
+      { "id": "A", "text": "Die Hauptversammlung" },
+      { "id": "B", "text": "Der Aufsichtsrat" },
+      { "id": "C", "text": "Der Betriebsrat" },
+      { "id": "D", "text": "Der Abschlussprüfer" }
+    ],
+    "correct_answers": ["B"],
+    "explanation": "Der Aufsichtsrat bestellt den Vorstand, beruft ihn ab und überwacht dessen Geschäftsführung (§§ 84, 111 AktG). Die Hauptversammlung wählt die Anteilseignervertreter im Aufsichtsrat, beschließt über die Gewinnverwendung und entlastet Vorstand und Aufsichtsrat."
+  },
+  {
+    "id": "AE2_WISO_Q020",
+    "topic": "WiSo / Betriebsverfassung (Mitbestimmung)",
+    "type": "single_choice",
+    "question": "Gegeben ist die abgebildete Übersicht über die Beteiligungsrechte des Betriebsrats. Die Geschäftsleitung plant die Einführung eines elektronischen Zeiterfassungssystems, das das Verhalten der Mitarbeiter aufzeichnen kann. Welche Beteiligungsstufe trifft zu?",
+    "media": {
+      "type": "image",
+      "src": "AE2_WISO_Q020.png",
+      "alt": "Treppendiagramm 'Beteiligungsrechte des Betriebsrats', von unten (schwach) nach oben (stark): Stufe 1 Informationsrecht, Stufe 2 Anhörungsrecht, Stufe 3 Beratungsrecht, Stufe 4 Widerspruchsrecht, Stufe 5 Mitbestimmungsrecht (Zustimmungspflicht, sonst Entscheidung durch Einigungsstelle)."
+    },
+    "options": [
+      { "id": "A", "text": "Informationsrecht – der Betriebsrat muss nur unterrichtet werden" },
+      { "id": "B", "text": "Beratungsrecht – die Geschäftsleitung muss die Maßnahme mit dem Betriebsrat besprechen, entscheidet aber allein" },
+      { "id": "C", "text": "Mitbestimmungsrecht – ohne Zustimmung des Betriebsrats oder Spruch der Einigungsstelle darf das System nicht eingeführt werden" },
+      { "id": "D", "text": "Anhörungsrecht – der Betriebsrat muss angehört werden, seine Meinung ist nicht bindend" }
+    ],
+    "correct_answers": ["C"],
+    "explanation": "Die Einführung und Anwendung technischer Einrichtungen, die dazu bestimmt (und nach der Rechtsprechung auch geeignet) sind, Verhalten oder Leistung der Arbeitnehmer zu überwachen, unterliegt nach § 87 Abs. 1 Nr. 6 BetrVG der echten Mitbestimmung. Kommt keine Einigung zustande, entscheidet die Einigungsstelle."
+  },
+  {
+    "id": "AE2_WISO_Q021",
+    "topic": "WiSo / Tarifrecht (Tarifvertragsarten)",
+    "type": "single_choice",
+    "question": "Welche Inhalte werden typischerweise in einem Manteltarifvertrag geregelt?",
+    "media": null,
+    "options": [
+      { "id": "A", "text": "Ausschließlich die Höhe der Löhne und Gehälter für das laufende Jahr" },
+      { "id": "B", "text": "Die Zusammensetzung und Wahl des Betriebsrats" },
+      { "id": "C", "text": "Die Höhe der Sozialversicherungsbeiträge" },
+      { "id": "D", "text": "Allgemeine Arbeitsbedingungen wie Arbeitszeit, Urlaubsdauer, Kündigungsfristen und Zuschläge" }
+    ],
+    "correct_answers": ["D"],
+    "explanation": "Der Manteltarifvertrag (Rahmentarifvertrag) regelt allgemeine, längerfristig gültige Arbeitsbedingungen wie Arbeitszeit, Urlaub, Kündigungsfristen und Zuschläge. Die konkrete Entgelthöhe steht im Lohn- bzw. Gehaltstarifvertrag, die Eingruppierung im Entgeltrahmentarifvertrag. Betriebsratswahlen regelt das BetrVG, Beitragssätze der Gesetzgeber."
+  },
+  {
+    "id": "AE2_WISO_Q022",
+    "topic": "WiSo / Arbeitsrecht (Entgeltfortzahlung)",
+    "type": "single_choice",
+    "question": "Ein Arbeitnehmer ist seit zwei Jahren beschäftigt und erkrankt. Welche Aussage nach dem Entgeltfortzahlungsgesetz (EFZG) ist richtig?",
+    "media": null,
+    "options": [
+      { "id": "A", "text": "Der Arbeitgeber zahlt das Entgelt bis zu sechs Wochen weiter; dauert die Erkrankung länger als drei Kalendertage, ist spätestens am darauffolgenden Arbeitstag eine ärztliche Bescheinigung vorzulegen." },
+      { "id": "B", "text": "Der Arbeitgeber zahlt ab dem ersten Krankheitstag Krankengeld in Höhe von 70 % des Bruttoentgelts." },
+      { "id": "C", "text": "Die Entgeltfortzahlung beträgt zwölf Wochen, danach zahlt die Rentenversicherung." },
+      { "id": "D", "text": "Ein Anspruch auf Entgeltfortzahlung besteht erst nach fünf Jahren Betriebszugehörigkeit." }
+    ],
+    "correct_answers": ["A"],
+    "explanation": "Nach § 3 EFZG besteht nach vierwöchiger ununterbrochener Dauer des Arbeitsverhältnisses Anspruch auf Entgeltfortzahlung für bis zu sechs Wochen. Nach § 5 EFZG ist bei einer Arbeitsunfähigkeit von mehr als drei Kalendertagen spätestens am darauffolgenden Arbeitstag eine ärztliche Bescheinigung vorzulegen (bei gesetzlich Versicherten über die eAU abrufbar). Danach zahlt die Krankenkasse Krankengeld."
+  },
+  {
+    "id": "AE2_WISO_Q023",
+    "topic": "WiSo / Arbeitsrecht (Kündigungsschutzgesetz)",
+    "type": "single_choice",
+    "question": "Unter welchen Voraussetzungen genießt ein Arbeitnehmer allgemeinen Kündigungsschutz nach dem Kündigungsschutzgesetz (KSchG)?",
+    "media": null,
+    "options": [
+      { "id": "A", "text": "Sofort ab dem ersten Arbeitstag, unabhängig von der Betriebsgröße" },
+      { "id": "B", "text": "Wenn das Arbeitsverhältnis länger als sechs Monate besteht und im Betrieb in der Regel mehr als zehn Arbeitnehmer beschäftigt sind" },
+      { "id": "C", "text": "Erst nach zwei Jahren Betriebszugehörigkeit und ab 50 Beschäftigten" },
+      { "id": "D", "text": "Nur wenn im Betrieb ein Betriebsrat besteht" }
+    ],
+    "correct_answers": ["B"],
+    "explanation": "Das KSchG gilt nach § 1 Abs. 1 nach einer Wartezeit von sechs Monaten und nach § 23 in Betrieben mit in der Regel mehr als zehn Arbeitnehmern (Teilzeitkräfte anteilig). Eine Kündigung muss dann sozial gerechtfertigt sein, also personen-, verhaltens- oder betriebsbedingt."
+  },
+  {
+    "id": "AE2_WISO_Q024",
+    "topic": "WiSo / Arbeitsrecht (Arbeitszeugnis)",
+    "type": "single_choice",
+    "question": "Ein Arbeitnehmer verlangt bei Beendigung seines Arbeitsverhältnisses ein qualifiziertes Arbeitszeugnis. Was muss dieses über ein einfaches Zeugnis hinaus enthalten?",
+    "media": null,
+    "options": [
+      { "id": "A", "text": "Den Grund der Kündigung und die Höhe des letzten Gehalts" },
+      { "id": "B", "text": "Angaben zu Krankheitstagen und Betriebsratstätigkeit" },
+      { "id": "C", "text": "Angaben über Leistung und Verhalten im Arbeitsverhältnis" },
+      { "id": "D", "text": "Nur Art und Dauer der Tätigkeit" }
+    ],
+    "correct_answers": ["C"],
+    "explanation": "Nach § 109 GewO enthält das einfache Zeugnis mindestens Art und Dauer der Tätigkeit. Auf Verlangen des Arbeitnehmers ist ein qualifiziertes Zeugnis zu erteilen, das sich zusätzlich auf Leistung und Verhalten erstreckt. Das Zeugnis muss wohlwollend und wahr sein; Krankheiten, Betriebsratstätigkeit oder Gehalt gehören nicht hinein."
+  },
+  {
+    "id": "AE2_WISO_Q025",
+    "topic": "WiSo / Wirtschaftliches Handeln (Ökonomisches Prinzip)",
+    "type": "single_choice",
+    "question": "Ein IT-Dienstleister soll eine fest vorgegebene Webanwendung umsetzen und wählt dafür das Angebot mit den geringsten Entwicklungskosten. Nach welchem Prinzip handelt das Unternehmen?",
+    "media": null,
+    "options": [
+      { "id": "A", "text": "Maximalprinzip" },
+      { "id": "B", "text": "Minimalprinzip" },
+      { "id": "C", "text": "Optimumprinzip" },
+      { "id": "D", "text": "Kostendeckungsprinzip" }
+    ],
+    "correct_answers": ["B"],
+    "explanation": "Beim Minimalprinzip (Sparprinzip) soll ein vorgegebenes Ergebnis mit möglichst geringem Mitteleinsatz erreicht werden. Beim Maximalprinzip wird mit gegebenen Mitteln ein möglichst großes Ergebnis angestrebt. Beim Optimumprinzip sind weder Mittel noch Ergebnis fest vorgegeben, sondern es wird das günstigste Verhältnis beider gesucht."
+  }
+]
