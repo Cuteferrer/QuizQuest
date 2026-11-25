@@ -1,6 +1,6 @@
 -- scripts/quiz_menu.lua
 -- quiz_menu.start(context, ids, npc_sprite_id, on_finished)
---   ids: { "AE2_UML_Q001", ... } — какие вопросы и в каком порядке.
+--   ids: { "AE2_UML_Q001", ... }.
 --   on_finished(result, score): result = "win" | "lose".
 
 local json = require("scripts/json")
@@ -34,12 +34,6 @@ local PROMPT_W = 288
 -- questions load
 local questions_by_id = nil
 local function load_index()
-	if questions_by_id then return questions_by_id end
-	local f, err = sol.file.open(QUESTIONS_FILE)
-	if not f then error("Unable to open " .. QUESTIONS_FILE .. ": " .. tostring(err)) end
-	local content = f:read("*a")
-	f:close()
-	content = content:gsub("^\239\187\191", "")  
 	questions_by_id = {}
 	for _, path in ipairs(QUESTIONS_FILES) do
 		local f, err = sol.file.open(path)
@@ -79,7 +73,7 @@ local function sets_equal(a, b)
 	return true
 end
 
-function quiz_menu.start(context, ids, npc_sprite_id, on_finished)
+function quiz_menu.start(context, ids, npc_sprite_id, on_finished, file_id)
 	local index = load_index()
 
 	local questions = {}

@@ -1,8 +1,3 @@
-map{ id = "School/N002", description = "start" }
-map{ id = "School/N003" }
-map{ id = "School/battle", description = "battle arena" }
-map{ id = "School/flur" }
-map{ id = "School/toil", description = ">_<" }
 map{ id = "Level4/BattleMap_Level4", description = "Level4/BattleMap_Level4" }
 map{ id = "Level4/Flur1_4", description = "Level4/Flur1_4" }
 map{ id = "Level4/Flur2_4", description = "Level4/Flur2_4" }
@@ -14,10 +9,12 @@ map{ id = "Level4/Room2_4", description = "Level4/Room2_4" }
 map{ id = "Level4/Room3_4", description = "Level4/Room3_4" }
 map{ id = "Level4/Room4_4", description = "Level4/Room4_4" }
 map{ id = "Level4/Room5_4", description = "Level4/Room5_4" }
-map{ id = "battle", description = "Battle arena for fighting " }
+map{ id = "School/N002", description = "start" }
+map{ id = "School/N003" }
+map{ id = "School/battle", description = "battle arena" }
+map{ id = "School/flur" }
+map{ id = "School/toil", description = ">_<" }
 map{ id = "battle_julian", description = "Battle arena for level_julian" }
-map{ id = "first_map", description = "First map" }
-map{ id = "flur" }
 
 tileset{ id = "bottomless_cliffs", description = "bottomless_cliffs" }
 tileset{ id = "castle", description = "Castle" }
@@ -390,10 +387,6 @@ file{ path = "maps/Level4/Flur5_4.dat", author = "Fabian Ecker", }
 file{ path = "maps/Level4/Flur5_4.lua", author = "Fabian Ecker", }
 file{ path = "maps/Level4/Room1_4.dat", author = "Fabian Ecker", }
 file{ path = "maps/Level4/Room1_4.lua", author = "Fabian Ecker", }
-file{ path = "maps/battle_julian.dat", author = "Julian", }
-file{ path = "maps/battle_julian.lua", author = "Julian", }
-file{ path = "maps/level_julian.dat", author = "Julian", }
-file{ path = "maps/level_julian.lua", author = "Julian", }
 file{ path = "maps/Level4/Room2_4.dat", author = "Fabian Ecker", }
 file{ path = "maps/Level4/Room2_4.lua", author = "Fabian Ecker", }
 file{ path = "maps/Level4/Room3_4.dat", author = "Fabian Ecker", }
@@ -402,6 +395,10 @@ file{ path = "maps/Level4/Room4_4.dat", author = "Fabian Ecker", }
 file{ path = "maps/Level4/Room4_4.lua", author = "Fabian Ecker", }
 file{ path = "maps/Level4/Room5_4.dat", author = "Fabian Ecker", }
 file{ path = "maps/Level4/Room5_4.lua", author = "Fabian Ecker", }
+file{ path = "maps/battle_julian.dat", author = "Julian", }
+file{ path = "maps/battle_julian.lua", author = "Julian", }
+file{ path = "maps/level_julian.dat", author = "Julian", }
+file{ path = "maps/level_julian.lua", author = "Julian", }
 file{ path = "musics/eduardo", author = "Eduardo Dueñas", license = "CC BY-SA 4.0" }
 file{ path = "musics/eduardo/boss.ogg", author = "Eduardo Dueñas", license = "CC BY-SA 4.0" }
 file{ path = "musics/eduardo/cave.ogg", author = "Eduardo Dueñas", license = "CC BY-SA 4.0" }
