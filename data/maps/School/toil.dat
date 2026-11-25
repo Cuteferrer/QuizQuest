@@ -1,0 +1,313 @@
+properties{
+  x = 0,
+  y = 0,
+  width = 2048,
+  height = 2048,
+  min_layer = 0,
+  max_layer = 2,
+  tileset = "dungeon/gray",
+}
+
+tile{
+  layer = 0,
+  x = 560,
+  y = 536,
+  width = 88,
+  height = 40,
+  pattern = "886",
+}
+
+tile{
+  layer = 0,
+  x = 560,
+  y = 528,
+  width = 96,
+  height = 48,
+  pattern = "floor.11-Alpha",
+}
+
+tile{
+  layer = 0,
+  x = 536,
+  y = 560,
+  width = 16,
+  height = 8,
+  pattern = "wall_tunnel.3a",
+}
+
+tile{
+  layer = 0,
+  x = 536,
+  y = 568,
+  width = 16,
+  height = 8,
+  pattern = "wall_tunnel.3b",
+}
+
+tile{
+  layer = 0,
+  x = 536,
+  y = 536,
+  width = 24,
+  height = 24,
+  pattern = "wall.corner_reverse.1-1b",
+}
+
+tile{
+  layer = 0,
+  x = 544,
+  y = 560,
+  width = 16,
+  height = 8,
+  pattern = "wall_tunnel.3a",
+}
+
+tile{
+  layer = 0,
+  x = 544,
+  y = 568,
+  width = 16,
+  height = 8,
+  pattern = "wall_tunnel.3b",
+}
+
+tile{
+  layer = 0,
+  x = 536,
+  y = 512,
+  width = 24,
+  height = 24,
+  pattern = "wall.corner.1-1",
+}
+
+tile{
+  layer = 0,
+  x = 536,
+  y = 576,
+  width = 128,
+  height = 24,
+  pattern = "wall.2-1",
+}
+
+tile{
+  layer = 0,
+  x = 560,
+  y = 512,
+  width = 96,
+  height = 24,
+  pattern = "wall.1-1",
+}
+
+tile{
+  layer = 0,
+  x = 648,
+  y = 512,
+  width = 24,
+  height = 24,
+  pattern = "wall.corner.2-1",
+}
+
+tile{
+  layer = 0,
+  x = 648,
+  y = 576,
+  width = 24,
+  height = 24,
+  pattern = "wall.corner.4-1",
+}
+
+tile{
+  layer = 0,
+  x = 648,
+  y = 528,
+  width = 24,
+  height = 48,
+  pattern = "wall.4-1",
+}
+
+tile{
+  layer = 0,
+  x = 608,
+  y = 512,
+  width = 8,
+  height = 32,
+  pattern = "10",
+  tileset = "castle",
+}
+
+tile{
+  layer = 0,
+  x = 568,
+  y = 536,
+  width = 8,
+  height = 8,
+  pattern = "tub.8",
+}
+
+tile{
+  layer = 0,
+  x = 576,
+  y = 528,
+  width = 8,
+  height = 8,
+  pattern = "tub.6",
+}
+
+tile{
+  layer = 0,
+  x = 560,
+  y = 536,
+  width = 8,
+  height = 8,
+  pattern = "tub.7",
+}
+
+tile{
+  layer = 0,
+  x = 576,
+  y = 536,
+  width = 8,
+  height = 8,
+  pattern = "tub.9",
+}
+
+tile{
+  layer = 0,
+  x = 560,
+  y = 528,
+  width = 8,
+  height = 8,
+  pattern = "tub.4",
+}
+
+tile{
+  layer = 0,
+  x = 568,
+  y = 528,
+  width = 8,
+  height = 8,
+  pattern = "tub.5",
+}
+
+tile{
+  layer = 0,
+  x = 584,
+  y = 528,
+  width = 16,
+  height = 24,
+  pattern = "barrel",
+}
+
+tile{
+  layer = 0,
+  x = 544,
+  y = 528,
+  width = 32,
+  height = 16,
+  pattern = "wall_pillar.3-9",
+}
+
+tile{
+  layer = 0,
+  x = 624,
+  y = 536,
+  width = 16,
+  height = 16,
+  pattern = "cafe_chair.2a",
+}
+
+tile{
+  layer = 0,
+  x = 608,
+  y = 528,
+  width = 8,
+  height = 32,
+  pattern = "10",
+  tileset = "castle",
+}
+
+tile{
+  layer = 0,
+  x = 624,
+  y = 528,
+  width = 16,
+  height = 8,
+  pattern = "cafePchair.2b",
+}
+
+destination{
+  name = "entry",
+  layer = 0,
+  x = 560,
+  y = 573,
+  direction = 0,
+}
+
+teletransporter{
+  layer = 0,
+  x = 536,
+  y = 560,
+  width = 16,
+  height = 16,
+  destination_map = "School/flur",
+  destination = "toil_exit",
+}
+
+npc{
+  layer = 0,
+  x = 632,
+  y = 549,
+  direction = 3,
+  subtype = 1,
+  sprite = "enemies/skelfos",
+  behavior = "dialog#",
+}
+
+wall{
+  layer = 0,
+  x = 608,
+  y = 496,
+  width = 8,
+  height = 64,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+npc{
+  layer = 0,
+  x = 592,
+  y = 541,
+  direction = 3,
+  subtype = 1,
+}
+
+npc{
+  layer = 0,
+  x = 616,
+  y = 573,
+  direction = -1,
+  subtype = 0,
+  behavior = "dialog#closed",
+}
+
+tile{
+  layer = 1,
+  x = 608,
+  y = 560,
+  width = 8,
+  height = 16,
+  pattern = "door_cache.3-1",
+}
+
+tile{
+  layer = 1,
+  x = 608,
+  y = 560,
+  width = 8,
+  height = 16,
+  pattern = "somartia_track.1",
+}
+

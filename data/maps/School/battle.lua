@@ -2,7 +2,7 @@ local map = ...
 local game = map:get_game()
 local quiz_menu = require("scripts/quiz_menu")
 
-local quiz_ids = { "AE2_UML_Q001", "AE2_UML_Q002", "AE2_UML_Q003", "AE2_UML_Q008" }
+local quiz_ids = { "AE2_UML_Q002", "AE2_UML_Q004", "AE2_UML_Q007", "AE2_UML_Q012" }
 
 local function start_quiz()
 	local hero = map:get_hero()

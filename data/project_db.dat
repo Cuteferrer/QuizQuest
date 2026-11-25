@@ -1,6 +1,8 @@
-map{ id = "battle", description = "Battle arena for fighting " }
-map{ id = "first_map", description = "First map" }
-map{ id = "flur" }
+map{ id = "School/N002", description = "start" }
+map{ id = "School/N003" }
+map{ id = "School/battle", description = "battle arena" }
+map{ id = "School/flur" }
+map{ id = "School/toil", description = ">_<" }
 
 tileset{ id = "bottomless_cliffs", description = "bottomless_cliffs" }
 tileset{ id = "castle", description = "Castle" }
@@ -45,6 +47,7 @@ sprite{ id = "chests/chest_purple", description = "Chest (purple)" }
 sprite{ id = "chests/chest_red", description = "Chest (red)" }
 sprite{ id = "chests/chest_yellow", description = "Chest (yellow)" }
 sprite{ id = "chests/large_chest_brown", description = "Large chest (brown)" }
+sprite{ id = "custom/Monitor", description = "Monitor" }
 sprite{ id = "destructibles/bush", description = "Bush" }
 sprite{ id = "destructibles/cabbagge_green", description = "Plant Green" }
 sprite{ id = "destructibles/cabbagge_grey", description = "Plant Grey" }

@@ -11,13 +11,13 @@ local map = ...
 local game = map:get_game()
 
 
-function npc1:on_interaction()
-game.quiz_return_map  = map:get_id()          -- current map id
-game.quiz_return_dest = "near_npc"            -- destination on the map near NPC
-	game.shared_npc_animation_set = npc1:get_sprite():get_animation_set()
+-- function npc1:on_interaction()
+--game.quiz_return_map  = map:get_id()          -- current map id
+--game.quiz_return_dest = "near_npc"            -- destination on the map near NPC
+--	game.shared_npc_animation_set = npc1:get_sprite():get_animation_set()
 	-- next map transition
-	map:get_hero():teleport("battle", "start")
-end
+--	map:get_hero():teleport("battle", "start")
+--end
 
 -- Event called at initialization time, as soon as this map is loaded.
 function map:on_started()
