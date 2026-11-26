@@ -10,16 +10,6 @@ properties{
 
 tile{
   layer = 0,
-  x = 0,
-  y = 0,
-  width = 440,
-  height = 288,
-  pattern = "ground_shadow",
-  tileset = "house",
-}
-
-tile{
-  layer = 0,
   x = 56,
   y = 96,
   width = 32,
@@ -1828,37 +1818,10 @@ tile{
 tile{
   layer = 0,
   x = 376,
-  y = -120,
-  width = 24,
-  height = 160,
-  pattern = "wall.4-1",
-}
-
-tile{
-  layer = 0,
-  x = 376,
   y = 32,
   width = 24,
   height = 24,
   pattern = "wall.corner_reverse.2-1",
-}
-
-tile{
-  layer = 0,
-  x = 336,
-  y = -72,
-  width = 24,
-  height = 112,
-  pattern = "wall.3-1",
-}
-
-tile{
-  layer = 0,
-  x = 360,
-  y = -72,
-  width = 16,
-  height = 104,
-  pattern = "1078",
 }
 
 tile{
@@ -2244,6 +2207,42 @@ tile{
   tileset = "trillium_castle",
 }
 
+tile{
+  layer = 0,
+  x = 376,
+  y = 24,
+  width = 24,
+  height = 16,
+  pattern = "wall.4-1",
+}
+
+tile{
+  layer = 0,
+  x = 336,
+  y = 24,
+  width = 24,
+  height = 16,
+  pattern = "wall.3-1",
+}
+
+tile{
+  layer = 0,
+  x = 336,
+  y = 32,
+  width = 24,
+  height = 24,
+  pattern = "wall.corner_reverse.1-1",
+}
+
+tile{
+  layer = 0,
+  x = 376,
+  y = 32,
+  width = 24,
+  height = 24,
+  pattern = "wall.corner_reverse.2-1",
+}
+
 destination{
   name = "destination",
   layer = 0,
@@ -2295,8 +2294,8 @@ teletransporter{
   y = 40,
   width = 16,
   height = 16,
-  destination_map = "flur",
-  destination = "destination",
+  destination_map = "School/flur",
+  destination = "N002_ausgang",
 }
 
 npc{

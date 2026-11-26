@@ -157,3 +157,12 @@ Altes Rechner mit Maus
 ]],
 }
 
+dialog{
+  id = "tag_nicht_vorbei",
+  text = [[
+Du hast noch nicht alles
+gelernt. Der Tag ist noch
+nicht vorbei
+]],
+}
+

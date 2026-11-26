@@ -1,3 +1,8 @@
+map{ id = "School/N002", description = "start" }
+map{ id = "School/N003" }
+map{ id = "School/battle", description = "battle arena" }
+map{ id = "School/flur" }
+map{ id = "School/toil", description = ">_<" }
 map{ id = "Level4/BattleMap_Level4", description = "Level4/BattleMap_Level4" }
 map{ id = "Level4/Flur1_4", description = "Level4/Flur1_4" }
 map{ id = "Level4/Flur2_4", description = "Level4/Flur2_4" }
@@ -57,6 +62,7 @@ sprite{ id = "chests/chest_purple", description = "Chest (purple)" }
 sprite{ id = "chests/chest_red", description = "Chest (red)" }
 sprite{ id = "chests/chest_yellow", description = "Chest (yellow)" }
 sprite{ id = "chests/large_chest_brown", description = "Large chest (brown)" }
+sprite{ id = "custom/Monitor", description = "Monitor" }
 sprite{ id = "custom Sprites/women_WisoBoss", description = "custom Sprites/women_WisoBoss" }
 sprite{ id = "destructibles/bush", description = "Bush" }
 sprite{ id = "destructibles/cabbagge_green", description = "Plant Green" }

@@ -35,6 +35,11 @@ local PROMPT_W = 288
 local questions_by_id = nil
 local function load_index()
 	if questions_by_id then return questions_by_id end
+	local f, err = sol.file.open(QUESTIONS_FILE)
+	if not f then error("Unable to open " .. QUESTIONS_FILE .. ": " .. tostring(err)) end
+	local content = f:read("*a")
+	f:close()
+	content = content:gsub("^\239\187\191", "")  
 	questions_by_id = {}
 	for _, path in ipairs(QUESTIONS_FILES) do
 		local f, err = sol.file.open(path)
@@ -82,7 +87,7 @@ function quiz_menu.start(context, ids, npc_sprite_id, on_finished)
 		if index[id] then
 			questions[#questions + 1] = index[id]
 		else
-			print("quiz: нет вопроса с id " .. tostring(id))
+			print("quiz: no question found, id:" .. tostring(id))
 		end
 	end
 	if #questions == 0 then return end
