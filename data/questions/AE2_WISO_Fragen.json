@@ -21,7 +21,6 @@
     "question": "Gegeben ist der abgebildete Auszug aus einer Gehaltsabrechnung. Wie hoch ist das Nettoentgelt des Mitarbeiters?",
     "media": {
       "type": "image",
-      "src": "AE2_WISO_Q002.png",
       "alt": "Gehaltsabrechnung November 2026, Steuerklasse I, keine Kirchensteuer, kinderlos. Bruttogehalt: 3.000,00 €. Abzüge: Lohnsteuer 330,00 €, Solidaritätszuschlag 0,00 €, Krankenversicherung (AN-Anteil) 262,50 €, Rentenversicherung (AN-Anteil) 279,00 €, Arbeitslosenversicherung (AN-Anteil) 39,00 €, Pflegeversicherung (AN-Anteil inkl. Kinderlosenzuschlag) 72,00 €. Nettoentgelt: ?"
     },
     "options": [
@@ -55,7 +54,6 @@
     "question": "Gegeben ist der abgebildete Auszug aus einem Arbeitsvertrag. Wie viele Urlaubstage stehen der Mitarbeiterin im Jahr 2026 zu?",
     "media": {
       "type": "image",
-      "src": "AE2_WISO_Q004.png",
       "alt": "Auszug Arbeitsvertrag: Arbeitnehmerin Lena Schmid, Beginn des Arbeitsverhältnisses: 01.08.2026, unbefristet, 5-Tage-Woche. § 7 Urlaub: Die Arbeitnehmerin erhält einen Jahresurlaub von 30 Arbeitstagen. Im Übrigen gelten die gesetzlichen Bestimmungen."
     },
     "options": [
@@ -89,7 +87,6 @@
     "question": "Gegeben ist der abgebildete Auszug aus einem Schichtplan eines volljährigen Mitarbeiters. Welche Aussage zur Einhaltung des Arbeitszeitgesetzes (ArbZG) ist richtig?",
     "media": {
       "type": "image",
-      "src": "AE2_WISO_Q006.png",
       "alt": "Schichtplan Dienstag, Mitarbeiter Tobias Weber (32 Jahre): Arbeitsbeginn 07:30 Uhr, Pause 12:00 bis 12:30 Uhr, Arbeitsende 17:30 Uhr. Keine weiteren Pausen eingetragen."
     },
     "options": [
@@ -123,7 +120,6 @@
     "question": "Gegeben ist der abgebildete Sachverhalt. Zu welchem Termin endet das Arbeitsverhältnis frühestens?",
     "media": {
       "type": "image",
-      "src": "AE2_WISO_Q008.png",
       "alt": "Sachverhalt: Arbeitnehmer Jonas Meier ist seit dem 01.03.2019 ununterbrochen bei der ByteWerk GmbH beschäftigt. Der Arbeitsvertrag enthält keine abweichende Regelung zu Kündigungsfristen, es gilt kein Tarifvertrag. Die ordentliche Kündigung durch den Arbeitgeber geht Herrn Meier am 10.11.2026 zu. Auszug § 622 Abs. 2 BGB: Betriebszugehörigkeit 2 Jahre = 1 Monat, 5 Jahre = 2 Monate, 8 Jahre = 3 Monate, jeweils zum Ende eines Kalendermonats."
     },
     "options": [
@@ -157,7 +153,6 @@
     "question": "Gegeben ist der abgebildete Handelsregisterauszug. Welche Handlung darf Herr Bauer ohne besondere Befugnis NICHT vornehmen?",
     "media": {
       "type": "image",
-      "src": "AE2_WISO_Q010.png",
       "alt": "Handelsregisterauszug Amtsgericht Regensburg, Abteilung B, HRB 12345. Firma: ByteWerk GmbH, Sitz: Regensburg. Gegenstand: Entwicklung und Vertrieb von Software. Stammkapital: 25.000,00 EUR. Geschäftsführerin: Anna Huber, einzelvertretungsberechtigt. Prokura: Einzelprokura Max Bauer."
     },
     "options": [
@@ -191,7 +186,6 @@
     "question": "Gegeben ist das abgebildete Organigramm. Um welche Organisationsform handelt es sich und welches Merkmal trifft zu?",
     "media": {
       "type": "image",
-      "src": "AE2_WISO_Q012.png",
       "alt": "Organigramm: Oben die Geschäftsleitung. Seitlich an der Verbindungslinie unterhalb der Geschäftsleitung hängt ein Kästchen 'Rechtsberatung / Datenschutz'. Unter der Geschäftsleitung drei Abteilungen: Einkauf, Vertrieb, IT. Unter jeder Abteilung jeweils zwei Gruppen. Jede Stelle ist nur über eine einzige Linie mit genau einer übergeordneten Stelle verbunden."
     },
     "options": [
@@ -225,7 +219,6 @@
     "question": "Zu welcher Kategorie der Sicherheitskennzeichnung gehört das abgebildete Zeichen?",
     "media": {
       "type": "image",
-      "src": "AE2_WISO_Q014.png",
       "alt": "Kreisrundes Sicherheitszeichen mit blauem Hintergrund und weißem Symbol eines Kopfes mit aufgesetztem Gehörschutz (Kapselgehörschutz)."
     },
     "options": [
@@ -259,7 +252,6 @@
     "question": "Gegeben ist das abgebildete Ablaufschema einer Tarifauseinandersetzung. Welcher Schritt gehört in das mit '?' markierte Feld?",
     "media": {
       "type": "image",
-      "src": "AE2_WISO_Q016.png",
       "alt": "Ablaufdiagramm von links nach rechts: Kündigung des alten Tarifvertrags → Tarifverhandlungen → Scheitern der Verhandlungen → Schlichtung → Scheitern der Schlichtung → ? → Streik (ggf. Aussperrung) → Neue Verhandlungen und Einigung → Zweite Urabstimmung → Neuer Tarifvertrag."
     },
     "options": [
@@ -293,7 +285,6 @@
     "question": "Gegeben ist die abgebildete Übersicht über die Zweige der gesetzlichen Sozialversicherung. Welcher Eintrag gehört in das mit '?' markierte Feld?",
     "media": {
       "type": "image",
-      "src": "AE2_WISO_Q018.png",
       "alt": "Tabelle mit den Spalten 'Versicherungszweig', 'Träger', 'Beitragszahlung'. Zeile 1: Krankenversicherung, Krankenkassen, AN und AG. Zeile 2: Pflegeversicherung, Pflegekassen, AN und AG. Zeile 3: Rentenversicherung, Deutsche Rentenversicherung, AN und AG. Zeile 4: Arbeitslosenversicherung, Bundesagentur für Arbeit, AN und AG. Zeile 5: Unfallversicherung, ?, nur AG."
     },
     "options": [
@@ -327,7 +318,6 @@
     "question": "Gegeben ist die abgebildete Übersicht über die Beteiligungsrechte des Betriebsrats. Die Geschäftsleitung plant die Einführung eines elektronischen Zeiterfassungssystems, das das Verhalten der Mitarbeiter aufzeichnen kann. Welche Beteiligungsstufe trifft zu?",
     "media": {
       "type": "image",
-      "src": "AE2_WISO_Q020.png",
       "alt": "Treppendiagramm 'Beteiligungsrechte des Betriebsrats', von unten (schwach) nach oben (stark): Stufe 1 Informationsrecht, Stufe 2 Anhörungsrecht, Stufe 3 Beratungsrecht, Stufe 4 Widerspruchsrecht, Stufe 5 Mitbestimmungsrecht (Zustimmungspflicht, sonst Entscheidung durch Einigungsstelle)."
     },
     "options": [
