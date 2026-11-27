@@ -34,6 +34,9 @@ local quiz_ids = {
 -- Level 1 = Fragen 1-5, Level 2 = Fragen 6-10, ..., Level 5 = Fragen 21-25.
 local QUESTIONS_PER_LEVEL = 5
 
+-- Zeitlimit im Bosskampf (Sekunden). Laeuft die Zeit ab, zaehlt das als Niederlage.
+local BOSS_TIME_LIMIT = 100
+
 -- Ermittelt das Level aus der Map, von der der Spieler kommt (z.B. "Level4/Room3_4" -> 3).
 local function get_level()
 	local level = tonumber(tostring(game.quiz_return_map):match("Room(%d+)_4"))
@@ -56,16 +59,23 @@ local function start_quiz()
 	local hero = map:get_hero()
 	hero:freeze()
   local level_quiz_ids = get_level_quiz_ids(get_level())
+	-- Boss-NPC (game.quiz_boss, gesetzt z.B. in Room5_4.lua): Timer + BOSS-Label
+	local options = nil
+	if game.quiz_boss then
+		options = { time_limit = BOSS_TIME_LIMIT, boss = true }
+	end
 	quiz_menu.start(map, level_quiz_ids, game.shared_npc_animation_set, function(result, score)
 	if result == "win" then
 		-- Back to NPC
+		game.quiz_boss = nil
 		hero:unfreeze()
 		hero:teleport(game.quiz_return_map, game.quiz_return_dest)
   elseif result == "exit" then
+		game.quiz_boss = nil
 		hero:unfreeze()
 		hero:teleport(game.quiz_return_map, game.quiz_return_dest)
 	else
-		-- Quiz loose
+		-- Quiz loose ("lose" oder "timeout" = Bosstimer abgelaufen)
 		local black = sol.surface.create()
 		black:fill_color({0, 0, 0})
 		black:set_opacity(0)
@@ -81,7 +91,7 @@ local function start_quiz()
 				end)
 			end)
 		end                           
-	end)                                 
+	end, options)                                 
 end                               
 
 function map:on_opening_transition_finished()

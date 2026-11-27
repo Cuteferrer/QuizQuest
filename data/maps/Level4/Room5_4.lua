@@ -8,6 +8,9 @@ function Room5_4_Schueler:on_interaction()
   game.quiz_return_map  = map:get_id()          -- current map id
   game.quiz_return_dest = "near_npc"            -- destination on the map near NPC
   game.shared_npc_animation_set = Room5_4_Schueler:get_sprite():get_animation_set()
+  -- Boss-Kampf? (Custom Property "boss" am NPC in Room5_4.dat)
+  -- Wird in BattleMap_Level4.lua ausgewertet: 100-Sekunden-Bosstimer + BOSS-Label.
+  game.quiz_boss = (Room5_4_Schueler:get_property("boss") == "true")
   map:get_hero():teleport("Level4/BattleMap_Level4", "start")
 end
 
