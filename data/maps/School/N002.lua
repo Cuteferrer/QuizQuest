@@ -1,4 +1,3 @@
--- Lua script of map first_map.
 -- This script is executed every time the hero enters this map.
 
 -- Feel free to modify the code below.
