@@ -21,7 +21,6 @@
 "question": "Gegeben ist der abgebildete Vorgangsknoten eines Netzplans. Wie hoch ist der Gesamtpuffer (GP) dieses Vorgangs?",
 "media": {
 "type": "image",
-"src": "AE2_PM_Q002.png",
 "alt": "Vorgangsknoten im Netzplan nach DIN 69900: Vorgangskennung V03, Dauer D=5. Oben links (FAZ)=12, oben rechts (FEZ)=17. Unten links (SAZ)=15, unten rechts (SEZ)=20."
 },
 "options": [
@@ -55,7 +54,6 @@
 "question": "Betrachten Sie das abgebildete Gantt-Diagramm eines Softwareprojekts. Welcher Pfad bildet den kritischen Pfad?",
 "media": {
 "type": "image",
-"src": "AE2_PM_Q004.png",
 "alt": "Gantt-Diagramm mit Vorgängen A bis E. A (Dauer 3d) -> B (Dauer 5d) -> E (Dauer 4d) bilden eine durchgehende Kette ohne Puffer. C (Dauer 2d) und D (Dauer 3d) laufen parallel zu B mit Freiräumen."
 },
 "options": [
@@ -89,7 +87,6 @@
 "question": "Basierend auf der abgebildeten Nutzwertanalyse: Welches Softwaresystem (A oder B) erzielt den höheren Gesamtnutzwert und wie hoch ist dieser?",
 "media": {
 "type": "image",
-"src": "AE2_PM_Q006.png",
 "alt": "Tabelle einer Nutzwertanalyse. Kriterium 1: Usability (Gewichtung 40%), System A: 8 Pkt, System B: 6 Pkt. Kriterium 2: Performance (Gewichtung 30%), System A: 5 Pkt, System B: 9 Pkt. Kriterium 3: Preis (Gewichtung 30%), System A: 7 Pkt, System B: 5 Pkt."
 },
 "options": [
@@ -123,7 +120,6 @@
 "question": "Sie sehen das folgende Kanban-Board während eines Daily Standups. Welches Problem liegt in der Phase 'In Progress' vor und wie sollte das Team reagieren?",
 "media": {
 "type": "image",
-"src": "AE2_PM_Q008.png",
 "alt": "Kanban-Board mit den Spalten 'Backlog', 'Ready', 'In Progress (WIP Limit: 3)', 'Testing' und 'Done'. In der Spalte 'In Progress' befinden sich 5 Kärtchen (User Stories)."
 },
 "options": [
@@ -157,7 +153,6 @@
 "question": "Die abgebildete Grafik zeigt ein Sprint Burn-down-Chart am Tag 6 eines 10-tägigen Sprints. Welche Aussage trifft auf den aktuellen Projektverlauf zu?",
 "media": {
 "type": "image",
-"src": "AE2_PM_Q010.png",
 "alt": "Burn-down-Chart. X-Achse: Tage 1-10, Y-Achse: Remaining Story Points (0-50). Gestrichelte Ideallinie von (0,50) zu (10,0). Durchgezogene Ist-Linie verläuft an Tag 6 deutlich oberhalb der Ideallinie bei 30 Story Points (Soll wäre 20)."
 },
 "options": [
@@ -191,7 +186,6 @@
 "question": "Welches Qualitätskriterium aus den INVEST-Kriterien für User Stories wird in der untenstehenden Abbildung verletzt?",
 "media": {
 "type": "image",
-"src": "AE2_PM_Q012.png",
 "alt": "Abbildung einer User Story Card. Titel: 'Gesamte Kundenverwaltung überarbeiten'. Beschreibung: 'Als Admin möchte ich alle Stammdaten, Rechnungen und Historien verwalten, um das Gesamtsystem zu modernisieren.' Story Points: 89."
 },
 "options": [
@@ -225,7 +219,6 @@
 "question": "Welche Zuordnung entspricht der korrekten Testebene für das 'Grobe Systemdesign' im gezeigten V-Modell?",
 "media": {
 "type": "image",
-"src": "AE2_PM_Q014.png",
 "alt": "V-Modell Diagramm. Links schräg nach unten: 1. Anforderungsdefinition, 2. Grobes Systemdesign, 3. Feinentwurf, 4. Implementierung. Rechts schräg nach oben: Testebene T1, Testebene T2, Testebene T3."
 },
 "options": [
@@ -259,7 +252,6 @@
 "question": "Betrachten Sie die abgebildete Risiko-Matrix. In welchem Bereich befindet sich ein Risiko mit 'Hoher Eintrittswahrscheinlichkeit' und 'Mittlerem Schadensausmaß', und welche Priorität hat es?",
 "media": {
 "type": "image",
-"src": "AE2_PM_Q016.png",
 "alt": "Risiko-Matrix 3x3. Y-Achse: Eintrittswahrscheinlich (Gering, Mittel, Hoch). X-Achse: Schadensausmaß (Gering, Mittel, Hoch). Farbfelder: Grün (niedrig), Gelb (mittel), Rot (hoch). Schnittpunkt Hoch/Mittel ist GELB mit Priorität 2."
 },
 "options": [
@@ -323,7 +315,6 @@
 "question": "Die Abbildung zeigt eine bestimmte Form der Projektorganisation in einem Unternehmen. Um welche Organisationsform handelt es sich?",
 "media": {
 "type": "image",
-"src": "AE2_PM_Q020.png",
 "alt": "Organigramm. Vertikale Fachabteilungen (Beschaffung, Entwicklung, Vertrieb). Horizontal verläuft die Projektleitung und hat direkte fachliche Weisungsbefugnis gegenüber den zugeordneten Mitarbeitern der Abteilungen."
 },
 "options": [
@@ -372,7 +363,6 @@
 "question": "Welche minimale Gesamtdauer ergibt sich für das Projekt aus dem dargestellten Netzplan?",
 "media": {
 "type": "image",
-"src": "media/pm_q023.png",
 "alt": "Netzplan mit Startknoten (t=0). Pfad 1: A (Dauer 4) -> B (Dauer 6) -> End. Pfad 2: C (Dauer 3) -> D (Dauer 8) -> End. Pfad 3: E (Dauer 2) -> End."
 },
 "options": [

@@ -21,7 +21,6 @@
     "question": "Welches objektorientierte Konzept wird im abgebildeten Diagramm durch den Pfeil mit der geschlossenen, nicht ausgemalten Spitze dargestellt?",
     "media": {
       "type": "image",
-      "src": "image_agent_tag_8778342727947502313",
       "alt": "UML Klassendiagramm mit Basisklasse und abgeleiteten Klassen"
     },
     "options": [
@@ -55,7 +54,6 @@
     "question": "Welche Aussagen zu den <> und <> Beziehungen im abgebildeten Anwendungsfalldiagramm (Use-Case-Diagramm) sind zutreffend?",
     "media": {
       "type": "image",
-      "src": "AE2_UML_Q004",
       "alt": "Use Case Diagramm mit Site User und Webmaster sowie Include und Extend Beziehungen"
     },
     "options": [
@@ -104,7 +102,6 @@
     "question": "Das abgebildete Diagramm zeigt Kontrollflüsse zwischen verschiedenen Aktionen. Welchem UML-Diagrammtyp ist diese Darstellungsform (Knoten, Übergänge, Start-/Endknoten) am ehesten zuzuordnen?",
     "media": {
       "type": "image",
-      "src": "AE2_UML_Q007",
       "alt": "Abstraktes Flussdiagramm bestehend aus Rechtecken, Rauten und Kontrollflüssen"
     },
     "options": [
@@ -183,7 +180,6 @@
     "question": "Im abgebildeten UseCase-Diagramm wird eine Beziehung zwischen dem Akteur 'Kunde' und dem Anwendungsfall 'Konto eröffnen' dargestellt. Wie bezeichnet man die durchgezogene Linie ohne Pfeilspitze zwischen einem Akteur und einem Use Case?",
     "media": {
       "type": "image",
-      "src": "AE2_UML_Q012",
       "alt": "UseCase-Diagramm mit dem Akteur Kunde, der über eine einfache Linie mit dem UseCase Konto eröffnen verbunden ist."
     },
     "options": [
@@ -217,7 +213,6 @@
     "question": "Betrachten Sie das abgebildete UseCase-Diagramm. Welche Beziehung muss zwischen dem Basis-UseCase 'Geld abheben' und dem UseCase 'PIN prüfen' verwendet werden, wenn die PIN-Prüfung bei jeder Geldabhebung zwingend ausgeführt werden muss?",
     "media": {
       "type": "image",
-      "src": "AE2_UML_Q014",
       "alt": "UseCase-Diagramm mit Geld abheben und PIN prüfen, verknüpft mit einer gestrichelten Linie und der Stereotype include."
     },
     "options": [
@@ -281,7 +276,6 @@
     "question": "Das vorliegende UseCase-Diagramm zeigt die Erweiterung 'Rabatt anwenden' für den Anwendungsfall 'Bestellung abschließen'. Unter welcher Bedingung wird der erweiterte Anwendungsfall ausgeführt?",
     "media": {
       "type": "image",
-      "src": "AE2_UML_Q018",
       "alt": "UseCase-Diagramm mit Bestellung abschließen und Rabatt anwenden mit einer extend-Beziehung und Extension Point Gutscheincode vorhanden."
     },
     "options": [
