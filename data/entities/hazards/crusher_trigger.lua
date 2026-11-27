@@ -20,8 +20,6 @@ function entity:trigger_crusher()
   sol.timer.start(entity, entity.cooldown_duration, function()
     entity.trigger_cooldown = false
   end)
-
-
 end
 
 
