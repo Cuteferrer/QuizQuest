@@ -8,11 +8,11 @@ function entity:on_created()
 
   entity:add_collision_test("containing", function(entity, other)
     if entity.trigger_cooldown then return end
-    if other:get_type() == "hero" then
-      entity:trigger_crusher()
-    end
-  end)
-end
+      if other:get_type() == "hero" then
+        entity:trigger_crusher()
+      end
+    end)
+  end
 
 
 function entity:trigger_crusher()
