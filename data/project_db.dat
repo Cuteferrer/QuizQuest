@@ -14,6 +14,7 @@ map{ id = "School/N003" }
 map{ id = "School/battle", description = "battle arena" }
 map{ id = "School/flur" }
 map{ id = "School/toil", description = ">_<" }
+map{ id = "battle", description = "Battle arena for fighting " }
 map{ id = "battle_julian", description = "Battle arena for level_julian" }
 
 tileset{ id = "bottomless_cliffs", description = "bottomless_cliffs" }
@@ -59,6 +60,7 @@ sprite{ id = "chests/chest_purple", description = "Chest (purple)" }
 sprite{ id = "chests/chest_red", description = "Chest (red)" }
 sprite{ id = "chests/chest_yellow", description = "Chest (yellow)" }
 sprite{ id = "chests/large_chest_brown", description = "Large chest (brown)" }
+sprite{ id = "custom Sprites/women_WisoBoss", description = "custom Sprites/women_WisoBoss" }
 sprite{ id = "custom/Monitor", description = "Monitor" }
 sprite{ id = "destructibles/bush", description = "Bush" }
 sprite{ id = "destructibles/cabbagge_green", description = "Plant Green" }
@@ -155,7 +157,10 @@ sprite{ id = "menus/battle_start" }
 sprite{ id = "menus/options_cursor", description = "Options cursor" }
 sprite{ id = "menus/solarus_logo", description = "Solarus logo" }
 sprite{ id = "menus/team_logo", description = "Solarus Team logo" }
+sprite{ id = "npc/fat_fairy", description = "npc/fat_fairy" }
 sprite{ id = "npc/kaleido", description = "Kaleido" }
+sprite{ id = "npc/lady_blue", description = "npc/lady_blue" }
+sprite{ id = "npc/old_man", description = "npc/old_man" }
 sprite{ id = "npc/sign", description = "Sign" }
 sprite{ id = "npc/woman_1a", description = "Woman 1a" }
 sprite{ id = "npc/woman_1b", description = "Woman 1b" }
@@ -592,6 +597,7 @@ file{ path = "sprites/chests/chest_purple.dat", author = "Diarandor", license = 
 file{ path = "sprites/chests/chest_red.dat", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sprites/chests/chest_yellow.dat", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sprites/chests/large_chest_brown.dat", author = "Diarandor", license = "CC BY-SA 4.0" }
+file{ path = "sprites/custom Sprites/women_WisoBoss.dat", author = "Fabian Ecker", }
 file{ path = "sprites/destructibles", license = "CC BY-SA 4.0" }
 file{ path = "sprites/destructibles/bush.dat", author = "Christopho", license = "CC BY-SA 4.0" }
 file{ path = "sprites/destructibles/bush.png", author = "Bertram", license = "CC BY-SA 4.0" }
@@ -847,8 +853,11 @@ file{ path = "sprites/menus/team_logo.dat", author = "Olivier Cléro", license =
 file{ path = "sprites/menus/team_logo.png", author = "Olivier Cléro", license = "CC BY-SA 4.0" }
 file{ path = "sprites/menus/team_logo_text.png", author = "Olivier Cléro", license = "CC BY-SA 4.0" }
 file{ path = "sprites/npc", license = "CC BY-SA 4.0" }
+file{ path = "sprites/npc/fat_fairy.dat", author = "Fabian Ecker", }
 file{ path = "sprites/npc/kaleido.dat", author = "Diarandor", license = "CC BY-SA 4.0" }
 file{ path = "sprites/npc/kaleido.png", author = "Diarandor", license = "CC BY-SA 4.0" }
+file{ path = "sprites/npc/lady_blue.dat", author = "Fabian Ecker", }
+file{ path = "sprites/npc/old_man.dat", author = "Fabian Ecker", }
 file{ path = "sprites/npc/sign.dat", author = "Christopho", license = "CC BY-SA 4.0" }
 file{ path = "sprites/npc/sign.png", author = "Bertam", license = "CC BY-SA 4.0" }
 file{ path = "sprites/npc/woman_1a.dat", author = "Diarandor", license = "CC BY-SA 4.0" }

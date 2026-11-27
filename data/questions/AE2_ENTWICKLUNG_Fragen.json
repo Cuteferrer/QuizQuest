@@ -6,7 +6,6 @@
 "question": "Sie möchten aus der Datenbank alle Kunden abfragen, die noch keine Bestellung aufgegeben haben. Welches SQL-Statement verknüpft die Tabellen korrekt und filtert die gewünschten Datensätze heraus?",
 "media": {
 "type": "image",
-"src": "AE2_DEV_Q001.png",
 "alt": "ER-Diagramm mit zwei Tabellen: Kunden (KundenID, Name) und Bestellungen (BestellID, KundenID, Datum)."
 },
 "options": [
@@ -40,7 +39,6 @@
 "question": "Sie sollen die Anzahl aller Projekte pro Abteilung ermitteln, deren durchschnittliche Projektdauer mehr als 30 Tage beträgt. Welche SQL-Klausel ist syntaktisch und logisch korrekt?",
 "media": {
 "type": "image",
-"src": "AE2_DEV_Q003.png",
 "alt": "Tabellenausschnitt der Tabelle 'Projekte' mit den Spalten ProjektID, AbteilungID und Dauer."
 },
 "options": [
@@ -89,7 +87,6 @@
 "question": "Welche SQL-Abfrage berechnet den Gesamtumsatz (Menge * Einzelpreis) für jeden Kunden anhand der drei abgebildeten Tabellen korrekt?",
 "media": {
 "type": "image",
-"src": "AE2_DEV_Q006.png",
 "alt": "Schema mit 3 Tabellen: Kunden (KundenID, Name), Bestellungen (BestellID, KundenID), Bestellpositionen (BestellID, Menge, Einzelpreis)."
 },
 "options": [
@@ -123,7 +120,6 @@
 "question": "Das abgebildete Array [5, 1, 4, 2, 8] soll mit dem 'Bubble Sort'-Algorithmus aufsteigend sortiert werden. Welchen Zustand hat das Array nach dem ersten vollständigen äußeren Durchlauf?",
 "media": {
 "type": "image",
-"src": "AE2_DEV_Q008.png",
 "alt": "Grafik des Ausgangs-Arrays: [5, 1, 4, 2, 8]"
 },
 "options": [
@@ -157,7 +153,6 @@
 "question": "In einem sortierten Array mit 9 Elementen (Indizes 0 bis 8) wird mittels Binärer Suche nach dem Wert 37 gesucht. Welches Element wird als Erstes als Mitte (Mid) geprüft?",
 "media": {
 "type": "image",
-"src": "AE2_DEV_Q010.png",
 "alt": "Array mit Werten: Index 0: 3, 1: 8, 2: 12, 3: 19, 4: 24, 5: 31, 6: 37, 7: 42, 8: 50."
 },
 "options": [
@@ -191,7 +186,6 @@
 "question": "Welcher Endwert steht nach Ablauf des abgebildeten Pseudocodes in der Variable 'ergebnis'?",
 "media": {
 "type": "image",
-"src": "AE2_DEV_Q012.png",
 "alt": "Pseudocode: INTEGER ergebnis = 1; FOR i = 1 TO 4 DO IF i MOD 2 == 1 THEN ergebnis = ergebnis * i; END IF; END FOR;"
 },
 "options": [
@@ -225,7 +219,6 @@
 "question": "Welchen Wert hat das Element arr[1] nach Ausführung der abgebildeten Zuweisungen?",
 "media": {
 "type": "image",
-"src": "AE2_DEV_Q014.png",
 "alt": "Pseudocode: ARRAY arr = [15, 30, 45]; INTEGER temp = arr[0]; arr[0] = arr[1]; arr[1] = temp;"
 },
 "options": [
@@ -274,7 +267,6 @@
 "question": "Der abgebildete Pseudocode soll alle Werte des Arrays verarbeiten, erzeugt jedoch beim Ausführen einen Fehler. Welcher Fehler liegt vor?",
 "media": {
 "type": "image",
-"src": "Image_Q017.png",
 "alt": "Pseudocode: ARRAY zahlen = [10, 20, 30]; INTEGER summe = 0; FOR i = 0 TO 3 DO summe = summe + zahlen[i]; END FOR"
 },
 "options": [
@@ -308,7 +300,6 @@
 "question": "In welcher Zeile und durch welche Ursache tritt der im abgebildeten Konsolen-Stacktrace gezeigte Laufzeitfehler auf?",
 "media": {
 "type": "image",
-"src": "AE2_DEV_Q019.png",
 "alt": "Screenshot Konsolenausgabe: java.lang.NullPointerException: Cannot invoke String.toLowerCase() because user.email is null at com.shop.UserService.validateUser(UserService.java:24)"
 },
 "options": [
@@ -342,7 +333,6 @@
 "question": "Die abgebildete SQL-Abfrage bricht mit einer Fehlermeldung ab. Welche Ursache hat der Fehler?",
 "media": {
 "type": "image",
-"src": "AE2_DEV_Q021.png",
 "alt": "SQL Code: SELECT AbteilungID, COUNT() FROM Mitarbeiter WHERE COUNT() > 5 GROUP BY AbteilungID;"
 },
 "options": [
