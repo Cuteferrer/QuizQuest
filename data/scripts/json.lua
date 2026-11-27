@@ -1,4 +1,4 @@
--- scripts/json.lua — минимальный JSON-декодер, без зависимостей.
+-- scripts/json.lua — json decoder.
 local json = {}
 
 local decode_value  -- forward
@@ -37,7 +37,7 @@ local function decode_string(s, i)
 				i = i + 2
 			end
 		elseif c == '' then
-			error("JSON: unclosed line found")
+			print("JSON: unclosed string")
 		else
 			res[#res + 1] = c
 			i = i + 1
@@ -57,7 +57,7 @@ local function decode_array(s, i)
 		local c = s:sub(i, i)
 		if c == ',' then i = skip_ws(s, i + 1)
 		elseif c == ']' then return arr, i + 1
-		else error("JSON: expexted ',' of ']'") end
+		else print("JSON: expected ',' or ']'") end
 	end
 end
 
@@ -78,7 +78,7 @@ local function decode_object(s, i)
 		local c = s:sub(i, i)
 		if c == ',' then i = i + 1
 		elseif c == '}' then return obj, i + 1
-		else error("JSON: ожидалась ',' или '}'") end
+		else print("JSON: expected ',' or '}'") end
 	end
 end
 

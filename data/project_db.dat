@@ -16,8 +16,6 @@ map{ id = "School/flur" }
 map{ id = "School/toil", description = ">_<" }
 map{ id = "battle", description = "Battle arena for fighting " }
 map{ id = "battle_julian", description = "Battle arena for level_julian" }
-map{ id = "first_map", description = "First map" }
-map{ id = "flur" }
 
 tileset{ id = "bottomless_cliffs", description = "bottomless_cliffs" }
 tileset{ id = "castle", description = "Castle" }
