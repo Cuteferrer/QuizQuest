@@ -37,7 +37,7 @@ local function decode_string(s, i)
 				i = i + 2
 			end
 		elseif c == '' then
-			error("JSON: незакрытая строка")
+			error("JSON: unclosed line found")
 		else
 			res[#res + 1] = c
 			i = i + 1
@@ -57,7 +57,7 @@ local function decode_array(s, i)
 		local c = s:sub(i, i)
 		if c == ',' then i = skip_ws(s, i + 1)
 		elseif c == ']' then return arr, i + 1
-		else error("JSON: ожидалась ',' или ']'") end
+		else error("JSON: expexted ',' of ']'") end
 	end
 end
 
@@ -70,7 +70,7 @@ local function decode_object(s, i)
 		local key
 		key, i = decode_string(s, i)
 		i = skip_ws(s, i)
-		if s:sub(i, i) ~= ':' then error("JSON: ожидалось ':'") end
+		if s:sub(i, i) ~= ':' then error("JSON: expected ':'") end
 		local v
 		v, i = decode_value(s, i + 1)
 		obj[key] = v
