@@ -2282,6 +2282,14 @@ npc{
   behavior = "dialog#Handygarage",
 }
 
+destination{
+  name = "near_npc",
+  layer = 0,
+  x = 352,
+  y = 181,
+  direction = 1,
+}
+
 tile{
   layer = 1,
   x = 544,

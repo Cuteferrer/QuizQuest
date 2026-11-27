@@ -1,13 +1,20 @@
 -- scripts/quiz_menu.lua
 -- quiz_menu.start(context, ids, npc_sprite_id, on_finished)
---   ids: { "AE2_UML_Q001", ... } — какие вопросы и в каком порядке.
+--   ids: { "AE2_UML_Q001", ... } — welche Fragen, in welcher Reihenfolge.
 --   on_finished(result, score): result = "win" | "lose".
+--
+-- Fullscreen-Unterstuetzung: Die Ausgabegroesse kommt aus screen:get_size(),
+-- denn sol.video.get_window_size() liefert im Vollbildmodus NICHT die echte
+-- Aufloesung (Doku: sie gibt die Groesse fuer die Rueckkehr in den
+-- Fenstermodus zurueck). Gezeichnet wird direkt auf den Screen in realen
+-- Pixeln (scharfer Text), mit derselben Skalierung+Zentrierung wie die
+-- Engine im Letter-Boxing-Modus.
 
 local json = require("scripts/json")
 
 local quiz_menu = {}
 
-local FONT = "enter_command"                     
+local FONT = "enter_command"
 local QUESTIONS_FILES = {
 	"questions/AE2_UML_Fragen.json",
 	"questions/AE2_ENTWICKLUNG_Fragen.json",
@@ -18,20 +25,25 @@ local IMAGE_DIR = "images/"                 -- Bild zur Frage: images/<Fragen-ID
 
 local PROMPT_X, PROMPT_Y        = 16, 12
 local PROMPT_IMG_W, PROMPT_IMG_H = 96, 50
--- Layout, wenn die Frage ein Bild hat: Bild oben rechts, Fragetext links daneben.
+-- Layout mit Bild: Bild oben rechts, Fragetext links daneben.
 local IMG_X, IMG_Y, IMG_W, IMG_H = 196, 8, 116, 70   -- darunter: Hinweis, dann Gegner-Herzen (y=96)
 local IMG_PROMPT_Y, IMG_PROMPT_W = 28, 172
 -- Vergroesserte Ansicht (Taste Tab)
 local ZOOM_X, ZOOM_Y, ZOOM_W, ZOOM_H = 8, 8, 304, 210
 local OPT_X, OPT_Y0, OPT_STEP   = 16, 110, 20
-local BOX                       = 8      -- checkbox size
+local BOX                       = 8      -- Checkbox-Groesse
 local NPC_X, NPC_Y              = 270, 160
 local ENEMY_HEARTS_X, ENEMY_HEARTS_Y   = 244, 96
 local PLAYER_HEARTS_X, PLAYER_HEARTS_Y = 10, 10
 local HEART                     = 10
 local PROMPT_W = 288
 
--- questions load
+local FONT_SIZE_PROMPT = 16
+local FONT_SIZE_OPTION = 14
+local FONT_SIZE_HINT   = 10
+local LINE_H = 18
+
+-- Fragen laden
 local questions_by_id = nil
 local function load_index()
 	if questions_by_id then return questions_by_id end
@@ -51,7 +63,7 @@ end
 
 local function wrap(text, font, size, max_width)
 	local lines = {}
-	for paragraph in (text .. "\n"):gmatch("(.-)\n") do  
+	for paragraph in (text .. "\n"):gmatch("(.-)\n") do
 		local line = ""
 		for word in paragraph:gmatch("%S+") do
 			local candidate = (line == "") and word or (line .. " " .. word)
@@ -82,7 +94,7 @@ function quiz_menu.start(context, ids, npc_sprite_id, on_finished)
 		if index[id] then
 			questions[#questions + 1] = index[id]
 		else
-			print("quiz: no question found, id:" .. tostring(id))
+			print("quiz: keine Frage mit id " .. tostring(id))
 		end
 	end
 	if #questions == 0 then return end
@@ -92,8 +104,8 @@ function quiz_menu.start(context, ids, npc_sprite_id, on_finished)
 	local cursor = 1
 	local num_options = 1
 	local marked = {}            -- marked[i] = true
-  local prompt_lines = {}
-	local correct_set = {}       -- correct_set[i] = true for current question
+	local prompt_lines = {}
+	local correct_set = {}       -- correct_set[i] = true fuer die aktuelle Frage
 	local current_image = nil
 	local image_zoomed = false
 	local player_lives = 3
@@ -101,10 +113,18 @@ function quiz_menu.start(context, ids, npc_sprite_id, on_finished)
 	local score = 0
 	local last_scale = nil
 
+	-- Aktueller Massstab + Versatz der Questflaeche im Fenster (Letterbox).
+	-- Wird in on_draw aus screen:get_size() ermittelt.
+	local view_scale, view_ox, view_oy = 1, 0, 0
+
+	local function sx(x) return math.floor(view_ox + x * view_scale) end
+	local function sy(y) return math.floor(view_oy + y * view_scale) end
+	local function ss(v) return v * view_scale end
+
 	local npc_sprite = npc_sprite_id and sol.sprite.create(npc_sprite_id) or nil
 
-  local heart_full = sol.sprite.create("hud/heart")
-  local heart_empty = sol.sprite.create("hud/empty_heart")
+	local heart_full = sol.sprite.create("hud/heart")
+	local heart_empty = sol.sprite.create("hud/empty_heart")
 
 	local prompt_text = sol.text_surface.create{ font = FONT, horizontal_alignment = "left" }
 	local hint_text = sol.text_surface.create{ font = FONT, horizontal_alignment = "left" }
@@ -112,7 +132,7 @@ function quiz_menu.start(context, ids, npc_sprite_id, on_finished)
 	local function option_text(i)
 		if not option_texts[i] then
 			option_texts[i] = sol.text_surface.create{ font = FONT, horizontal_alignment = "left" }
-			if last_scale then option_texts[i]:set_font_size(math.floor(14 * last_scale)) end
+			if last_scale then option_texts[i]:set_font_size(math.floor(FONT_SIZE_OPTION * last_scale)) end
 		end
 		return option_texts[i]
 	end
@@ -142,7 +162,7 @@ function quiz_menu.start(context, ids, npc_sprite_id, on_finished)
 		prompt_text:set_text(q.question or "")
 		current_image = get_image(IMAGE_DIR .. q.id .. ".png")
 		image_zoomed = false
-		prompt_lines = wrap(q.question or "", FONT, 16, current_image and IMG_PROMPT_W or PROMPT_W)
+		prompt_lines = wrap(q.question or "", FONT, FONT_SIZE_PROMPT, current_image and IMG_PROMPT_W or PROMPT_W)
 		for i = 1, num_options do
 			option_text(i):set_text(q.options[i].text or "")
 		end
@@ -180,30 +200,28 @@ function quiz_menu.start(context, ids, npc_sprite_id, on_finished)
 	local previous_video_draw = sol.video.on_draw
 
 	-- Zeichnet das Bild in die Box (seitenverhaeltnistreu, zentriert).
-	local function draw_image(screen, surface, qx, qy, box_w, box_h, scale)
+	local function draw_image(screen, surface, qx, qy, box_w, box_h)
 		if not surface then return end
 		local sw, sh = surface:get_size()
 		local fit = math.min(box_w / sw, box_h / sh)
 		local dw, dh = sw * fit, sh * fit
 		local dx, dy = qx + (box_w - dw) / 2, qy + (box_h - dh) / 2
-		screen:fill_color({255, 255, 255}, math.floor((dx - 1) * scale), math.floor((dy - 1) * scale),
-			math.ceil((dw + 2) * scale), math.ceil((dh + 2) * scale))
-		surface:set_scale(fit * scale, fit * scale)
-		surface:draw(screen, math.floor(dx * scale), math.floor(dy * scale))
+		screen:fill_color({255, 255, 255}, sx(dx) - 1, sy(dy) - 1,
+			math.ceil(ss(dw)) + 2, math.ceil(ss(dh)) + 2)
+		surface:set_scale(fit * view_scale, fit * view_scale)
+		surface:draw(screen, sx(dx), sy(dy))
 	end
 
-local function draw_hearts(screen, full_count, total, qx, qy, scale)
-	local hw = heart_full:get_size()
-	for i = 1, total do
-		local s = (i <= full_count) and heart_full or heart_empty
-		local ox, oy = s:get_origin()        -- origin
-		s:set_scale(scale, scale)
-		local tx = (qx + (i - 1) * (hw + 2)) * scale
-		local ty = qy * scale
-		s:draw(screen, tx + ox * scale, ty + oy * scale)
+	local function draw_hearts(screen, full_count, total, qx, qy)
+		local hw = heart_full:get_size()
+		for i = 1, total do
+			local s = (i <= full_count) and heart_full or heart_empty
+			local ox, oy = s:get_origin()
+			s:set_scale(view_scale, view_scale)
+			s:draw(screen, sx(qx + (i - 1) * (hw + 2)) + ss(ox), sy(qy) + ss(oy))
+		end
 	end
 
-end
 	function menu:on_started()
 		load_question()
 	end
@@ -229,7 +247,7 @@ end
 		elseif command == "down" then
 			cursor = cursor % num_options + 1
 		elseif command == "space" then
-			marked[cursor] = (not marked[cursor]) or nil   -- Check / Uncheck
+			marked[cursor] = (not marked[cursor]) or nil   -- ankreuzen / abwaehlen
 		elseif command == "return" then
 			confirm()
 		elseif command == "escape" then
@@ -254,60 +272,67 @@ end
 	end
 
 	function sol.video:on_draw(screen)
+		-- Echte Ausgabegroesse holen: 1 Pixel von "screen" = 1 Pixel auf dem
+		-- Monitor, auch im Vollbildmodus (siehe Doku zu sol.video:on_draw).
+		local out_w, out_h = screen:get_size()
 		local qw, qh = sol.video.get_quest_size()
-		local ww, wh = sol.video.get_window_size()
-		local scale = wh / qh
 
-		if scale ~= last_scale then
-			prompt_text:set_font_size(math.floor(16 * scale))
+		-- Gleiche Transformation wie die Engine im Letter-Boxing-Modus.
+		local new_scale = math.min(out_w / qw, out_h / qh)
+		view_scale = new_scale
+		view_ox = math.floor((out_w - qw * new_scale) / 2)
+		view_oy = math.floor((out_h - qh * new_scale) / 2)
+
+		if new_scale ~= last_scale then
+			prompt_text:set_font_size(math.floor(FONT_SIZE_PROMPT * new_scale))
 			for i = 1, num_options do
-				option_text(i):set_font_size(math.floor(14 * scale))
+				option_text(i):set_font_size(math.floor(FONT_SIZE_OPTION * new_scale))
 			end
-			hint_text:set_font_size(math.floor(10 * scale))
-			last_scale = scale
+			hint_text:set_font_size(math.floor(FONT_SIZE_HINT * new_scale))
+			last_scale = new_scale
 		end
 
+		-- Abdunkeln der gesamten Ausgabe (auch der Letterbox-Raender).
 		screen:fill_color({0, 0, 0, 150})
 
 		-- Vergroesserte Bildansicht
 		if current_image and image_zoomed then
 			screen:fill_color({0, 0, 0, 220})
-			draw_image(screen, current_image, ZOOM_X, ZOOM_Y, ZOOM_W, ZOOM_H, scale)
+			draw_image(screen, current_image, ZOOM_X, ZOOM_Y, ZOOM_W, ZOOM_H)
 			hint_text:set_text("[Tab] zurueck zur Frage")
-			hint_text:draw(screen, ZOOM_X * scale, (ZOOM_Y + ZOOM_H + 10) * scale)
+			hint_text:draw(screen, sx(ZOOM_X), sy(ZOOM_Y + ZOOM_H + 10))
 			return
 		end
 
-		local line_h = 18
 		local ty = PROMPT_Y + PROMPT_IMG_H + 6
 		if current_image then
-			draw_image(screen, current_image, IMG_X, IMG_Y, IMG_W, IMG_H, scale)
+			draw_image(screen, current_image, IMG_X, IMG_Y, IMG_W, IMG_H)
 			hint_text:set_text("[Tab] Bild vergroessern")
-			hint_text:draw(screen, IMG_X * scale, (IMG_Y + IMG_H + 6) * scale)
+			hint_text:draw(screen, sx(IMG_X), sy(IMG_Y + IMG_H + 6))
 			ty = IMG_PROMPT_Y
 		end
 		for _, line in ipairs(prompt_lines) do
 			prompt_text:set_text(line)
-			prompt_text:draw(screen, PROMPT_X * scale, ty * scale)
-			ty = ty + line_h
+			prompt_text:draw(screen, sx(PROMPT_X), sy(ty))
+			ty = ty + LINE_H
 		end
 
 		for i = 1, num_options do
 			local oy = OPT_Y0 + (i - 1) * OPT_STEP
 			local box_color = marked[i] and {255, 220, 60} or {90, 90, 90}
-			screen:fill_color(box_color, OPT_X * scale, oy * scale, BOX * scale, BOX * scale)
+			screen:fill_color(box_color, sx(OPT_X), sy(oy), ss(BOX), ss(BOX))
 			local t = option_text(i)
 			t:set_color(i == cursor and {255, 255, 0} or {255, 255, 255})
-			t:draw(screen, (OPT_X + BOX + 6) * scale, (oy + BOX / 2) * scale)
+			t:draw(screen, sx(OPT_X + BOX + 6), sy(oy + BOX / 2))
 		end
 
 		if npc_sprite then
-			npc_sprite:set_scale(scale, scale)
-			npc_sprite:draw(screen, NPC_X * scale, NPC_Y * scale)
+			npc_sprite:set_scale(view_scale, view_scale)
+			npc_sprite:draw(screen, sx(NPC_X), sy(NPC_Y))
 		end
 
-		draw_hearts(screen, enemy_lives, #questions, ENEMY_HEARTS_X, ENEMY_HEARTS_Y, scale)
-		draw_hearts(screen, player_lives, 3, PLAYER_HEARTS_X, PLAYER_HEARTS_Y, scale)
+		draw_hearts(screen, enemy_lives, #questions, ENEMY_HEARTS_X, ENEMY_HEARTS_Y)
+		draw_hearts(screen, player_lives, 3, PLAYER_HEARTS_X, PLAYER_HEARTS_Y)
 	end
 
 	sol.menu.start(context, menu)
