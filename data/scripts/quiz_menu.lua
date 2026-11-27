@@ -1,7 +1,11 @@
 -- scripts/quiz_menu.lua
--- quiz_menu.start(context, ids, npc_sprite_id, on_finished)
+-- quiz_menu.start(context, ids, npc_sprite_id, on_finished, options)
 --   ids: { "AE2_UML_Q001", ... } — welche Fragen, in welcher Reihenfolge.
---   on_finished(result, score): result = "win" | "lose".
+--   on_finished(result, score): result = "win" | "lose" | "exit" | "timeout".
+--   options (optional):
+--     time_limit = Sekunden  -> Countdown oben in der Mitte; bei 0 endet das
+--                               Quiz mit result = "timeout".
+--     boss = true            -> rotes "BOSS"-Label ueber dem Gegner.
 --
 -- Fullscreen-Unterstuetzung: Die Ausgabegroesse kommt aus screen:get_size(),
 -- denn sol.video.get_window_size() liefert im Vollbildmodus NICHT die echte
@@ -32,15 +36,28 @@ local IMG_PROMPT_Y, IMG_PROMPT_W = 28, 172
 local ZOOM_X, ZOOM_Y, ZOOM_W, ZOOM_H = 8, 8, 304, 210
 local OPT_X, OPT_Y0, OPT_STEP   = 16, 110, 20
 local BOX                       = 8      -- Checkbox-Groesse
+-- Antworten werden automatisch umgebrochen (wie der Fragetext):
+local OPT_TEXT_X                = OPT_X + BOX + 6   -- Textanfang rechts neben der Checkbox
+local OPT_RIGHT                 = 240               -- rechter Rand (rechts davon: Gegner + Herzen)
+local OPT_W                     = OPT_RIGHT - OPT_TEXT_X
+local OPT_GAP                   = 4                 -- Abstand zwischen zwei Antworten
+local OPT_BOTTOM                = 236               -- unterster nutzbarer Punkt
+local OPT_FONT_SIZES            = { 14, 12, 10 }    -- wird kleiner, wenn es sonst nicht passt
+local PROMPT_FONT_SIZES         = { 16, 14, 12, 10 } -- dito fuer den Fragetext
 local NPC_X, NPC_Y              = 270, 160
 local ENEMY_HEARTS_X, ENEMY_HEARTS_Y   = 244, 96
 local PLAYER_HEARTS_X, PLAYER_HEARTS_Y = 10, 10
 local HEART                     = 10
 local PROMPT_W = 288
+local TIMER_X, TIMER_Y          = 160, 10     -- Bosstimer (zentriert)
+local TIMER_WARN                = 10          -- ab hier rot
+local BOSS_LABEL_Y              = 122         -- ueber dem Gegner-Sprite (NPC_X)
 
 local FONT_SIZE_PROMPT = 16
 local FONT_SIZE_OPTION = 14
 local FONT_SIZE_HINT   = 10
+local FONT_SIZE_TIMER  = 14
+local FONT_SIZE_BOSS   = 12
 local LINE_H = 18
 
 -- Fragen laden
@@ -86,7 +103,8 @@ local function sets_equal(a, b)
 	return true
 end
 
-function quiz_menu.start(context, ids, npc_sprite_id, on_finished)
+function quiz_menu.start(context, ids, npc_sprite_id, on_finished, options)
+	options = options or {}
 	local index = load_index()
 
 	local questions = {}
@@ -105,6 +123,15 @@ function quiz_menu.start(context, ids, npc_sprite_id, on_finished)
 	local num_options = 1
 	local marked = {}            -- marked[i] = true
 	local prompt_lines = {}
+	local option_lines = {}      -- option_lines[i] = { "Zeile 1", "Zeile 2", ... }
+	local opt_font_size = FONT_SIZE_OPTION
+	local opt_line_h = FONT_SIZE_OPTION + 3
+	local opt_y0 = OPT_Y0
+	local prompt_font_size = FONT_SIZE_PROMPT
+	local prompt_line_h = LINE_H
+	local prompt_y0 = PROMPT_Y + PROMPT_IMG_H + 6
+	local applied_prompt_font = nil
+	local applied_opt_font = nil -- zuletzt gesetzte (skalierte) Schriftgroesse der Antworten
 	local correct_set = {}       -- correct_set[i] = true fuer die aktuelle Frage
 	local current_image = nil
 	local image_zoomed = false
@@ -112,6 +139,7 @@ function quiz_menu.start(context, ids, npc_sprite_id, on_finished)
 	local enemy_lives = #questions
 	local score = 0
 	local last_scale = nil
+	local time_left = options.time_limit      -- nil = kein Timer
 
 	-- Aktueller Massstab + Versatz der Questflaeche im Fenster (Letterbox).
 	-- Wird in on_draw aus screen:get_size() ermittelt.
@@ -128,11 +156,14 @@ function quiz_menu.start(context, ids, npc_sprite_id, on_finished)
 
 	local prompt_text = sol.text_surface.create{ font = FONT, horizontal_alignment = "left" }
 	local hint_text = sol.text_surface.create{ font = FONT, horizontal_alignment = "left" }
+	local timer_text = sol.text_surface.create{ font = FONT, horizontal_alignment = "center" }
+	local boss_text = sol.text_surface.create{ font = FONT, horizontal_alignment = "center", text = "BOSS" }
+	boss_text:set_color({255, 40, 40})
 	local option_texts = {}
 	local function option_text(i)
 		if not option_texts[i] then
 			option_texts[i] = sol.text_surface.create{ font = FONT, horizontal_alignment = "left" }
-			if last_scale then option_texts[i]:set_font_size(math.floor(FONT_SIZE_OPTION * last_scale)) end
+			if applied_opt_font then option_texts[i]:set_font_size(applied_opt_font) end
 		end
 		return option_texts[i]
 	end
@@ -162,9 +193,43 @@ function quiz_menu.start(context, ids, npc_sprite_id, on_finished)
 		prompt_text:set_text(q.question or "")
 		current_image = get_image(IMAGE_DIR .. q.id .. ".png")
 		image_zoomed = false
-		prompt_lines = wrap(q.question or "", FONT, FONT_SIZE_PROMPT, current_image and IMG_PROMPT_W or PROMPT_W)
+		-- Layout: Frage umbrechen, Antworten darunter umbrechen. Passt alles
+		-- zusammen nicht bis OPT_BOTTOM, wird zuerst die Antwortschrift und
+		-- danach die Frageschrift schrittweise kleiner.
+		-- Reicht auch die kleinste Schrift nicht, wird im zweiten Durchlauf
+		-- (compact) der freie Platz oben genutzt: Frage startet hoeher und die
+		-- Antworten duerfen direkt unter der Frage beginnen (ohne Bild).
+		local prompt_w = current_image and IMG_PROMPT_W or PROMPT_W
+		local fits = false
+		for _, compact in ipairs({ false, true }) do
+		prompt_y0 = (current_image or compact) and IMG_PROMPT_Y or (PROMPT_Y + PROMPT_IMG_H + 6)
+		local min_opt_y = (compact and not current_image) and 0 or OPT_Y0
+		for _, psize in ipairs(PROMPT_FONT_SIZES) do
+			local plines = wrap(q.question or "", FONT, psize, prompt_w)
+			local plh = psize + 2
+			local prompt_bottom = prompt_y0 + (#plines - 1) * plh + plh / 2
+			local y0 = math.max(min_opt_y, math.ceil(prompt_bottom + 8))
+			for _, size in ipairs(OPT_FONT_SIZES) do
+				local line_h = size + 3
+				local lines = {}
+				local y = y0
+				for i = 1, num_options do
+					lines[i] = wrap(q.options[i].text or "", FONT, size, OPT_W)
+					y = y + #lines[i] * line_h + OPT_GAP
+				end
+				prompt_lines, prompt_font_size, prompt_line_h = plines, psize, plh
+				option_lines, opt_font_size, opt_line_h, opt_y0 = lines, size, line_h, y0
+				if y - OPT_GAP <= OPT_BOTTOM then fits = true break end
+			end
+			if fits then break end
+		end
+		if fits then break end
+		end
+		if not fits then
+			print("quiz: Frage " .. tostring(q.id) .. " ist auch mit kleinster Schrift zu lang")
+		end
 		for i = 1, num_options do
-			option_text(i):set_text(q.options[i].text or "")
+			option_text(i)
 		end
 		local correct_ids = {}
 		for _, cid in ipairs(q.correct_answers) do correct_ids[cid] = true end
@@ -224,6 +289,20 @@ function quiz_menu.start(context, ids, npc_sprite_id, on_finished)
 
 	function menu:on_started()
 		load_question()
+		if time_left then
+			-- Laeuft auch weiter, wenn ein Bild per Tab vergroessert ist.
+			-- Haengt am Menue und endet daher automatisch mit dem Quiz.
+			sol.timer.start(menu, 1000, function()
+				time_left = time_left - 1
+				if time_left <= 0 then
+					time_left = 0
+					menu.result = "timeout"
+					sol.menu.stop(menu)
+					return false
+				end
+				return true
+			end)
+		end
 	end
 
 	-- Wichtig: Tasten werden beim DRUECKEN ausgewertet und sowohl Druecken als auch
@@ -271,6 +350,49 @@ function quiz_menu.start(context, ids, npc_sprite_id, on_finished)
 		if on_finished then on_finished(menu.result or "lose", score) end
 	end
 
+	-- Hinweis: Die folgenden Helfer stehen bewusst AUSSERHALB von on_draw.
+	-- Solarus nutzt LuaJIT, und dort darf eine Funktion hoechstens 60 Upvalues
+	-- (Variablen von ausserhalb der Funktion) verwenden. Sonst laedt die Datei nicht.
+
+	-- Schriftgroessen von Frage und Antworten (haengen von Skalierung UND Textlaenge ab)
+	local function update_fonts(scale)
+		local wanted = math.floor(opt_font_size * scale)
+		if wanted ~= applied_opt_font then
+			applied_opt_font = wanted
+			for _, t in pairs(option_texts) do t:set_font_size(wanted) end
+		end
+		local wanted_prompt = math.floor(prompt_font_size * scale)
+		if wanted_prompt ~= applied_prompt_font then
+			applied_prompt_font = wanted_prompt
+			prompt_text:set_font_size(wanted_prompt)
+		end
+	end
+
+	-- Antworten mit Checkbox, zeilenweise umgebrochen
+	local function draw_options(screen)
+		local oy = opt_y0
+		for i = 1, num_options do
+			local box_color = marked[i] and {255, 220, 60} or {90, 90, 90}
+			screen:fill_color(box_color, sx(OPT_X), sy(oy), ss(BOX), ss(BOX))
+			local t = option_text(i)
+			t:set_color(i == cursor and {255, 255, 0} or {255, 255, 255})
+			for _, line in ipairs(option_lines[i] or {}) do
+				t:set_text(line)
+				t:draw(screen, sx(OPT_TEXT_X), sy(oy + BOX / 2))
+				oy = oy + opt_line_h
+			end
+			oy = oy + OPT_GAP
+		end
+	end
+
+	-- Bosstimer (auch in der vergroesserten Bildansicht sichtbar)
+	local function draw_timer(screen)
+		if not time_left then return end
+		timer_text:set_text(string.format("Zeit %d:%02d", math.floor(time_left / 60), time_left % 60))
+		timer_text:set_color(time_left <= TIMER_WARN and {255, 60, 60} or {255, 255, 255})
+		timer_text:draw(screen, sx(TIMER_X), sy(TIMER_Y))
+	end
+
 	function sol.video:on_draw(screen)
 		-- Echte Ausgabegroesse holen: 1 Pixel von "screen" = 1 Pixel auf dem
 		-- Monitor, auch im Vollbildmodus (siehe Doku zu sol.video:on_draw).
@@ -284,13 +406,12 @@ function quiz_menu.start(context, ids, npc_sprite_id, on_finished)
 		view_oy = math.floor((out_h - qh * new_scale) / 2)
 
 		if new_scale ~= last_scale then
-			prompt_text:set_font_size(math.floor(FONT_SIZE_PROMPT * new_scale))
-			for i = 1, num_options do
-				option_text(i):set_font_size(math.floor(FONT_SIZE_OPTION * new_scale))
-			end
 			hint_text:set_font_size(math.floor(FONT_SIZE_HINT * new_scale))
+			timer_text:set_font_size(math.floor(FONT_SIZE_TIMER * new_scale))
+			boss_text:set_font_size(math.floor(FONT_SIZE_BOSS * new_scale))
 			last_scale = new_scale
 		end
+		update_fonts(new_scale)
 
 		-- Abdunkeln der gesamten Ausgabe (auch der Letterbox-Raender).
 		screen:fill_color({0, 0, 0, 150})
@@ -301,38 +422,36 @@ function quiz_menu.start(context, ids, npc_sprite_id, on_finished)
 			draw_image(screen, current_image, ZOOM_X, ZOOM_Y, ZOOM_W, ZOOM_H)
 			hint_text:set_text("[Tab] zurueck zur Frage")
 			hint_text:draw(screen, sx(ZOOM_X), sy(ZOOM_Y + ZOOM_H + 10))
+			draw_timer(screen)
 			return
 		end
 
-		local ty = PROMPT_Y + PROMPT_IMG_H + 6
+		local ty = prompt_y0
 		if current_image then
 			draw_image(screen, current_image, IMG_X, IMG_Y, IMG_W, IMG_H)
 			hint_text:set_text("[Tab] Bild vergroessern")
 			hint_text:draw(screen, sx(IMG_X), sy(IMG_Y + IMG_H + 6))
-			ty = IMG_PROMPT_Y
 		end
 		for _, line in ipairs(prompt_lines) do
 			prompt_text:set_text(line)
 			prompt_text:draw(screen, sx(PROMPT_X), sy(ty))
-			ty = ty + LINE_H
+			ty = ty + prompt_line_h
 		end
 
-		for i = 1, num_options do
-			local oy = OPT_Y0 + (i - 1) * OPT_STEP
-			local box_color = marked[i] and {255, 220, 60} or {90, 90, 90}
-			screen:fill_color(box_color, sx(OPT_X), sy(oy), ss(BOX), ss(BOX))
-			local t = option_text(i)
-			t:set_color(i == cursor and {255, 255, 0} or {255, 255, 255})
-			t:draw(screen, sx(OPT_X + BOX + 6), sy(oy + BOX / 2))
-		end
+		draw_options(screen)
 
 		if npc_sprite then
 			npc_sprite:set_scale(view_scale, view_scale)
 			npc_sprite:draw(screen, sx(NPC_X), sy(NPC_Y))
 		end
 
+		if options.boss then
+			boss_text:draw(screen, sx(NPC_X), sy(BOSS_LABEL_Y))
+		end
+
 		draw_hearts(screen, enemy_lives, #questions, ENEMY_HEARTS_X, ENEMY_HEARTS_Y)
 		draw_hearts(screen, player_lives, 3, PLAYER_HEARTS_X, PLAYER_HEARTS_Y)
+		draw_timer(screen)
 	end
 
 	sol.menu.start(context, menu)

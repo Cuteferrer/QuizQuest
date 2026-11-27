@@ -1671,7 +1671,13 @@ npc{
   y = 69,
   direction = 3,
   subtype = 1,
-  sprite = "npc/kaleido",
+  sprite = "custom Sprites/women_WisoBoss",
+  properties = {
+    {
+      key = "boss",
+      value = "true",
+    },
+  },
 }
 
 destination{
